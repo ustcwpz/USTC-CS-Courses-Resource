@@ -1,4 +1,4 @@
-all: insert heap merge
+all: insert heap merge quick
 	
 insert:
 	javac -encoding utf-8 Insert.java;
@@ -12,5 +12,8 @@ merge:
 	javac -encoding utf-8 Merge.java;
 	java Merge;
 
+quick:
+	javac -encoding utf-8 Quick.java;
+	java Quick;
 clean:
 	rm *.class
