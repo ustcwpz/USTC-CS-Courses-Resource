@@ -6,6 +6,7 @@
     > QQ: 1033329461
 
  ************************************************************************/
+
 import java.util.*;
 import java.nio.file.*;
 import java.io.*;
@@ -20,17 +21,18 @@ public class Insert{
             origin[i] = in.nextLine();
         }
 
-        // int[] exp={5};
         int[] exp={2, 5, 8, 11, 14, 17};
         // 开始调用函数进行排序.
         for(int index : exp){
             String[] partArray = Arrays.copyOf(origin, 1<<index);
             // 取微秒级，因为发现纳秒后三位都是0.
             long enduration = sort(partArray)/1000;
+            
             // 输出时间到time.txt，注意flush().
             outTime.println("index: " + index + "\ntime: " + enduration + "\tmicroseconds.");
             outTime.flush();
 
+            // 输出排好序的数组到result中
             System.out.println("index: " + index + "\ntime: " + enduration + "\tmicroseconds.");
             PrintWriter outSort = new PrintWriter("../output/insert_sort/result_"+index+".txt", "UTF-8");
             for(int j = 0; j < 1<<index; j++){
@@ -42,6 +44,8 @@ public class Insert{
         
     }
 
+    // 用于比较字符串大小的函数
+    // 小则-1 大则1 相等则0
     public static int compare(String a, String b){
         if(a.length() < b.length())
             return -1;
@@ -57,7 +61,7 @@ public class Insert{
         long startTime = System.nanoTime();
         // 排序
         // 算法之间只有这里不同。
-        //        // 初始化        
+        // 初始化        
         int l = A.length;
         int min;
         String tmp; 
