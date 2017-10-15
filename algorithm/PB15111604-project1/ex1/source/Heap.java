@@ -66,7 +66,7 @@ public class Heap{
         // 开始计时
         long startTime = System.nanoTime();
         // 排序
-        // 算法之间只有这里不同。
+        // 算法之间主要只有这里不同。
         heap_sort(A);
 
         // 结束计时，返回时间差。

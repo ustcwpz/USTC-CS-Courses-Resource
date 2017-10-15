@@ -10,7 +10,7 @@ import java.util.*;
 
 public class GenerateStrings{
     public static void main(String[] args) throws IOException{
-        PrintWriter outString = new PrintWriter("./input_strings.txt", "UTF-8");
+        PrintWriter outString = new PrintWriter("../input/input_strings.txt", "UTF-8");
         for(int i = 0; i < (1 << 17) ; i++){
             int l = (int)(Math.random() * 32 + 1);
             String s = "";

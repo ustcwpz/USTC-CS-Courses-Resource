@@ -1,0 +1,12 @@
+index: 2
+time: 4	microseconds.
+index: 5
+time: 25	microseconds.
+index: 8
+time: 1837	microseconds.
+index: 11
+time: 6049	microseconds.
+index: 14
+time: 488874	microseconds.
+index: 17
+time: 34780567	microseconds.

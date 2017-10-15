@@ -41,9 +41,7 @@ public class Quick{
                 outSort.println(partArray[j]);
                 outSort.flush();
             }
-
         }
-        
     }
     
     // 用于比较字符串大小的函数
@@ -62,7 +60,7 @@ public class Quick{
         // 开始计时
         long startTime = System.nanoTime();
         // 排序
-        // 算法之间只有这里不同。
+        // 算法之间主要只有这里不同。
         quick_sort(A, 0, A.length - 1);
 
         // 结束计时，返回时间差。

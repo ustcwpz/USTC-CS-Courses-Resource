@@ -12,7 +12,7 @@ import java.nio.file.*;
 import java.io.*;
 
 public class Merge{
-
+    
     public static void main(String[] args) throws IOException{
         /* 初始化:读入所有数据到origin数组中.*/
         Scanner in = new Scanner(Paths.get("../input/input_strings.txt"), "UTF-8");
@@ -62,7 +62,7 @@ public class Merge{
         // 开始计时
         long startTime = System.nanoTime();
         // 排序
-        // 算法之间只有这里不同。
+        // 算法之间主要只有这里不同。
         merge_sort(A, 0, A.length - 1);
 
         // 结束计时，返回时间差。
@@ -82,7 +82,7 @@ public class Merge{
         for(int i = 0; i < n2; i++){
             R[i] = A[q + i + 1];
         }
-        // 33个'A'字符串
+        // 33个'A'字符串，表示最大
         L[n1] = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         R[n2] = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         

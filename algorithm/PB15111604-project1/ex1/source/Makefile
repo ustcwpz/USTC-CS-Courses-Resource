@@ -1,5 +1,9 @@
 all: insert heap merge quick
-	
+
+generate:
+	javac GenerateStrings.java;
+	java GenerateStrings;
+
 insert:
 	javac -encoding utf-8 Insert.java;
 	java Insert;
@@ -15,5 +19,6 @@ merge:
 quick:
 	javac -encoding utf-8 Quick.java;
 	java Quick;
+
 clean:
 	rm *.class

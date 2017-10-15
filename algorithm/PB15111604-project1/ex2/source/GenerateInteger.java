@@ -10,8 +10,8 @@ import java.util.*;
 
 public class GenerateInteger{
     public static void main(String[] args) throws IOException{
-        PrintWriter outInt = new PrintWriter("./input_integers.txt", "UTF-8");
-        for(int i = 0; i < (1 << 17) ; i++){
+        PrintWriter outInt = new PrintWriter("../input/input_integers.txt", "UTF-8");
+        for(int i = 0; i < (1 << 25) ; i++){
             int r = (int)(Math.random() * 65535 + 1);
             outInt.println(r);
             outInt.flush();
