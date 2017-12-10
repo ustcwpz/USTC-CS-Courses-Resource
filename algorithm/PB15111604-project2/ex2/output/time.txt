@@ -1,0 +1,16 @@
+number of coefficients: 60
+    Normal	time: 15111	nanoseconds.
+number of coefficients: 32
+    Normal	time: 4889	nanoseconds.
+number of coefficients: 16
+    Normal	time: 1778	nanoseconds.
+number of coefficients: 4
+    Normal	time: 444	nanoseconds.
+number of coefficients: 60
+    FFT   	time: 68889	nanoseconds.
+number of coefficients: 32
+    FFT   	time: 33777	nanoseconds.
+number of coefficients: 16
+    FFT   	time: 16444	nanoseconds.
+number of coefficients: 4
+    FFT   	time: 8888	nanoseconds.
