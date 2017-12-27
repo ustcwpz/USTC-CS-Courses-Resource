@@ -1,0 +1,2 @@
+Time to delete node 24/3:      4000 nanoseconds.
+Time to delete node 23/4:      5000 nanoseconds.

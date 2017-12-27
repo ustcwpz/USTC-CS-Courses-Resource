@@ -1,0 +1,4 @@
+ 1 - 10 slice:       6000 nanoseconds.
+11 - 20 slice:       7000 nanoseconds.
+21 - 30 slice:       7000 nanoseconds.
+Total building:     46000 nanoseconds.

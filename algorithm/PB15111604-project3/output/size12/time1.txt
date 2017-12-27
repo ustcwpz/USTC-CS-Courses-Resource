@@ -1,0 +1,2 @@
+ 1 - 10 slice:       5000 nanoseconds.
+Total building:     17000 nanoseconds.

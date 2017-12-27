@@ -1,0 +1,24 @@
+key:  337, color:red  , size: 1
+key: 1593, color:black, size: 3
+key: 4150, color:red  , size: 1
+key: 5045, color:black, size: 5
+key: 5524, color:black, size: 1
+key: 9243, color:red  , size:15
+key: 9840, color:black, size: 1
+key:10463, color:black, size: 9
+key:13833, color:red  , size: 1
+key:16603, color:black, size: 3
+key:17138, color:red  , size: 1
+key:22059, color:red  , size: 7
+key:23304, color:red  , size: 1
+key:23604, color:black, size: 3
+key:24555, color:red  , size: 1
+key:26011, color:black, size:24
+key:26376, color:red  , size: 1
+key:26827, color:black, size: 2
+key:26829, color:red  , size: 6
+key:27845, color:red  , size: 1
+key:29878, color:black, size: 3
+key:31024, color:red  , size: 1
+key:31458, color:black, size: 8
+key:32740, color:black, size: 1

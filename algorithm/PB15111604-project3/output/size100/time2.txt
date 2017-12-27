@@ -1,0 +1,2 @@
+Time to delete node 100/3:     18000 nanoseconds.
+Time to delete node 99/4:     16000 nanoseconds.

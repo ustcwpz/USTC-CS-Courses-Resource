@@ -1,0 +1,12 @@
+key: 5045, color:red  , size: 1
+key: 9840, color:red  , size: 1
+key: 9243, color:black, size: 3
+key:13833, color:red  , size: 1
+key:23604, color:red  , size: 1
+key:22059, color:black, size: 3
+key:10463, color:red  , size: 7
+key:26827, color:red  , size: 1
+key:29878, color:black, size: 2
+key:32740, color:black, size: 1
+key:31458, color:red  , size: 4
+key:26011, color:black, size:12
