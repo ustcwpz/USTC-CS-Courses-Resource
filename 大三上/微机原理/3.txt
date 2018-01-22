@@ -1,0 +1,40 @@
+环境:      win10 emu8086
+完成情况:   
+    1完成,
+    2.1完成,
+    2.2完成了处理字符串,将处理完的三十六进制数输出
+        没有完成最后将处理完的三十六进制转化为四进制的处理.
+        输出样例:
+ZZZZZZ = 
+2Bits = 
+2Bits = 
+2Bits = 
+ZZZZZZ = 
+7 = 
+
+
+噗...我以为注释文件要写注释...
+下面请忽略....
+1.asm的注释
+
+用21h/01h 的int得到第一个数字(3-9),ascii减去'0'后即为重复个数,存入number中.
+再用21h/01h的int得到重复字符,直接存入symbol中.
+
+1.1 伪代码
+    for (bl = 0; bl != number; bl++){
+        用21h/02h的int输出10, 13,即换行
+        for(cl = 0; cl <= bl; cl++)
+            用21h/02h的int输出symbol
+    }
+
+1.2 伪代码
+    for (bl = 0; bl != number; bl++){
+        用21h/02h的int输出10, 13,即换行
+        for(dl = 0; dl < number - bl -1; dl++)
+            用21h/02h的int输出' '
+        for(cl = 0; cl <= 2*bl; cl++)
+            用21h/02h的int输出symbol
+    }
+
+2.asm的注释
+
