@@ -1,0 +1,41 @@
+int stack[100];
+int esp=0,ebp=0;
+
+int eax;
+
+void fib() {
+	int n;
+	int accu;
+	stack[esp]=ebp;
+	ebp=esp;
+	esp=esp+1;
+	
+	n=stack[ebp-1];
+	
+	if(n<=2) {
+		eax=1;
+		esp=ebp;
+		ebp=stack[ebp];
+	}
+	else {
+		stack[esp]=n-1;
+		esp=esp+1;
+		fib();
+		accu=eax;
+		stack[esp-1]=n-2;
+		fib();
+		accu=accu+eax;
+		eax=accu;
+		esp=ebp;
+		ebp=stack[ebp];
+	}
+}
+
+
+void main() {
+	stack[0]=10;
+	esp=1;
+	fib();
+	output_var = eax;
+	output();
+}

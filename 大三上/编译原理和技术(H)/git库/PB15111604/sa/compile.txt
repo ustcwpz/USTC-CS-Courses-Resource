@@ -1,0 +1,30 @@
+CPU： 		
+    i5-6300HQ
+内存大小： 	
+    16G
+操作系统：   
+    windows - wsl
+cmake目标：  
+    make
+cmake build type：
+    Debug
+编译线程数： 
+    7
+编译耗时：   
+    58min37s
+内存占用峰值： 
+    Mem:15.7G + Swap:2.55G
+遇到的问题及如何解决：
+    1.之前的经验
+        基于去年的经验，所以一开始就把ld换成了gold，方法是在cmake的时候
+        cmake ... -DLLVM_USE_LINKER=gold ...
+        还有一个是上一次llvm release编译的经验，之前不知道有time命令，所以统计时间是用的人眼。而这次用了time，体验好了很多。
+    2.磁盘空间不足
+        报错：
+            [100%] Built target clang-check
+/usr/bin/ld: fatal error: ../../bin/opt：设备上没有空间
+collect2: error: ld returned 1 exit status
+        解决：
+            没想到build+install文件夹一共48G，一开始是在wsl下面的home目录，也就是在windows的系统盘中，但是系统盘只有空闲的20+G。
+            后来转战另一个固态硬盘D盘，删掉了50+G的kali才留下来空间。
+            最终成功。

@@ -1,0 +1,8 @@
+void fib(){
+    ;
+}
+void main(){
+    fib();
+    int i;
+    i = 1;
+}

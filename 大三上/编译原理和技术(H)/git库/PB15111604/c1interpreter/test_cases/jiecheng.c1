@@ -1,0 +1,44 @@
+
+int foo_var;
+int foo_ret;
+void foo()
+{
+  int n = foo_var;
+  if (n <= 1)
+  {
+    foo_ret = 1;
+  }
+  else
+  {
+    foo_var = n - 1;
+    foo();
+    foo_ret = n * foo_ret;
+  }
+}
+
+int counter_i;
+
+void count_down()
+{
+    counter_i = counter_i - 1;
+}
+
+void count_up()
+{
+    counter_i = counter_i + 1;
+}
+
+
+void main()
+{
+    counter_i = 1;
+    while(counter_i <= 10)
+    {
+	foo_var = counter_i;
+ 	foo();
+	output_var = foo_ret;
+	output();
+
+        count_up();
+    }
+}

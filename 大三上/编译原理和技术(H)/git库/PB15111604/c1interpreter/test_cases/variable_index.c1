@@ -1,0 +1,11 @@
+void main(){
+    int i[]={1,2,3};
+    int b[3]={1,2,3};
+    b[i[b[1]]] = 5;
+    int a=0;
+    while(a < 3){
+        output_var = b[a];
+        output();
+        a = a+1;
+    }
+}

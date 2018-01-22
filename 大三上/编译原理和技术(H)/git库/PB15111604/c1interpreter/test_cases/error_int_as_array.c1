@@ -1,0 +1,5 @@
+int i;
+void main(){
+    i[1]=1;
+    int a = i[1];
+}

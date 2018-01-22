@@ -1,0 +1,6 @@
+int i;
+void main(){
+    int j;
+    j = -6;
+    j  = -j;
+}

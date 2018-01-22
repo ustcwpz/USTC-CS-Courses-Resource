@@ -1,0 +1,54 @@
+// static declaration.
+
+int counter_i;
+
+void count_down()
+{
+    counter_i = counter_i - 1;
+}
+
+void count_up()
+{
+    counter_i = counter_i + 1;
+}
+
+int N;
+int num[100];
+
+void get_input()
+{
+	if (N <= 100)
+	{
+		counter_i = 0;
+		while (counter_i < N)
+		{
+			input();
+			num[counter_i] = input_var;
+			count_up();
+		}
+	}
+}
+
+int sum_ret;
+void sum()
+{
+	int sum = 0;
+	counter_i = 0;
+	while (counter_i < N)
+	{
+		sum = sum + num[counter_i];
+		count_up();
+	}
+	sum_ret = sum;
+}
+
+void main()
+{
+	// input a number not greater than 100
+	input();
+	N = input_var;
+	get_input();
+	sum();
+	output_var = sum_ret;
+	output();
+}

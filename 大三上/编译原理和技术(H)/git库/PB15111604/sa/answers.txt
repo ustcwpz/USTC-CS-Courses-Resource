@@ -1,0 +1,120 @@
+3.1 简要说明test.c、AST.svg、CFG.svg和ExplodedGraph.svg之间的联系与区别
+Answer:
+	test.c  
+        是源文件
+    AST.svg 
+        是对应的Abstract Syntax Tree的图形表示。
+    CFG.svg 
+        是对应的控制流图的图形表示
+    ExplodedGraph.svg 
+        对应的是由analyzer产生的状态转换图.
+    从四者之间的关系来看,test.c和AST.svg的直观相关性更强一点,CFG.svg和ExplodedGraph.svg的直观相关性更强一点.因为前两者直观结构更为相似;后两者的表达的"状态转换"的属性更加相似.
+    从信息量上来看,信息量的多少从少到多的顺序应该是:AST.svg<test.c<CFG.svg<ExplodedGraph.svg.
+    因为AST只有语法上的体现,而失去了语义的信息.
+    而CFG里的基本块内部,基本块之间的信息十分具体明确.
+    而ExplodedGraph.svg则涵盖了最多的信息,所以称为"ExplodedGraph". 
+3.2
+3.2.1 Checker 对于程序的分析主要在 AST 上还是在 CFG 上进行？
+
+    CFG上，因为AST上的信息实在是太少了。
+    阅读材料上提到，checker分析时采取的是路径敏感的探索策略，显然要用到CFG。
+3.2.2 Checker 在分析程序时需要记录程序状态，这些状态一般保存在哪里？
+
+    ProgramState中,其中：
+    Environment存储着源代码表达式到符号值的映射；
+    Store存储着内存单元到符号值的映射；
+    GenericDataMap存储着符号值的约束等其他信息。
+3.2.3 简要解释分析器在分析下面程序片段时的过程，在过程中产生了哪些symbolic values? 它们的关系是什么？
+    一段程序：
+    int x = 3, y = 4;
+    int *p = &x;
+    int z = *(p + 1);
+
+    Line 1： 
+        计算3，构建一个指向具体数字3的SVal(ConcreteInt，设为CI3)，然后计算x=3的赋值，先计算x的左值(生成MemRegion的SVal，设为MRx)，然后在symbolic store中bind 刚才指向3的Sval给x的MemRegion。
+        计算4，构建一个指向具体数字4的SVal(ConcreteInt，设为CI4)，然后计算y=4的赋值，先计算y的左值(生成MemRegion的SVal，设为MRy)，然后在symbolic store中bind 刚才指向4的Sval给y的MemRegion。
+    Line 2：
+        计算&x，先构建一个表示x左值的SVal，再构建一个SVal来表示&x的值，设这个值为$0。计算p的左值(生成MemRegion的SVal，设为MRp0)，然后在symbolic store中bind 这个刚才$0的SVal给p的MemRegion。
+    Line 3：
+        计算p，先构建一个表示p左值的SVal，设为MRp1，然后做左值到右值的转换，生成一个新的SVal，这个SVal指向p当前被bound的值(也就是$0)，然后生成一个指向具体数字1的SVal(ConcreteInt，设为CI1)，之后再用这两个SVal，创建一个新的SVal(SVadd)来表示二者的和。之后创建一个新的SVal(SVd)表示*(p+1)(解引用)，利用SVadd，再之后计算z的左值(生成MemRegion的SVal，设为MRz)，帮刚才表示解引用的SVd bind给symbolic store中z的MemRegion。
+
+    关系：
+        Line 1中，CI3 bound to MRx，CI4 bound to MRy
+        Line 2中，$0的SVal bound to MRp0
+        Line 3中，MRp1与MRp0表示的内容是相同的，bound的都是$0。SVd bound to MRz。
+
+3.3
+3.3.1 LLVM 大量使用了 C++11/14的智能指针，请简要描述几种智能指针的特点、使用场合，如有疑问也可以记录在报告中.
+    auto_ptr:
+        被弃用。一旦多个auto_ptr指向一个对象，那么容易引起冲突，并且编译期不会报错。
+    unique_tr:
+        一个unique_ptr“拥有”一个对象，如果多个unique_ptr同时指向一个对象则会在编译期报错。临时的unique_ptr可以赋值或者拷贝给其他unique_ptr或者shared_ptr。
+    shared_ptr:
+        多个shared_ptr可以指向一个对象.全程维护一个对相关量的引用计数器.多一个shared_ptr指向时+1,少一个时-1.计数器值为0时销毁.
+    weak_ptr:
+        为了解决shared_ptr的循环引用问题而设计.指向时不会改变对象的引用计数器值,当计数器值变为0时weak_ptr指向空指针.
+    场合:
+        一般情况下shared_ptr是首选.
+        任何场合都不用auto_ptr.
+        当要求一个对象最多被一个智能指针指向的时候用unique_ptr.
+        当一个对象可能被多个智能指针指向的时候使用shared_ptr,
+        当要避免循环引用问题产生的时候使用weak_ptr.
+
+3.3.2 LLVM 不使用 C++ 的运行时类型推断（RTTI），理由是什么？LLVM 提供了怎样的机制来代替它？
+    理由是C++的RTTI会导致很多不必要的空间的臃肿和性能的降低.
+    LLVM提供了isa<>,cast<>,dyn_cast<>,cast_or_null<>,dyn_cast_or_null<>等模板来代替.
+
+3.3.3 如果你想写一个函数，它的参数既可以是数组，也可以是std::vector，那么你可以声明该参数为什么类型？如果你希望同时接受 C 风格字符串和 std::string 呢？
+    ①ArrayRef
+    ②StringRef 
+
+3.3.4 你有时会在cpp文件中看到匿名命名空间的使用，这是出于什么考虑？
+    通过使用匿名命名空间,来使空间内成员私有于cpp文件自身,同时避免重名冲突,并且能够使编译器能够更加"激进地"优化代码.
+
+3.4.1 这个 checker 对于什么对象保存了哪些状态？保存在哪里？
+    checker自身是stateless的.
+    它检查的是文件的打开关闭.
+    保存了文件的打开关闭状态.
+    具体针对的是OpenFn和CloseFn对应的CallEvent Call对象,
+    保存的是FileDesc的StreamState::getOpened()状态以及FileDesc的StreamState::getClosed()状态.
+    通过C.addTransition(State)的形式,将这些状态保存在了CheckerContext中,(也就是ExplodedGraph的节点之间的边中)
+    此外,还有针对不同的报错信息(而不是状态),    将这些信息保存在CheckerContext中
+
+3.4.2 状态在哪些时候会发生变化？
+    checkPostCall中:在调用GlobalCFunction并且函数名为"fopen"，并且文件句柄可获取(调用成功)时，将这个文件对应的状态设置为Opened，
+    checkPreCall中:在调用GlobalCFunction并且函数名为"fclose",并且参数个数为1,并且文件句柄可获取,且没有DoubleClose时,将文件对应的状态设置为Closed.
+    checkDeadSymbols中:发现dead symbol时,将其移除.
+
+3.4.3 在哪些地方有对状态的检查？
+    Call一个函数之前,checkPreCall中
+    Call一个函数之后,checkPostCall中
+    在发现有符号死亡的时候,checkDeadSymbols
+
+3.4.4 函数SimpleStreamChecker::checkPointerEscape的逻辑是怎样的？实现了什么功能？用在什么地方？
+    逻辑:
+        如果指针被作为参数传给一个函数,并且这个函数不能保证之后这个文件不会被close,那就不作处理,返回.
+        如果不是这样,那就乐观地认为文件会在其他地方close,并在当前的状态移除这些追踪不到的符号,返回.
+    功能:
+        对于追踪不到的文件指针信息进行抛弃,避免没有意义的努力以及错误的尝试.
+    用在:
+        用在文件指针的赋值,或者文件指针作为参数传递给其他函数等地方.
+
+3.4.5 根据以上认识，你认为这个简单的checker能够识别出怎样的bug？又有哪些局限性？请给出测试程序及相关的说明。
+    能够识别的bug:
+        简单的doubleclose,noclose(也就是leak)的bug
+    局限性:
+        涉及到较为复杂的对文件指针的处理时，就不能够检测出来。比如：
+        文件指针作为函数参数传给函数；
+        对文件指针进行比较复杂的计算与赋值。
+
+3.5.1 增加一个checker需要增加哪些文件？需要对哪些文件进行修改？
+    需要增加checker对应的cpp文件到lib/StaticAnalyzer/Checkers目录中.
+    需要修改checker对应的cpp，添加一个registration的函数，比如ento::registerSimpleStreamChecker，另外还要修改Checkers.td，选择对应的package，并且按照对应的格式添加词条。此外还有CMakeLists.txt..
+
+3.5.2 阅读clang/include/clang/StaticAnalyzer/Checkers/CMakeLists.txt，解释其中的 clang_tablegen 函数的作用。
+    clang_tablegen函数会生成一个命令，通过调用tblgen，根据Checkers.td生成Checkers.inc来配置checker。
+
+3.5.3 .td文件在clang中出现多次，比如这里的clang/include/clang/StaticAnalyzer/Checkers/Checkers.td。这类文件的作用是什么？它是怎样生成C++头文件或源文件的？这个机制有什么好处？
+    ①.td文件是tablegen所利用的文件类型,全称是target description,是用来批量处理数据/信息的,比如生成一些C++文件.
+    ②.td文件由classes和definitions组成(统称为record).这些records有一个名字,一列值,一列superclasses.这些值是用来工作的主要数据,蕴含着过程所需要的主要的特定信息.这些数据的处理依赖于后端,tablegen主要负责数据的结构和格式.这里,classes是用来生成其他record的,生成C++文件主要依据的就是classes,以及对应的后端实现.
+    ③这个机制能够将过程自动化批量处理,减少出错的概率的同时减小了重复操作的工作量,提高了效率.

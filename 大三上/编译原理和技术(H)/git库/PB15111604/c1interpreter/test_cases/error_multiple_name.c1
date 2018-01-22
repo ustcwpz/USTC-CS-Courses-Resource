@@ -1,0 +1,10 @@
+void f(){}
+void f(){}
+void main(){
+    int i;
+    int i;
+    {
+        int i;
+        int i;
+    }
+}
