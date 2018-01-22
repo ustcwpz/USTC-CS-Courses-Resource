@@ -1,0 +1,94 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE FALSE
+SET_PREFERENCE devicefamily spartan6
+SET_PREFERENCE device xc6slx16
+SET_PREFERENCE speedgrade -3
+SET_PREFERENCE package csg324
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE simulationfiles Behavioral
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE outputdirectory C:/Users/zevin/Desktop/Lab6/ipcore_dir/
+SET_PREFERENCE workingdirectory C:/Users/zevin/Desktop/Lab6/ipcore_dir/tmp/
+SET_PREFERENCE subworkingdirectory C:/Users/zevin/Desktop/Lab6/ipcore_dir/tmp/_cg/
+SET_PREFERENCE transientdirectory C:/Users/zevin/Desktop/Lab6/ipcore_dir/tmp/_cg/_dbg/
+SET_PREFERENCE designentry Verilog
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE addpads false
+SET_PREFERENCE projectname coregen
+SET_PREFERENCE formalverification false
+SET_PREFERENCE asysymbol false
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE foundationsym false
+SET_PREFERENCE createndf false
+SET_PREFERENCE removerpms false
+SET_PARAMETER Component_Name mem
+SET_PARAMETER Interface_Type Native
+SET_PARAMETER AXI_Type AXI4_Full
+SET_PARAMETER AXI_Slave_Type Memory_Slave
+SET_PARAMETER Use_AXI_ID false
+SET_PARAMETER AXI_ID_Width 4
+SET_PARAMETER Memory_Type Single_Port_RAM
+SET_PARAMETER Enable_32bit_Address false
+SET_PARAMETER ecctype No_ECC
+SET_PARAMETER ECC false
+SET_PARAMETER softecc false
+SET_PARAMETER Use_Error_Injection_Pins false
+SET_PARAMETER Error_Injection_Type Single_Bit_Error_Injection
+SET_PARAMETER Use_Byte_Write_Enable false
+SET_PARAMETER Byte_Size 9
+SET_PARAMETER Algorithm Minimum_Area
+SET_PARAMETER Primitive 8kx2
+SET_PARAMETER Assume_Synchronous_Clk false
+SET_PARAMETER Write_Width_A 32
+SET_PARAMETER Write_Depth_A 256
+SET_PARAMETER Read_Width_A 32
+SET_PARAMETER Operating_Mode_A WRITE_FIRST
+SET_PARAMETER Enable_A Always_Enabled
+SET_PARAMETER Write_Width_B 32
+SET_PARAMETER Read_Width_B 32
+SET_PARAMETER Operating_Mode_B WRITE_FIRST
+SET_PARAMETER Enable_B Always_Enabled
+SET_PARAMETER Register_PortA_Output_of_Memory_Primitives false
+SET_PARAMETER Register_PortA_Output_of_Memory_Core false
+SET_PARAMETER Use_REGCEA_Pin false
+SET_PARAMETER Register_PortB_Output_of_Memory_Primitives false
+SET_PARAMETER Register_PortB_Output_of_Memory_Core false
+SET_PARAMETER Use_REGCEB_Pin false
+SET_PARAMETER register_porta_input_of_softecc false
+SET_PARAMETER register_portb_output_of_softecc false
+SET_PARAMETER Pipeline_Stages 0
+SET_PARAMETER Load_Init_File true
+SET_PARAMETER Coe_File ./mem.coe
+SET_PARAMETER Fill_Remaining_Memory_Locations false
+SET_PARAMETER Remaining_Memory_Locations 0
+SET_PARAMETER Use_RSTA_Pin false
+SET_PARAMETER Reset_Memory_Latch_A false
+SET_PARAMETER Reset_Priority_A CE
+SET_PARAMETER Output_Reset_Value_A 0
+SET_PARAMETER Use_RSTB_Pin false
+SET_PARAMETER Reset_Memory_Latch_B false
+SET_PARAMETER Reset_Priority_B CE
+SET_PARAMETER Output_Reset_Value_B 0
+SET_PARAMETER Reset_Type SYNC
+SET_PARAMETER Additional_Inputs_for_Power_Estimation false
+SET_PARAMETER Port_A_Clock 100
+SET_PARAMETER Port_A_Write_Rate 50
+SET_PARAMETER Port_B_Clock 100
+SET_PARAMETER Port_B_Write_Rate 50
+SET_PARAMETER Port_A_Enable_Rate 100
+SET_PARAMETER Port_B_Enable_Rate 100
+SET_PARAMETER Collision_Warnings ALL
+SET_PARAMETER Disable_Collision_Warnings false
+SET_PARAMETER Disable_Out_of_Range_Warnings false
+SET_PARAMETER use_bram_block Stand_Alone
+SET_PARAMETER MEM_FILE no_Mem_file_loaded
+SET_CORE_NAME Block Memory Generator
+SET_CORE_VERSION 7.3
+SET_CORE_VLNV xilinx.com:ip:blk_mem_gen:7.3
+SET_CORE_CLASS com.xilinx.ip.blk_mem_gen_v7_3.blk_mem_gen_v7_3
+SET_CORE_PATH C:/Xilinx/14.7/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/blk_mem_gen_v7_3
+SET_CORE_GUIPATH C:/Xilinx/14.7/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/blk_mem_gen_v7_3/gui/blk_mem_gen_v7_3.tcl
+SET_CORE_DATASHEET http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v7_3;d=pg058-blk-mem-gen.pdf
+ADD_CORE_DOCUMENT <C:\Xilinx\14.7\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\blk_mem_gen_v7_3\doc\blk_mem_gen_v7_3_vinfo.html><blk_mem_gen_v7_3_vinfo.html>

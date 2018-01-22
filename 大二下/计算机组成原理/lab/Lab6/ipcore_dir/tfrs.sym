@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="tfrs">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2017-6-5T8:0:16</timestamp>
+    <pin polarity="Input" x="0" y="80" name="a[6:0]" />
+    <pin polarity="Input" x="0" y="112" name="d[31:0]" />
+    <pin polarity="Input" x="0" y="272" name="we" />
+    <pin polarity="Input" x="0" y="304" name="clk" />
+    <pin polarity="Output" x="288" y="80" name="spo[31:0]" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">tfrs</text>
+        <rect width="224" x="32" y="32" height="512" />
+        <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="80" type="pin a[6:0]" />
+        <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="112" type="pin d[31:0]" />
+        <line x2="32" y1="272" y2="272" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="272" type="pin we" />
+        <line x2="32" y1="304" y2="304" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="304" type="pin clk" />
+        <line x2="256" y1="80" y2="80" style="linewidth:W" x1="288" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="252" y="80" type="pin spo[31:0]" />
+    </graph>
+</symbol>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pn" timeStamp="Tue May 02 14:20:18 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="711968451DBE42BDA3E9049D4CFF74C6" type="project"/>
+<property name="ProjectIteration" value="0" type="project"/>
+<property name="ProjectFile" value="C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/Lab6.xise" type="project"/>
+<property name="ProjectCreationTimestamp" value="2017-05-01T22:44:40" type="project"/>
+</section>
+<section name="Project Statistics" visible="true">
+<property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
+<property name="PROP_FitterReportFormat" value="HTML" type="process"/>
+<property name="PROP_LastAppliedGoal" value="Balanced" type="design"/>
+<property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
+<property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
+<property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/test/uut" type="process"/>
+<property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
+<property name="PROP_SynthTopFile" value="changed" type="process"/>
+<property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
+<property name="PROP_UseSmartGuide" value="false" type="design"/>
+<property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
+<property name="PROP_intProjectCreationTimestamp" value="2017-05-01T22:44:40" type="design"/>
+<property name="PROP_intWbtProjectID" value="711968451DBE42BDA3E9049D4CFF74C6" type="design"/>
+<property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
+<property name="PROP_intWorkingDirUsed" value="No" type="design"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.top" type="process"/>
+<property name="PROP_AutoTop" value="true" type="design"/>
+<property name="PROP_DevFamily" value="Spartan6" type="design"/>
+<property name="PROP_DevDevice" value="xc6slx16" type="design"/>
+<property name="PROP_DevFamilyPMName" value="spartan6" type="design"/>
+<property name="PROP_DevPackage" value="csg324" type="design"/>
+<property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
+<property name="PROP_DevSpeed" value="-3" type="design"/>
+<property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
+<property name="FILE_COREGEN" value="1" type="source"/>
+<property name="FILE_VERILOG" value="5" type="source"/>
+</section>
+</application>
+</document>

@@ -1,0 +1,58 @@
+Release 12.3 - xst M.70d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: control.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"\Users\CZK\Desktop\COD\COD LAB\Lab6_MCLK_CPU\Lab6\control.v\" into library work
+Parsing module <control>.
+WARNING:HDLCompiler:568 - "\Users\CZK\Desktop\COD\COD LAB\Lab6_MCLK_CPU\Lab6\control.v" Line 80: Constant value is truncated to fit in <4> bits.
+WARNING:HDLCompiler:568 - "\Users\CZK\Desktop\COD\COD LAB\Lab6_MCLK_CPU\Lab6\control.v" Line 81: Constant value is truncated to fit in <4> bits.
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.43 secs
+ 
+--> 
+
+Total memory usage is 183236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

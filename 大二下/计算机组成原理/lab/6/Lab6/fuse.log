@@ -1,0 +1,31 @@
+Running: C:\Xilinx\12.3\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/test_isim_beh.exe -prj C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/test_beh.prj work.test work.glbl 
+ISim M.70d (signature 0x16fbe694)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file \"C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/ipcore_dir/mem.v\" into library work
+Analyzing Verilog file \"C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/REG_FILE.v\" into library work
+Analyzing Verilog file \"C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/control.v\" into library work
+Analyzing Verilog file \"C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/alu.v\" into library work
+Analyzing Verilog file \"C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/top.v\" into library work
+Analyzing Verilog file \"C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/test.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/12.3/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module control
+Compiling module BLK_MEM_GEN_V4_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_3(C_FAMILY="spart...
+Compiling module mem
+Compiling module REG_FILE
+Compiling module alu
+Compiling module top
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable C:/Users/CZK/Desktop/COD/COD LAB/Lab6_MCLK_CPU/Lab6/test_isim_beh.exe
+Fuse Memory Usage: 21216 KB
+Fuse CPU Usage: 264 ms

@@ -1,0 +1,14 @@
+
+run
+-ifmt VHDL
+-ent tfrs_exdes 
+-p xc6slx16-csg324-3
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn tfrs_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain

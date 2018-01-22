@@ -1,0 +1,73 @@
+##############################################################
+#
+# Xilinx Core Generator version 14.7
+# Date: Mon Jun 05 07:59:45 2017
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+#  Generated from component: xilinx.com:ip:dist_mem_gen:7.2
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = false
+SET asysymbol = true
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
+SET designentry = Verilog
+SET device = xc6slx16
+SET devicefamily = spartan6
+SET flowvendor = Other
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
+SET package = csg324
+SET removerpms = false
+SET simulationfiles = Behavioral
+SET speedgrade = -3
+SET verilogsim = true
+SET vhdlsim = false
+# END Project Options
+# BEGIN Select
+SELECT Distributed_Memory_Generator xilinx.com:ip:dist_mem_gen:7.2
+# END Select
+# BEGIN Parameters
+CSET ce_overrides=ce_overrides_sync_controls
+CSET coefficient_file=no_coe_file_loaded
+CSET common_output_ce=false
+CSET common_output_clk=false
+CSET component_name=tfrs
+CSET data_width=32
+CSET default_data=0
+CSET default_data_radix=16
+CSET depth=128
+CSET dual_port_address=non_registered
+CSET dual_port_output_clock_enable=false
+CSET input_clock_enable=false
+CSET input_options=non_registered
+CSET memory_type=single_port_ram
+CSET output_options=non_registered
+CSET pipeline_stages=0
+CSET qualify_we_with_i_ce=false
+CSET reset_qdpo=false
+CSET reset_qsdpo=false
+CSET reset_qspo=false
+CSET simple_dual_port_address=non_registered
+CSET simple_dual_port_output_clock_enable=false
+CSET single_port_output_clock_enable=false
+CSET sync_reset_qdpo=false
+CSET sync_reset_qsdpo=false
+CSET sync_reset_qspo=false
+# END Parameters
+# BEGIN Extra information
+MISC pkg_timestamp=2012-11-21T20:07:40Z
+# END Extra information
+GENERATE
+# CRC: c2ec203e

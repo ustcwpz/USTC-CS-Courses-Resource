@@ -1,0 +1,3 @@
+NEWPROJECT "E:/diligent Lab/statemachine2/ipcore_dir/coregen.cgp"
+SETPROJECT "E:/diligent Lab/statemachine2/ipcore_dir/coregen.cgp"
+LAUNCHXCO "E:/diligent Lab/statemachine2/ipcore_dir/ram.xco"

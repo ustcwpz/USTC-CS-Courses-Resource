@@ -1,0 +1,17 @@
+# Output products list for <ram>
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt
+ram.asy
+ram.gise
+ram.mif
+ram.ngc
+ram.sym
+ram.v
+ram.veo
+ram.vhd
+ram.vho
+ram.xco
+ram.xise
+ram_flist.txt
+ram_xmdf.tcl

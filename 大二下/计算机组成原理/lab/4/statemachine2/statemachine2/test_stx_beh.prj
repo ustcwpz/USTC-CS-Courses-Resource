@@ -1,0 +1,6 @@
+verilog isim_temp "REG_FILE.v"
+verilog isim_temp "control.v"
+verilog isim_temp "ALU.v"
+verilog isim_temp "top.v"
+verilog isim_temp "test.v"
+verilog isim_temp "D:/ise/ISE_DS/ISE//verilog/src/glbl.v"

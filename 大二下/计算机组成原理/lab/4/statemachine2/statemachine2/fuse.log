@@ -1,0 +1,33 @@
+Running: D:\ise\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/diligent Lab/statemachine2/test_isim_beh.exe -prj E:/diligent Lab/statemachine2/test_beh.prj work.test work.glbl 
+ISim M.70d (signature 0x16fbe694)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file \"E:/diligent Lab/statemachine2/ipcore_dir/ram.v\" into library work
+Analyzing Verilog file \"E:/diligent Lab/statemachine2/REG_FILE.v\" into library work
+Analyzing Verilog file \"E:/diligent Lab/statemachine2/control.v\" into library work
+Analyzing Verilog file \"E:/diligent Lab/statemachine2/ALU.v\" into library work
+Analyzing Verilog file \"E:/diligent Lab/statemachine2/top.v\" into library work
+Analyzing Verilog file \"E:/diligent Lab/statemachine2/test.v\" into library work
+Analyzing Verilog file \"D:/ise/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "E:/diligent Lab/statemachine2/top.v" Line 34: Size mismatch in connection of port <alu_op>. Formal port size is 5-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/diligent Lab/statemachine2/top.v" Line 43: Size mismatch in connection of port <r3_addr>. Formal port size is 5-bit while actual signal size is 8-bit.
+Completed static elaboration
+Compiling module ALU
+Compiling module REG_FILE
+Compiling module BLK_MEM_GEN_V4_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_3(C_FAMILY="spart...
+Compiling module ram
+Compiling module control
+Compiling module top
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable E:/diligent Lab/statemachine2/test_isim_beh.exe
+Fuse Memory Usage: 21204 KB
+Fuse CPU Usage: 187 ms

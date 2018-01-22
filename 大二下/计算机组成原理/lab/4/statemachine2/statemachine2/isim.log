@@ -1,0 +1,34 @@
+ISim log file
+Running: E:\diligent Lab\statemachine2\test_isim_beh.exe -gui -tclbatch isim.cmd -wdb E:/diligent Lab/statemachine2/test_isim_beh.wdb 
+ISim M.70d (signature 0x16fbe694)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+WARNING: File "E:/diligent Lab/statemachine2/top.v" Line 26.  For instance uut/u_ALU/, width 5 of formal port alu_op is not equal to width 32 of actual signal doutb.
+WARNING: File "E:/diligent Lab/statemachine2/top.v" Line 27.  For instance uut/u_REG_FILE/, width 5 of formal port r3_addr is not equal to width 8 of actual signal address3.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module test.uut.u_ram.inst.blk_mem_gen_v4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module test.uut.u_ram.inst.blk_mem_gen_v4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module test.uut.u_ram.inst.blk_mem_gen_v4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
