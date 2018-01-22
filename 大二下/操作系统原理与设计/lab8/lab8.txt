@@ -1,0 +1,69 @@
+实验八是在实验七基础上进行完成，部分函数实验七的代码中已经提供。
+提供部分内容实现：
+1.上下文切换
+.global CTX_SW
+CTX_SW: 
+	pushf 
+  pusha 
+	movl prevTSK_StackPtr,%eax
+	movl %esp, (%eax)
+	movl nextTSK_StackPtr, %esp
+	popa 
+	popf
+	ret
+
+2.init8259A
+	.globl init8259A
+init8259A:
+	mov $0xff, %al
+	out %al, $0x21
+	out %al, $0xA1
+	
+	mov $0x11, %al
+	out %al, $0x20
+	
+	mov $0x20, %al
+	out %al, $0x21
+	
+	mov $0x04, %al
+	out %al, $0x21
+#define AUTO_EOI 1
+#if AUTO_EOI
+	mov $0x03, %al
+	out %al, $0x21
+#else
+  mov $0x01, %al
+	out %al, $0x21
+#endif
+  	
+  mov $0x11, %al
+	out %al, $0xA0
+	
+	mov $0x28, %al
+	out %al, $0xA1
+	
+	mov $0x02, %al
+	out %al, $0xA1
+
+  mov $0x01, %al
+	out %al, $0xA1
+
+	ret
+
+3.init8253A
+	.globl init8253
+init8253:
+	mov $0x34, %al
+	out %al, $0x43
+	
+  # ?100HZ?
+	mov $(11932 & 0xff), %al
+	out %al, $0x40
+	
+	mov $(11932 >> 8), %al
+	out	%al, $0x40	
+	
+	in $0x21, %al 
+	andb $0xFE, %al
+	out %al, $0x21
+	ret
