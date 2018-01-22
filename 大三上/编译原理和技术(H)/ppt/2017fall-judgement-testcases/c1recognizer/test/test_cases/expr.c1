@@ -1,0 +1,11 @@
+const int e1 = 1 + 2;
+const int e2 = 1 - 2;
+const int e3 = 1 * 3;
+const int e4 = 4 / 2;
+const int e5 = 1 % 2;
+const int e6 = +1;
+const int e7 = -1;
+const int e8 = 1 + 2 * 3;
+const int e9 = (1 + 2) * 3;
+const int e10[] = {e1, e2, e3};
+const int e11 = e10[e1];
