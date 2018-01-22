@@ -1,0 +1,22 @@
+QMAKE_LICHECK_TIMESTAMP = "Fri Jul 28"
+QMAKE_CXX.INCDIRS = \
+    F:/Qt5.9/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include \
+    F:/Qt5.9/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed \
+    F:/Qt5.9/Tools/mingw530_32/i686-w64-mingw32/include \
+    F:/Qt5.9/Tools/mingw530_32/i686-w64-mingw32/include/c++ \
+    F:/Qt5.9/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 \
+    F:/Qt5.9/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward
+QMAKE_CXX.LIBDIRS = \
+    F:/Qt5.9/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0 \
+    F:/Qt5.9/Tools/mingw530_32/lib/gcc \
+    F:/Qt5.9/Tools/mingw530_32/i686-w64-mingw32/lib \
+    F:/Qt5.9/Tools/mingw530_32/lib
+QMAKE_CXX.QT_COMPILER_STDCXX = 199711L
+QMAKE_CXX.QMAKE_GCC_MAJOR_VERSION = 5
+QMAKE_CXX.QMAKE_GCC_MINOR_VERSION = 3
+QMAKE_CXX.QMAKE_GCC_PATCH_VERSION = 0
+QMAKE_CXX.COMPILER_MACROS = \
+    QT_COMPILER_STDCXX \
+    QMAKE_GCC_MAJOR_VERSION \
+    QMAKE_GCC_MINOR_VERSION \
+    QMAKE_GCC_PATCH_VERSION
