@@ -1,0 +1,74 @@
+--HW1 for FoPL
+--Stu:金泽文 No:PB15111604
+
+1.
+    quicksort :: (Ord a) => [a] -> [a]
+    --I don't think lesser and greater are functions
+    lesser :: [Ord a]
+    greater :: [Ord a]
+    --quicksort [] = [] 
+        --=> it must be a list
+    --quicksort (p:xs) = (bla) ++ [p] (bla)
+        --=> it must be a list of 'p's
+    --filter (<p) xs
+        --=> 'p' must can be compared and ordered and should be of the type which is a member of Ord
+2.
+(a)
+    (Eq t, Num t) => (t -> t) -> t -> t
+    --the use of 'case of x' => x can be tested with '=' symbol, so t i a member of Eq 
+    --the use of 'x * ' and 'x - 1' => t is a member of Num
+    --the use of 'x * g (x-1)' =>, g takes a 't' type argument and returns a 't' type result, so g :: t -> t
+    --finally, it should be 
+        (Eq t, Num t) => (t -> t) -> t -> t
+(b)
+    (a -> a) -> a
+    --assume f :: a -> b , y :: (a->b) -> c
+    -- f (y f)  => (y f) :: a 
+    --          => c = a
+    --          => y f :: a
+    --          => f (y f) :: a 
+    --          => b = a 
+    --          => y :: (a -> a) -> a
+(c)
+    fibRec g n = case n of
+                        0 -> 0
+                        1 -> 1
+                        n -> (g (n - 1)) + (g (n - 2))
+    --y fibRec n = fibRec (y fibRec) n
+    --           = case n of
+                        0 -> 0
+                        1 -> 1
+                        n -> ((y fibRec) (n - 1)) + ((y fibRec) (n - 2))
+(d)
+    i.
+    --  y(f) = (\g -> f(g g) ) (\g -> f(g g))
+    --       = f((\g -> f(g g)) (\g -> f(g g)))  
+    --  f(y(f)) = f((\g -> f(g g) ) (\g -> f(g g)))
+    --  y(f) = f(y(f))
+    ii.
+    --because the compiler will check the type with the type inference, while 
+    --  y f = (\g -> f (g g) ) (\g -> f (g g))
+        --  = f ((\g -> f (g g)) (\g -> f (g g)))
+        --  = f (f ((\g -> f (g g)) (\g -> f (g g))))
+        --  = f (f (f ((\g -> f (g g)) (\g -> f (g g)))))
+        --  = ... 
+    -- the type inference won't stop, so error occurred
+
+(e)
+    reduceRec g f l = case l of
+                    [] -> undefined
+                    [x] -> x
+                    (x:xs) - > f x (g f xs)
+    --
+        y reduceRec f l = reduceRec (y reduceRec) f l
+                        = case l of
+                            [] -> undefined
+                            [x] -> x
+                            (x:xs) - > f x ((y reduceRec) f xs)
+        reduce f l = case l of
+                        [] -> undefined
+                        [x] -> x
+                        (x:xs) - > f x (reduce f xs)
+
+
+

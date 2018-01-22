@@ -1,0 +1,19 @@
+start：
+    函数不大写   if必须有else
+    函数式：像excel一样，无前后次序限制，函数可以作为参数或者return
+    无参函数相当于definition
+    list - 
+    : 元素和list
+    ++ 两个list
+    index 通过 !!
+    b = [[1]]   
+    b = [1] : b
+    结果b会无限递归，
+    就像数学一样
+    range [1..10] [1,3..10] 
+    不要用float 
+    [20,19..1] 而不是 [20..1]
+    nested list comprehensions
+    tuple 无需 homogenous ，数目，类型 固定
+elem 函数判断，是一个个值的比较 
+How can the repeat function know it's infinite and finish construction in time

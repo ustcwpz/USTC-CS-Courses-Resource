@@ -1,0 +1,326 @@
+
+Begin
+    Var x End
+    Var y End
+    Assign y 2
+    Function fact Paras
+    Begin
+        Function t Paras Begin
+            Return 1
+        End
+        Return t
+    End
+    Read y
+        While Lt 1 y
+        Begin
+            Assign x Apply fact Argus  End
+            Assign y Minus y 1 
+        End
+    Print Apply x Argus End
+    Read y
+        While Lt 1 y
+        Begin
+            Assign x Apply fact Argus  End
+            Assign y Minus y 1 
+        End
+    Print Apply x Argus End
+
+    Read y
+    
+        While Lt 1 y
+        Begin
+            Assign x Apply fact Argus  End
+            Assign y Minus y 1 
+        End
+    Print Apply x Argus End
+
+End
+
+
+
+
+Begin
+    Var x End
+    Function fact Paras i
+    Begin
+        If Lt i 2
+        Begin
+            Return 1
+        End
+        Else
+        Begin
+            Return Apply fact Argus Minus i 1 End
+        End
+    End
+    Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+End
+
+
+
+Begin
+    Function f Paras g h Begin
+        Function t Paras x Begin
+            Return Apply g Argus h x End
+        End
+        Return t
+    End
+    Function add Paras x y Begin
+        Return Plus x y
+    End
+    Var a End
+    Assign a Apply f Argus add 50    End
+    Print Apply a Argus 30 End
+End
+
+
+
+
+
+Begin
+    Function f Paras 
+    Begin
+        Return f
+    End
+    Var g End
+    Assign g Apply f Argus End
+    
+End
+
+
+测试1
+------------------
+
+
+
+
+
+
+
+
+Begin 
+    Var x End
+    Assign x 4 
+    Function g Paras z
+    Begin
+        Return Mult x z 
+    End 
+    Function f Paras h
+    Begin 
+        Var x End
+        Assign x 7 
+        Return Plus x Apply h Argus 3 End
+    End
+    Print Apply f Argus g End
+
+    Var i End
+    Assign i 20
+    Function m Paras 
+    Begin
+        Function g Paras j
+        Begin
+            Return Plus i j
+        End
+        Assign x g
+    End
+    Call m Argus  End
+    Print Apply x Argus 1 End
+End
+
+
+情况1
+-------------------
+
+
+Begin
+    Function f Paras 
+    Begin
+        Return 110
+    End
+    Var g End
+    Assign g f 
+    Print Apply g Argus End
+End
+
+在函数内部赋值函数。测试的是argu替换。
+-------------------
+
+Begin
+    Var x End
+    Function f Paras i
+    Begin
+        Function g Paras j
+        Begin
+            Return Plus i j
+        End
+        Assign x g
+    End
+    Call f Argus 20 End
+    Print Apply x Argus 1 End
+End
+同上
+--------------------
+
+
+
+
+
+
+Begin
+    Var x End
+    Var i End
+    Assign i 20
+    Function m Paras 
+    Begin
+        Function g Paras j
+        Begin
+            Return Plus i j
+        End
+        Assign x g
+    End
+    Call m Argus  End
+    Print Apply x Argus 1 End
+End
+----------------
+
+
+
+
+Begin 
+    Function g Paras gg 
+    Begin
+        Function h Paras hh 
+        Begin
+            Function t Paras
+            Begin
+                Return Plus gg hh
+            End
+            Return t
+        End
+        Return Apply h Argus 1 End
+    End
+    Var f End
+    Assign f Apply g Argus 2 End
+    Print Apply f Argus End
+End
+
+----------------
+
+
+Begin
+    Function f Paras 
+    Begin
+        Return f
+    End
+    Var g End
+    Assign g Apply f Argus End
+    
+End
+
+----------------
+
+
+Begin
+    Var x End
+    Function f Paras i
+    Begin
+        Assign x i
+    End
+    Function g Paras
+    Begin
+        Return 123
+    End
+    Call f Argus g End
+    Print x
+    Print Apply x Argus End
+End
+
+Begin
+    Var x End
+    Assign x 1
+    While Gt x 0 Begin
+        Read x
+        Print Mod x 3173
+    End
+End
+
+
+
+Begin
+    Var i j End
+    Assign i 10
+    Assign j 0
+    While Gt i j Begin
+        Print j
+        Assign j Plus j 1
+    End
+End
+
+
+Begin
+    While Lt 1 2
+    Begin
+        
+    End
+End
+
+
+
+Begin
+    Var x End
+    Function fact Paras i
+    Begin
+        If Lt i 2
+        Begin
+            Return 1
+        End
+        Else
+        Begin
+            Return Apply fact Argus Minus i 1 End
+        End
+    End
+
+    Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+        Read x
+    Print Apply fact Argus x End
+End
+
+
+
+
+
+Begin
+    Var x End
+    Function test Paras i Begin
+        If Eq i 2 Begin
+            Return Plus i Minus i 1 
+            End
+        Else Begin 
+            Return 123
+        End 
+    End
+    Read x
+    While Gt x 0 Begin
+        Print Apply test Argus x End
+        Assign x Minus x 1
+    End
+End
