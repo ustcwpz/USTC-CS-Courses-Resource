@@ -1,0 +1,21 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	COUNT                   3033
+//	DDR                     3038
+//	DELAY                   302A
+//	DSR                     3037
+//	HEL                     300B
+//	HEL1                    300D
+//	HELLO                   303A
+//	INTADD                  3032
+//	KBDR                    3036
+//	KBSR                    3035
+//	KEYINT                  3031
+//	MASKIE                  3034
+//	REP                     302C
+//	SAVER1                  3039
+//	STACK                   3030
+//	USER                    300A
+//	WOR                     301A
+//	WOR1                    301C
+//	WORLD                   3047

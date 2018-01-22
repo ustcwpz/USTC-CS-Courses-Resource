@@ -1,0 +1,142 @@
+ch3_语言要素{     
+
+--预编译:
+	·`timescale 编译器指令在模块说明外部出现 , 并且影响后面所有的时延值。
+	
+	·当一个设计中的多个模块带有自身的`timescale编译指令时将发生什么？
+	 在这种情况下，模拟器总是定位在所有模块的最小时延精度上，并且所有时延都相应地换算为最小时延精度。
+
+	`unconnected_drive和`nounconnected_drive:
+		两者之间任何为连接的输入端口 是 正偏电路状态 | 反偏电路状态？
+	`default_nettype编译指令在模块定义外出现，
+		并且在下一个相同编译指令或 `resetall编译指令出现前一直有效。
+
+--寄存器类型:
+	寄存器，
+
+	存储器:
+		reg[3:0] s [63:0] s-一个64个4位寄存器数组，是一个存储器。
+		存储器不能部分选择或位选择
+			example:
+				s[60][2] 不允许
+				s[60][2:4] 不允许
+
+	integer: 
+		不给定范围，则至少32位
+		不支持向量访问，截取位值的方法:赋值给一般的reg，访问reg
+	time类型 
+		不给定范围，则至少64位
+	real,realtime类型 (实数寄存器、实数时间寄存器):
+	二者完全相同
+	变量声明缺省值为0，不允许声明值域、位界限、字节界限。
+	当将x、z赋值给他们是，设置为0
+
+--parameter:
+}
+
+ch4_表达式{
+
+--4.1 操作数:
+
+	integer--二进制补码
+	reg寄存器，时间寄存器--无符号数，
+	real，realtime--有符号浮点数
+
+	·位选择:
+	选择表达式为x、z或越界，则值为x。例如S[x]值为x。
+
+--4.2 操作符:
+	
+	if有一个操作数是x或z，则结果为x
+
+	cond_expr ? expr1 : expr2;
+	    如果cond_expr为x或z，结果将是按以下逻辑expr1和expr2按位操作的值 : 0与0得0， 1与1得1，
+        其余情况为x。
+
+    连接和复制:
+    	连接通过{,}
+    	不允许连接非定长常熟
+    	复制通过{repetition_number{expr1,expr2,.. . } }
+--4.3 表达式种类:
+	标量表达式是计算结果为 1位的表达式。如果希望产生标量结果 , 但是表达式产生的结果为向量, 则最终结果为向量最右侧的位值。
+}
+
+ch5_门电平模型化{
+	
+--5.1 内置基本门:
+	门实例语句
+		gate_type [instance_name] (term1,term2,.. . , termN);
+		各term是线网或寄存器
+
+--5.2 多输入门:
+	and nand nor or xor xnor(均只有单输出，参数的第一个为输出端口)
+	多输入门的输出绝不是z
+
+--5.3 多数出门:
+	buf not(均只有单输入，参数的最后一个为输入端口)
+	同样，输出绝不是z
+
+--5.4 三态门:
+	bufif0 bufif1 notif0 notif1
+	参数分别为(OutputA, InputB,ControlC)
+	输出可以为z
+
+--5.5 上拉、下拉电阻:
+	pullup 1 pulldown 0
+	同样
+	gate_type [instance_name] (OutputA);
+
+--5.6 MOS开关:
+	cmos pmos nmos rcmos rpmos rnmos
+缺省：
+--5.7 双向开关:
+缺省
+--5.8 门时延:
+	上升 0 d d1 		 dA
+	下降 0 d d2 		 dB
+	to_x 0 d min(d1, d2) min(dA, dB, dC)
+	截止 0 d min(d1, d2) dC
+缺省
+
+--5.9 实例数组:
+	gate_type [delay] instance_name [leftbound:rightbound] (list_of_terminal_names);
+	左界不必大于右界，并且左、右界两者都不必限定为0
+	实例名称instance_name不可缺省
+
+}
+
+ch6_用户定义的原语{
+	UDP实例语句的语法与基本门的实例语句语法一致.
+ 
+--6.1 UDP的定义:
+	primitiveUDP_name(OutputName,List_of_inputs)
+		Output_declaration
+		List_of_input_declarations
+		[Reg_declaration]
+		[Initial_statement]
+		table
+			List_of_tabel_entries
+		endtable
+	endprimitive	
+之后缺省
+}
+
+ch7_数据流模型化{
+
+--7.1 连续赋值语句:
+--7.3 线网说明赋值:
+	wire Clear;
+	assign Clear = 'b1;
+	等价于线网声明赋值:
+	wire Clear = 'b1;
+	不允许在同一个线网上出现多个线网说明赋值。如果多个赋值是必需的，则必须使用连续赋值语句。？？？
+--7.4 时延:
+	值变化快于时延间隔的情况
+	assign # (rise, fall, turn-off ) LHS_target = RHS_expression;
+--7.5 线网时延:
+
+
+
+}
+for 不支持不确定次数的循环
+ERROR:HDLCompiler:1440 - "C:\Users\Zevin\Documents\verilog\lab7\test.v" Line 25: Non-constant loop condition not supported for for
