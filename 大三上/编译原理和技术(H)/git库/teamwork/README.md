@@ -7,7 +7,7 @@ This teamwork project is one of the [projects](https://github.com/ustc-compiler/
 | ---- | ---- | -------------- |
 | 队长   | 齐炜祯  | qiweizhen      |
 | 成员   | 黄一凡  | GhostScreaming |
-| 成员   | 金泽文  | leo2589        |
+| 成员   | 金泽文  | kingzevin  |
 ### 2. 项目简介
 本组研究的课题为“Java Garbage Collection 与各种GC算法”。
 WikiPedia 对 Garbage Collection 的定义如下:
