@@ -1,0 +1,3520 @@
+.
+├── index.html
+├── README.md
+├── tmp
+│   └── pic
+│       ├── 02_universe.png
+│       ├── 03_initialize_heap.png
+│       ├── 04_create_heap.png
+│       ├── 05_universe_post_init.png
+│       ├── 06_create_heap_with_policy.png
+│       ├── 07_genCollectedHeap_初始化.png
+│       ├── 08_genCollectedHeap_申请空间.png
+│       ├── 09_genCollectedHeap_allocate_new_tlab.png
+│       ├── 10_genCollectedHeap_mem_allocate.png
+│       ├── 11_collectorPolicy1.png
+│       ├── 11_collectorPolicy2.png
+│       ├── 11_collectorPolicy3.png
+│       ├── 12_VMThread_execute_notify.png
+│       ├── 13_vm_doit.png
+│       ├── 14_satisfy_failed_allocation.png
+│       ├── 15_do_collection1.png
+│       ├── 15_do_collection2.png
+│       ├── 16_MarkSweepPolicy.png
+│       ├── 17_DefNewGeneration_collect1.png
+│       ├── 17_DefNewGeneration_collect2.png
+│       ├── 18_TenuredGeneration_collect.png
+│       ├── 19_GenMarkSweep_invoke_at_safepoint.png
+│       ├── 20_GenMarkSweep_mark_sweep_phase1.png
+│       ├── 21_GenMarkSweep_mark_sweep_phase2.png
+│       ├── 22_GenMarkSweep_mark_sweep_phase3.png
+│       └── 23_GenMarkSweep_mark_sweep_phase4.png
+├── 公选课
+│   ├── 交响乐赏析
+│   │   ├── PB15111604_金泽文_波莱罗赏析.docx
+│   │   ├── PB15111604_金泽文_波莱罗赏析.pdf
+│   │   ├── PB15111604_金泽文_波莱罗赏析.txt
+│   │   └── PB15111604_金泽文_波莱罗赏析.zip
+│   └── 计算机系统详解(csapp)
+│       ├── lab-src
+│       │   ├── archlab32-handout.tar
+│       │   ├── bomb.tar
+│       │   ├── buflab32-handout.tar
+│       │   ├── cachelab-handout.tar
+│       │   ├── datalab-handout.tar
+│       │   ├── malloclab-handout--2014.tar
+│       │   ├── perflab-handout-2014.tar
+│       │   ├── proxylab-handout.tar
+│       │   ├── shlab-handout-2003.tar
+│       │   └── target1.tar
+│       └── students
+│           ├── kingzevin
+│           │   └── PB15111604_金泽文_csapp.docx
+│           └── mbinary
+│               ├── PB16030899 -朱河勤-csapp-bomb-lab-report.md
+│               └── PB16030899 -朱河勤-csapp-bomb-lab-report.pdf
+├── 大三上
+│   ├── Web-信息处理与应用
+│   │   ├── hw
+│   │   │   ├── Homework06.docx
+│   │   │   ├── Homework07.docx
+│   │   │   ├── Homework08-clustering.docx
+│   │   │   ├── homework_web.html
+│   │   │   ├── homework模板.docx
+│   │   │   ├── HW1.1-PB15111604金泽文.docx
+│   │   │   ├── HW1.2-PB15111604金泽文.docx
+│   │   │   ├── HW2-PB15111604金泽文.docx
+│   │   │   ├── HW3-PB15111604金泽文.docx
+│   │   │   ├── HW4-PB15111604金泽文(updated).docx
+│   │   │   ├── HW5-PB15111604金泽文.docx
+│   │   │   └── Web-信息处理与应用习题解答1(共2).pdf
+│   │   ├── lab1-搜索引擎
+│   │   │   ├── PB15111604金泽文.docx
+│   │   │   ├── PB15111604金泽文.pdf
+│   │   │   ├── PB15111604金泽文.zip
+│   │   │   └── src
+│   │   │       ├── ICTCLAS_Analyzer
+│   │   │       │   ├── CNLPIRLibrary.java
+│   │   │       │   ├── NLPIRException.java
+│   │   │       │   ├── NLPIRTokenizerAnalyzer.java
+│   │   │       │   ├── NLPIRTokenizerFactory.java
+│   │   │       │   └── NLPIRTokenizer.java
+│   │   │       ├── lucene
+│   │   │       │   ├── Index.java
+│   │   │       │   └── Search.java
+│   │   │       ├── WebContent
+│   │   │       │   ├── back.jpg
+│   │   │       │   ├── exam.jpg
+│   │   │       │   ├── green.jpg
+│   │   │       │   ├── green.png
+│   │   │       │   ├── index.jsp
+│   │   │       │   ├── META-INF
+│   │   │       │   │   └── MANIFEST.MF
+│   │   │       │   ├── result.jsp
+│   │   │       │   └── WEB-INF
+│   │   │       │       └── web.xml
+│   │   │       └── win32-x86-64
+│   │   │           └── NLPIR.dll
+│   │   ├── lab2-数据
+│   │   │   └── pb15111604
+│   │   │       ├── PB15111604_金泽文.doc
+│   │   │       ├── PB15111604_金泽文.pdf
+│   │   │       ├── 实验一
+│   │   │       │   ├── alinkjaccard.m
+│   │   │       │   ├── DBLP.mat
+│   │   │       │   ├── Egonet.mat
+│   │   │       │   ├── evaluation.m
+│   │   │       │   ├── football_gd.txt
+│   │   │       │   ├── football.mat
+│   │   │       │   ├── getBestK.m
+│   │   │       │   ├── girvannewman.m
+│   │   │       │   ├── graph.txt
+│   │   │       │   ├── main.m
+│   │   │       │   ├── modularity.m
+│   │   │       │   ├── ncut.m
+│   │   │       │   ├── output
+│   │   │       │   │   ├── DBLP_alinkjaccard.txt
+│   │   │       │   │   ├── DBLP_girvannewman.txt
+│   │   │       │   │   ├── DBLP_modularity.txt
+│   │   │       │   │   ├── DBLP_ncut.txt
+│   │   │       │   │   ├── DBLP_rcut.txt
+│   │   │       │   │   ├── Egonet_alinkjaccard.txt
+│   │   │       │   │   ├── Egonet_girvannewman.txt
+│   │   │       │   │   ├── Egonet_modularity.txt
+│   │   │       │   │   ├── Egonet_ncut.txt
+│   │   │       │   │   ├── Egonet_rcut.txt
+│   │   │       │   │   ├── evaluation.m
+│   │   │       │   │   ├── football_alinkjaccard.txt
+│   │   │       │   │   ├── football_girvannewman.txt
+│   │   │       │   │   ├── football_modularity.txt
+│   │   │       │   │   ├── football_ncut.txt
+│   │   │       │   │   ├── football_rcut.txt
+│   │   │       │   │   ├── polbooks_alinkjaccard.txt
+│   │   │       │   │   ├── polbooks_girvannewman.txt
+│   │   │       │   │   ├── polbooks_modularity.txt
+│   │   │       │   │   ├── polbooks_ncut.txt
+│   │   │       │   │   ├── polbooks_rcut.txt
+│   │   │       │   │   └── resultevaluation.m
+│   │   │       │   ├── polbooks_gd.txt
+│   │   │       │   ├── polbooks.mat
+│   │   │       │   ├── rcut.m
+│   │   │       │   └── 可视化
+│   │   │       │       ├── csv
+│   │   │       │       │   ├── DBLP_alinkjaccard.csv
+│   │   │       │       │   ├── DBLP.csv
+│   │   │       │       │   ├── DBLP_girvannewman.csv
+│   │   │       │       │   ├── DBLP_modularity.csv
+│   │   │       │       │   ├── DBLP_ncut.csv
+│   │   │       │       │   ├── DBLP_rcut.csv
+│   │   │       │       │   ├── Egonet_alinkjaccard.csv
+│   │   │       │       │   ├── Egonet.csv
+│   │   │       │       │   ├── Egonet_girvannewman.csv
+│   │   │       │       │   ├── Egonet_modularity.csv
+│   │   │       │       │   ├── Egonet_ncut.csv
+│   │   │       │       │   ├── Egonet_rcut.csv
+│   │   │       │       │   ├── football_alinkjaccard.csv
+│   │   │       │       │   ├── football.csv
+│   │   │       │       │   ├── football_girvannewman.csv
+│   │   │       │       │   ├── football_modularity.csv
+│   │   │       │       │   ├── football_ncut.csv
+│   │   │       │       │   ├── football_rcut.csv
+│   │   │       │       │   ├── polbooks_alinkjaccard.csv
+│   │   │       │       │   ├── polbooks.csv
+│   │   │       │       │   ├── polbooks_girvannewman.csv
+│   │   │       │       │   ├── polbooks_modularity.csv
+│   │   │       │       │   ├── polbooks_ncut.csv
+│   │   │       │       │   └── polbooks_rcut.csv
+│   │   │       │       ├── DBLP_alinkjaccard.png
+│   │   │       │       ├── DBLP_girvannewman.png
+│   │   │       │       ├── DBLP_modularity.png
+│   │   │       │       ├── DBLP_ncut.png
+│   │   │       │       ├── DBLP_rcut.png
+│   │   │       │       ├── Egonet_alinkjaccard.png
+│   │   │       │       ├── Egonet_girvannewman.png
+│   │   │       │       ├── Egonet_modularity.png
+│   │   │       │       ├── Egonet_ncut.png
+│   │   │       │       ├── Egonet_rcut.png
+│   │   │       │       ├── football_alinkjaccard.png
+│   │   │       │       ├── football_girvannewman.png
+│   │   │       │       ├── football_modularity.png
+│   │   │       │       ├── football_ncut.png
+│   │   │       │       ├── football_rcut.png
+│   │   │       │       ├── polbooks_alinkjaccard.png
+│   │   │       │       ├── polbooks_girvannewman.png
+│   │   │       │       ├── polbooks_modularity.png
+│   │   │       │       ├── polbooks_ncut.png
+│   │   │       │       └── polbooks_rcut.png
+│   │   │       └── 实验二
+│   │   │           ├── closeness_centrality.m
+│   │   │           ├── closeness_centrality.txt
+│   │   │           ├── ctime.txt
+│   │   │           ├── degree_centrality.m
+│   │   │           ├── degree_centrality.txt
+│   │   │           ├── dtime.txt
+│   │   │           ├── getMatrix.m
+│   │   │           ├── graph.txt
+│   │   │           ├── greedy.m
+│   │   │           ├── greedy.txt
+│   │   │           ├── gtime.txt
+│   │   │           ├── influenceICM.m
+│   │   │           ├── main.m
+│   │   │           ├── random.m
+│   │   │           ├── random.txt
+│   │   │           └── rtime.txt
+│   │   ├── Mining of Massive Datasets.pdf
+│   │   ├── Mining the Web - Discovering knowledge from hypertext data.pdf
+│   │   ├── ppt_jpq
+│   │   │   ├── webinfo01.pdf
+│   │   │   ├── webinfo02.pdf
+│   │   │   ├── webinfo03.pdf
+│   │   │   ├── webinfo04.pdf
+│   │   │   ├── webinfo05.pdf
+│   │   │   ├── webinfo06.pdf
+│   │   │   ├── webinfo07.pdf
+│   │   │   ├── webinfo08.pdf
+│   │   │   └── webinfo09.pdf
+│   │   ├── ppt_xll
+│   │   │   ├── WebMining1-Intro.pdf
+│   │   │   ├── WebMining2-Data.pdf
+│   │   │   ├── WebMining3-Classification.pdf
+│   │   │   ├── WebMining4-Clustering.pdf
+│   │   │   ├── WebMining5-SNAcommunity1.pdf
+│   │   │   ├── WebMining6-SNAcommunity2.pdf
+│   │   │   ├── WebMining7-SNAinfluence.pdf
+│   │   │   └── WebMining8-Recommendation.pdf
+│   │   ├── Search Engines Information Retrieval in Practice - W. Bruce Croft.pdf
+│   │   ├── Web-review-2017.pdf
+│   │   ├── 搜索引擎-信息检索实践 .W.Bruce.Croft.pdf
+│   │   └── 熊的web.pdf
+│   ├── 密码学
+│   │   ├── Homework.pdf
+│   │   ├── Introduction to Modern Cryptography 2ed.pdf
+│   │   ├── ppt
+│   │   │   ├── chap01.pptx
+│   │   │   ├── chap02.pptx
+│   │   │   ├── chap03.pptx
+│   │   │   ├── chap04.pptx
+│   │   │   ├── chap05.pptx
+│   │   │   ├── chap06.pptx
+│   │   │   ├── chap07.pptx
+│   │   │   ├── chap08.pptx
+│   │   │   ├── chap09.pptx
+│   │   │   └── chap10.pptx
+│   │   ├── Project.pdf
+│   │   ├── stanford
+│   │   │   ├── 01-intro-v2-annotated.pdf
+│   │   │   ├── 01-intro-v2-annotated.pptx
+│   │   │   ├── 02-stream-v2-annotated.pdf
+│   │   │   ├── 02-stream-v2-annotated.pptx
+│   │   │   ├── 03-block-v2-annotated.pdf
+│   │   │   ├── 03-block-v2-annotated .pptx
+│   │   │   ├── 04-using-block-v2-annotated.pdf
+│   │   │   ├── 04-using-block-v2-annotated.pptx
+│   │   │   ├── 05-integrity-v2-annotated.pdf
+│   │   │   ├── 05-integrity-v2-annotated.pptx
+│   │   │   ├── 06-collision-resistance-v2-annotated.pdf
+│   │   │   ├── 06-collision-resistance-v2-annotated.pptx
+│   │   │   ├── 07-authenc-v2-annotated.pdf
+│   │   │   ├── 07-authenc-v2-annotated.pptx
+│   │   │   ├── 08-odds-and-ends-v2-annotated.pdf
+│   │   │   ├── 08-odds-and-ends-v2-annotated.pptx
+│   │   │   ├── 09-basic-key-exchange-annotated.pdf
+│   │   │   ├── 09-basic-key-exchange-annotated.pptx
+│   │   │   ├── 10-numth-annotated.pdf
+│   │   │   ├── 10-numth-annotated.pptx
+│   │   │   ├── 11-pubkey-trapdoor-annotated.pdf
+│   │   │   ├── 11-pubkey-trapdoor-annotated.pptx
+│   │   │   ├── 12-pubkey-dh-annotated.pdf
+│   │   │   └── 12-pubkey-dh-annotated.pptx
+│   │   └── Understanding Cryptography.pdf
+│   ├── 微机原理
+│   │   ├── 1.asm
+│   │   ├── 2.asm
+│   │   ├── 3.txt
+│   │   ├── ex1.asm
+│   │   ├── ex2.asm
+│   │   ├── ex3.asm
+│   │   ├── ex4.asm
+│   │   ├── PB15111604_金泽文_97.zip
+│   │   ├── Sample.txt
+│   │   ├── Test.doc
+│   │   └── Test.txt
+│   ├── 程序设计语言基础(英)
+│   │   ├── baby.hs
+│   │   ├── Concepts in Programming Languages by Mitchell (1).pdf
+│   │   ├── FOPL大作业
+│   │   │   ├── examples.txt
+│   │   │   ├── FOPL大作业_PB15111604_金泽文.docx
+│   │   │   ├── FOPL大作业_PB15111604_金泽文.pdf
+│   │   │   ├── FOPL大作业_PB15111604_金泽文.zip
+│   │   │   ├── Makefile
+│   │   │   ├── p
+│   │   │   ├── Prj.cpp
+│   │   │   ├── project (4).zip
+│   │   │   ├── Term.cpp
+│   │   │   └── Term.h
+│   │   ├── hw
+│   │   │   ├── baby.hs
+│   │   │   ├── FOPL第3次作业_15111604_金泽文.pdf
+│   │   │   ├── FOPL第4次作业_15111604_金泽文.hs
+│   │   │   ├── FOPL第4次作业_15111604_金泽文.pdf
+│   │   │   ├── FOPL第5次作业_15111604_金泽文.docx
+│   │   │   ├── FOPL第5次作业_15111604_金泽文.pdf
+│   │   │   ├── hw1_PB15111604.hs
+│   │   │   ├── hw1.pdf
+│   │   │   ├── hw2_PB15111604.md
+│   │   │   ├── hw2_PB15111604.txt
+│   │   │   ├── hw2.pdf
+│   │   │   ├── hw3_PB15111604.txt
+│   │   │   ├── hw3.pdf
+│   │   │   ├── hw5.pdf
+│   │   │   ├── hw_PB15111604.txt
+│   │   │   ├── PB15111604_金泽文_Report_for_FoPL.docx
+│   │   │   └── PB15111604_金泽文_Report_for_FoPL.pdf
+│   │   ├── Introduction To Automata Theory, Languages, And Computation 3rd.pdf
+│   │   ├── IntroToHaskell.hs
+│   │   ├── notes_haskell.txt
+│   │   ├── ppt
+│   │   │   ├── 00_Introduction.pptx
+│   │   │   ├── 02_Lambda_More.pptx
+│   │   │   ├── 05_TypeClasses.pdf
+│   │   │   ├── 06_ioMonad.pdf
+│   │   │   ├── 07_control.pdf
+│   │   │   ├── 14_concurrency_notes.pdf
+│   │   │   ├── 14_Concurrency.pdf
+│   │   │   ├── chap6.pdf
+│   │   │   ├── Chapter5-IntroToHaskell.pdf
+│   │   │   ├── Chapter7.pdf
+│   │   │   ├── fund-11.pdf
+│   │   │   ├── haskell2010.pdf
+│   │   │   ├── mapp.pdf
+│   │   │   ├── mapreduce.pdf
+│   │   │   ├── Monad for functional programming.pdf
+│   │   │   ├── objects-2.pdf
+│   │   │   ├── object-types-subtyping.pdf
+│   │   │   ├── Parallel.pptx
+│   │   │   ├── Programming in Haskell.pdf
+│   │   │   ├── programming languages and lambda calculi.pdf
+│   │   │   ├── ProgramSynthesis.pdf
+│   │   │   ├── scope.pdf
+│   │   │   ├── STM.ppt
+│   │   │   ├── templates-generics.pdf
+│   │   │   ├── the-essence-of-functional-programming.pdf
+│   │   │   └── types.pdf
+│   │   ├── Real World Haskell.pdf
+│   │   ├── Seven Languages in Seven Weeks A Pragmatic Guide to Learning Programming Languages.pdf
+│   │   ├── The_art_of_multiprocessor_programming.pdf
+│   │   └── 自动机理论、语言和计算导论(原书第3版).pdf
+│   ├── 算法基础
+│   │   ├── PB15111604-project1
+│   │   │   ├── ex1
+│   │   │   │   ├── input
+│   │   │   │   │   └── input_strings.txt
+│   │   │   │   ├── output
+│   │   │   │   │   ├── heap_sort
+│   │   │   │   │   │   └── time.txt
+│   │   │   │   │   ├── insert_sort
+│   │   │   │   │   │   └── time.txt
+│   │   │   │   │   ├── merge_sort
+│   │   │   │   │   │   └── time.txt
+│   │   │   │   │   └── quick_sort
+│   │   │   │   │       └── time.txt
+│   │   │   │   └── source
+│   │   │   │       ├── GenerateStrings.java
+│   │   │   │       ├── Heap.java
+│   │   │   │       ├── Insert.class
+│   │   │   │       ├── Insert.java
+│   │   │   │       ├── Makefile
+│   │   │   │       ├── Merge.java
+│   │   │   │       └── Quick.java
+│   │   │   ├── ex2
+│   │   │   │   ├── input
+│   │   │   │   │   └── input_integers.txt
+│   │   │   │   ├── output
+│   │   │   │   │   ├── bubble_sort
+│   │   │   │   │   │   └── time.txt
+│   │   │   │   │   ├── counting_sort
+│   │   │   │   │   │   └── time.txt
+│   │   │   │   │   ├── quick_sort
+│   │   │   │   │   │   └── time.txt
+│   │   │   │   │   └── radix_sort
+│   │   │   │   │       └── time.txt
+│   │   │   │   └── source
+│   │   │   │       ├── Bubble.java
+│   │   │   │       ├── Counting.java
+│   │   │   │       ├── GenerateInteger.java
+│   │   │   │       ├── Makefile
+│   │   │   │       ├── Quick.java
+│   │   │   │       └── Radix.java
+│   │   │   ├── PB15111604-金泽文-project1.doc
+│   │   │   └── PB15111604-金泽文-project1.pdf
+│   │   ├── PB15111604-project2
+│   │   │   ├── ex1
+│   │   │   │   ├── input
+│   │   │   │   │   └── input.txt
+│   │   │   │   ├── output
+│   │   │   │   │   ├── result.txt
+│   │   │   │   │   └── time.txt
+│   │   │   │   └── src
+│   │   │   │       ├── DynamicProgramming.java
+│   │   │   │       └── GenerateIntegers.java
+│   │   │   ├── ex2
+│   │   │   │   ├── input
+│   │   │   │   │   └── input.txt
+│   │   │   │   ├── output
+│   │   │   │   │   ├── result.txt
+│   │   │   │   │   └── time.txt
+│   │   │   │   └── src
+│   │   │   │       ├── GenerateDoubles.java
+│   │   │   │       └── PolynomialMultiplication.java
+│   │   │   ├── PB15111604-金泽文-project2.doc
+│   │   │   └── PB15111604-金泽文-project2.pdf
+│   │   ├── PB15111604-project3
+│   │   │   ├── input
+│   │   │   │   └── input.txt
+│   │   │   ├── output
+│   │   │   │   ├── size100
+│   │   │   │   │   ├── delete_data.txt
+│   │   │   │   │   ├── inorder.txt
+│   │   │   │   │   ├── postorder.txt
+│   │   │   │   │   ├── preorder.txt
+│   │   │   │   │   ├── time1.txt
+│   │   │   │   │   └── time2.txt
+│   │   │   │   ├── size12
+│   │   │   │   │   ├── delete_data.txt
+│   │   │   │   │   ├── inorder.txt
+│   │   │   │   │   ├── postorder.txt
+│   │   │   │   │   ├── preorder.txt
+│   │   │   │   │   ├── time1.txt
+│   │   │   │   │   └── time2.txt
+│   │   │   │   ├── size24
+│   │   │   │   │   ├── delete_data.txt
+│   │   │   │   │   ├── inorder.txt
+│   │   │   │   │   ├── postorder.txt
+│   │   │   │   │   ├── preorder.txt
+│   │   │   │   │   ├── time1.txt
+│   │   │   │   │   └── time2.txt
+│   │   │   │   ├── size36
+│   │   │   │   │   ├── delete_data.txt
+│   │   │   │   │   ├── inorder.txt
+│   │   │   │   │   ├── postorder.txt
+│   │   │   │   │   ├── preorder.txt
+│   │   │   │   │   ├── time1.txt
+│   │   │   │   │   └── time2.txt
+│   │   │   │   ├── size48
+│   │   │   │   │   ├── delete_data.txt
+│   │   │   │   │   ├── inorder.txt
+│   │   │   │   │   ├── postorder.txt
+│   │   │   │   │   ├── preorder.txt
+│   │   │   │   │   ├── time1.txt
+│   │   │   │   │   └── time2.txt
+│   │   │   │   └── size60
+│   │   │   │       ├── delete_data.txt
+│   │   │   │       ├── inorder.txt
+│   │   │   │       ├── postorder.txt
+│   │   │   │       ├── preorder.txt
+│   │   │   │       ├── time1.txt
+│   │   │   │       └── time2.txt
+│   │   │   ├── PB15111604-金泽文-project3.doc
+│   │   │   ├── PB15111604-金泽文-project3.pdf
+│   │   │   └── src
+│   │   │       ├── GenerateIntegers.java
+│   │   │       ├── Makefile
+│   │   │       ├── RBNode.class
+│   │   │       ├── RBTree.class
+│   │   │       ├── RedBlack.class
+│   │   │       └── RedBlack.java
+│   │   ├── PB15111604-project4
+│   │   │   ├── ex1
+│   │   │   │   ├── size1
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output1.dot
+│   │   │   │   │       ├── output1.svg
+│   │   │   │   │       ├── output1.txt
+│   │   │   │   │       └── time1.txt
+│   │   │   │   ├── size2
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output1.dot
+│   │   │   │   │       ├── output1.svg
+│   │   │   │   │       ├── output1.txt
+│   │   │   │   │       └── time1.txt
+│   │   │   │   ├── size3
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output1.dot
+│   │   │   │   │       ├── output1.svg
+│   │   │   │   │       ├── output1.txt
+│   │   │   │   │       └── time1.txt
+│   │   │   │   ├── size4
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output1.dot
+│   │   │   │   │       ├── output1.svg
+│   │   │   │   │       ├── output1.txt
+│   │   │   │   │       └── time1.txt
+│   │   │   │   ├── size5
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output1.dot
+│   │   │   │   │       ├── output1.txt
+│   │   │   │   │       └── time1.txt
+│   │   │   │   ├── size6
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output1.dot
+│   │   │   │   │       ├── output1.txt
+│   │   │   │   │       └── time1.txt
+│   │   │   │   └── source
+│   │   │   │       ├── GenerateGraphs.class
+│   │   │   │       ├── GenerateGraphs.java
+│   │   │   │       ├── Graph.class
+│   │   │   │       ├── Graph$COLOR.class
+│   │   │   │       ├── Graph$Node.class
+│   │   │   │       ├── Makefile
+│   │   │   │       ├── SCC.class
+│   │   │   │       └── SCC.java
+│   │   │   ├── ex2
+│   │   │   │   ├── size1
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output2.txt
+│   │   │   │   │       └── time2.txt
+│   │   │   │   ├── size2
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output2.txt
+│   │   │   │   │       └── time2.txt
+│   │   │   │   ├── size3
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output2.txt
+│   │   │   │   │       └── time2.txt
+│   │   │   │   ├── size4
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output2.txt
+│   │   │   │   │       └── time2.txt
+│   │   │   │   ├── size5
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output2.txt
+│   │   │   │   │       └── time2.txt
+│   │   │   │   ├── size6
+│   │   │   │   │   ├── input
+│   │   │   │   │   │   └── input.txt
+│   │   │   │   │   └── output
+│   │   │   │   │       ├── output2.txt
+│   │   │   │   │       └── time2.txt
+│   │   │   │   └── source
+│   │   │   │       ├── GenerateGraphs.class
+│   │   │   │       ├── GenerateGraphs.java
+│   │   │   │       ├── Graph.class
+│   │   │   │       ├── Graph$ENode.class
+│   │   │   │       ├── Graph$VNode.class
+│   │   │   │       ├── Johnson.class
+│   │   │   │       ├── Johnson.java
+│   │   │   │       ├── Makefile
+│   │   │   │       ├── SCC.class
+│   │   │   │       ├── SCC.java
+│   │   │   │       ├── testGraph.class
+│   │   │   │       ├── testGraph$COLOR.class
+│   │   │   │       ├── testGraph$Node.class
+│   │   │   │       └── Tuple.class
+│   │   │   ├── PB15111604-金泽文-project4.doc
+│   │   │   └── PB15111604-金泽文-project4.pdf
+│   │   ├── 算法基础-2009试卷.doc
+│   │   └── 算法基础-2009试卷答案.doc
+│   ├── 编译原理和技术(H)
+│   │   ├── 201801CompilerPractice.pdf
+│   │   ├── git库
+│   │   │   ├── PB15111604
+│   │   │   │   ├── c1interpreter
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── src
+│   │   │   │   │   │   ├── assembly_builder.cpp
+│   │   │   │   │   │   ├── assembly_builder.h
+│   │   │   │   │   │   ├── main.cpp
+│   │   │   │   │   │   ├── runtime
+│   │   │   │   │   │   │   ├── io.c
+│   │   │   │   │   │   │   └── io.h
+│   │   │   │   │   │   ├── runtime.cpp
+│   │   │   │   │   │   └── runtime.h
+│   │   │   │   │   └── test_cases
+│   │   │   │   │       ├── assign.c1
+│   │   │   │   │       ├── cond.c1
+│   │   │   │   │       ├── declstmt.c1
+│   │   │   │   │       ├── econd.c1
+│   │   │   │   │       ├── elvalue.c1
+│   │   │   │   │       ├── Err.c1
+│   │   │   │   │       ├── error_array_as_int.c1
+│   │   │   │   │       ├── error_array_init_variable.c1
+│   │   │   │   │       ├── error_assign_const.c1
+│   │   │   │   │       ├── error_define_array_index_variable.c1
+│   │   │   │   │       ├── error_divided_by_zero.c1
+│   │   │   │   │       ├── error_global_array_init_not_const.c1
+│   │   │   │   │       ├── error_int_as_array.c1
+│   │   │   │   │       ├── error_multiple_name.c1
+│   │   │   │   │       ├── error_no_name.c1
+│   │   │   │   │       ├── error_too_much.c1
+│   │   │   │   │       ├── fib.c1
+│   │   │   │   │       ├── function.c1
+│   │   │   │   │       ├── global_assgin.c1
+│   │   │   │   │       ├── global_decl.c1
+│   │   │   │   │       ├── index_array.c1
+│   │   │   │   │       ├── jiecheng.c1
+│   │   │   │   │       ├── lexical_tokens.c1
+│   │   │   │   │       ├── local_array.c1
+│   │   │   │   │       ├── local_assgin.c1
+│   │   │   │   │       ├── local_decl.c1
+│   │   │   │   │       ├── sum.c1
+│   │   │   │   │       └── variable_index.c1
+│   │   │   │   ├── c1recognizer
+│   │   │   │   │   ├── c1recognizer-config.cmake.in
+│   │   │   │   │   ├── cmake
+│   │   │   │   │   │   └── ExternalAntlr4Cpp.cmake
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── doc
+│   │   │   │   │   │   ├── lab1-1.md
+│   │   │   │   │   │   ├── lab1-2-Parser.md
+│   │   │   │   │   │   └── lab1-3-AST.md
+│   │   │   │   │   ├── grammar
+│   │   │   │   │   │   ├── C1Lexer.g4
+│   │   │   │   │   │   ├── C1Parser.g4
+│   │   │   │   │   │   └── c1.sh
+│   │   │   │   │   ├── include
+│   │   │   │   │   │   └── c1recognizer
+│   │   │   │   │   │       ├── error_reporter.h
+│   │   │   │   │   │       ├── recognizer.h
+│   │   │   │   │   │       └── syntax_tree.h
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── src
+│   │   │   │   │   │   ├── error_listener.cpp
+│   │   │   │   │   │   ├── error_listener.h
+│   │   │   │   │   │   ├── error_reporter.cpp
+│   │   │   │   │   │   ├── recognizer.cpp
+│   │   │   │   │   │   ├── syntax_tree_builder.cpp
+│   │   │   │   │   │   ├── syntax_tree_builder.h
+│   │   │   │   │   │   └── syntax_tree.cpp
+│   │   │   │   │   └── test
+│   │   │   │   │       ├── main.cpp
+│   │   │   │   │       ├── syntax_tree_serializer.hpp
+│   │   │   │   │       └── test_cases
+│   │   │   │   │           ├── cond.c1
+│   │   │   │   │           ├── declarations.c1
+│   │   │   │   │           ├── declstmt.c1
+│   │   │   │   │           ├── dtest.c1
+│   │   │   │   │           ├── econd.c1
+│   │   │   │   │           ├── elvalue.c1
+│   │   │   │   │           ├── expr.c1
+│   │   │   │   │           ├── lexical_tokens.c1
+│   │   │   │   │           ├── lvalue.cl
+│   │   │   │   │           ├── mysample.c1
+│   │   │   │   │           ├── semi.c1
+│   │   │   │   │           ├── simple.c1
+│   │   │   │   │           └── wrong_sample.c1
+│   │   │   │   ├── Homework
+│   │   │   │   │   ├── H1
+│   │   │   │   │   │   └── answer.md
+│   │   │   │   │   ├── H10
+│   │   │   │   │   │   ├── answer.md
+│   │   │   │   │   │   └── test
+│   │   │   │   │   │       ├── Makefile
+│   │   │   │   │   │       ├── t
+│   │   │   │   │   │       └── test1.c
+│   │   │   │   │   └── H2
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       └── tokens.py
+│   │   │   │   ├── lab-1-2-answer
+│   │   │   │   │   ├── lab1-2-LeftRecursive.md
+│   │   │   │   │   ├── mult_calculator.py
+│   │   │   │   │   ├── MultFirst.g4
+│   │   │   │   │   ├── mult.sh
+│   │   │   │   │   ├── plus_calculator.py
+│   │   │   │   │   ├── PlusFirst.g4
+│   │   │   │   │   ├── plus.sh
+│   │   │   │   │   ├── UnsupportedLeftRecursive.g4
+│   │   │   │   │   └── unsupport.sh
+│   │   │   │   ├── lab2
+│   │   │   │   │   ├── doc
+│   │   │   │   │   │   ├── lab2.md
+│   │   │   │   │   │   └── lab2-pre.md
+│   │   │   │   │   ├── fib_gen.cpp
+│   │   │   │   │   ├── fib.ll
+│   │   │   │   │   └── Makefile
+│   │   │   │   └── sa
+│   │   │   │       ├── analysis.txt
+│   │   │   │       ├── answers.txt
+│   │   │   │       ├── AST.svg
+│   │   │   │       ├── CFG.svg
+│   │   │   │       ├── compile.txt
+│   │   │   │       ├── ExplodedGraph.svg
+│   │   │   │       ├── test
+│   │   │   │       │   └── TestSimpleStream.c
+│   │   │   │       ├── test.c
+│   │   │   │       └── TestSimpleStream.c
+│   │   │   └── teamwork
+│   │   │       ├── Algorithm by Fan.md
+│   │   │       ├── Algotirhms.md
+│   │   │       ├── gcForC
+│   │   │       │   ├── opensource
+│   │   │       │   │   ├── garbageCollector.c
+│   │   │       │   │   ├── garbageCollector.h
+│   │   │       │   │   ├── gcLogger.c
+│   │   │       │   │   ├── gcLogger.h
+│   │   │       │   │   ├── heapList.c
+│   │   │       │   │   ├── heapList.h
+│   │   │       │   │   ├── list.c
+│   │   │       │   │   ├── list.h
+│   │   │       │   │   └── readme.md
+│   │   │       │   └── readme.md
+│   │   │       ├── GC-state-of-the-art.md
+│   │   │       ├── Java Garbage Collector.md
+│   │   │       ├── notes_for_JVM.md
+│   │   │       ├── pics
+│   │   │       │   ├── AndroidO
+│   │   │       │   │   ├── allocation.jpg
+│   │   │       │   │   ├── copyingPhase.png
+│   │   │       │   │   ├── GCLantacy.jpg
+│   │   │       │   │   ├── gcProcess.png
+│   │   │       │   │   ├── improvement.png
+│   │   │       │   │   ├── pausePhase.png
+│   │   │       │   │   ├── readBarriers1.png
+│   │   │       │   │   ├── readBarriers2.png
+│   │   │       │   │   ├── reclaimPhase.png
+│   │   │       │   │   └── result.png
+│   │   │       │   └── HotSpot
+│   │   │       │       └── 01_概览.png
+│   │   │       ├── questions
+│   │   │       └── README.md
+│   │   ├── lab2-pre.md
+│   │   ├── PB15111604_金泽文_Report_for_FoPL.pdf
+│   │   ├── ppt
+│   │   │   ├── 2017fall-c1r_final.zip
+│   │   │   ├── 2017fall-judgement-testcases
+│   │   │   │   ├── antlr-example
+│   │   │   │   │   ├── expr_calculator.py
+│   │   │   │   │   └── expr.g4
+│   │   │   │   ├── c1recognizer
+│   │   │   │   │   ├── c1recognizer-config.cmake.in
+│   │   │   │   │   ├── cmake
+│   │   │   │   │   │   └── ExternalAntlr4Cpp.cmake
+│   │   │   │   │   ├── CMakeLists.txt
+│   │   │   │   │   ├── grammar
+│   │   │   │   │   │   ├── C1Lexer.g4
+│   │   │   │   │   │   └── C1Parser.g4
+│   │   │   │   │   ├── include
+│   │   │   │   │   │   └── c1recognizer
+│   │   │   │   │   │       ├── error_reporter.h
+│   │   │   │   │   │       ├── recognizer.h
+│   │   │   │   │   │       └── syntax_tree.h
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── src
+│   │   │   │   │   │   ├── error_listener.cpp
+│   │   │   │   │   │   ├── error_listener.h
+│   │   │   │   │   │   ├── error_reporter.cpp
+│   │   │   │   │   │   ├── recognizer.cpp
+│   │   │   │   │   │   ├── syntax_tree_builder.cpp
+│   │   │   │   │   │   ├── syntax_tree_builder.h
+│   │   │   │   │   │   └── syntax_tree.cpp
+│   │   │   │   │   └── test
+│   │   │   │   │       ├── main.cpp
+│   │   │   │   │       ├── syntax_tree_serializer.hpp
+│   │   │   │   │       └── test_cases
+│   │   │   │   │           ├── declarations.c1
+│   │   │   │   │           ├── expr.c1
+│   │   │   │   │           ├── lexical_tokens.c1
+│   │   │   │   │           └── simple.c1
+│   │   │   │   └── README.md
+│   │   │   ├── 2017fall-judgement-testcases.zip
+│   │   │   ├── 2017fall-master.zip
+│   │   │   ├── antlr4权威指南.pdf
+│   │   │   ├── c1recognizer.zip
+│   │   │   ├── ch11_运行时.pdf
+│   │   │   ├── ch12_OO.pdf
+│   │   │   ├── ch4_syntaxdirect.pdf
+│   │   │   ├── ch5_typecheck.pdf
+│   │   │   ├── ch6_Runtime storage organization.pdf
+│   │   │   ├── ch7_中间代码生成.pdf
+│   │   │   ├── ch8_代码生成.pdf
+│   │   │   ├── ch9_optimize.pdf
+│   │   │   ├── lexicalAnalysis.pdf
+│   │   │   ├── optimize.pdf
+│   │   │   ├── parsing.pdf
+│   │   │   ├── runtime.pdf
+│   │   │   ├── TA20171024.pptx
+│   │   │   ├── TA20171123.pdf
+│   │   │   ├── TA20171123.pptx
+│   │   │   ├── TA20171221.pdf
+│   │   │   ├── TA20171221.pptx
+│   │   │   ├── typecheck.pdf
+│   │   │   ├── 中间代码生成ch7.pdf
+│   │   │   ├── 代码生成.pdf
+│   │   │   ├── 语法制导翻译.pdf
+│   │   │   ├── 课件
+│   │   │   │   ├── dp_cg.ppt
+│   │   │   │   ├── lec10_1.ppt
+│   │   │   │   ├── lec10_2.ppt
+│   │   │   │   ├── lec11.ppt
+│   │   │   │   ├── lec12.ppt
+│   │   │   │   ├── lec1.ppt
+│   │   │   │   ├── lec2.ppt
+│   │   │   │   ├── lec3.ppt
+│   │   │   │   ├── lec4.ppt
+│   │   │   │   ├── lec5.ppt
+│   │   │   │   ├── lec6.ppt
+│   │   │   │   ├── lec7.ppt
+│   │   │   │   ├── lec8.ppt
+│   │   │   │   ├── lec9_1.ppt
+│   │   │   │   ├── lec9_2.ppt
+│   │   │   │   └── ssa_form.pdf
+│   │   │   └── 课件(1).rar
+│   │   ├── README.md
+│   │   ├── The garbage collection handbook  the art of automatic memory management.PDF
+│   │   ├── 合影2.jpg
+│   │   ├── 合影.jpg
+│   │   └── 垃圾回收的算法与实现---文字版.pdf
+│   └── 计算机网络
+│       ├── answer.doc
+│       ├── Chapter8.ppt
+│       ├── Computer Networking A Top-Down Approach 6th E.pdf
+│       ├── Homework_new.doc
+│       ├── lab
+│       │   ├── 第一次实验
+│       │   │   ├── green.jpg
+│       │   │   └── index.html
+│       │   ├── 第三次实验
+│       │   │   ├── alice.txt
+│       │   │   ├── dhcp-ethereal-trace-1
+│       │   │   ├── dns-ethereal-trace-1
+│       │   │   ├── dns-ethereal-trace-2
+│       │   │   ├── dns-ethereal-trace-3
+│       │   │   ├── dns-ethereal-trace-4
+│       │   │   ├── ethernet-ethereal-trace-1
+│       │   │   ├── http-ethereal-trace-1
+│       │   │   ├── http-ethereal-trace-2
+│       │   │   ├── http-ethereal-trace-3
+│       │   │   ├── http-ethereal-trace-4
+│       │   │   ├── http-ethereal-trace-5
+│       │   │   ├── icmp-ethereal-trace-1
+│       │   │   ├── icmp-ethereal-trace-2
+│       │   │   ├── ip-ethereal-trace-1
+│       │   │   ├── MyLab3Captured.pcapng
+│       │   │   ├── NAT_home_side.pcap
+│       │   │   ├── NAT_ISP_side.pcap
+│       │   │   ├── ssl-ethereal-trace-1
+│       │   │   ├── tcp-ethereal-trace-1
+│       │   │   ├── udp-wireshark-trace.pcap
+│       │   │   ├── Wireshark_802_11.pcap
+│       │   │   ├── wireshark-traces.zip
+│       │   │   ├── 实验三.pptx
+│       │   │   ├── 第三次实验参考文件TCP.pdf
+│       │   │   ├── 金泽文+PB15111604+第三次计算机网络实验报告.doc
+│       │   │   └── 金泽文+PB15111604+第三次计算机网络实验报告.pdf
+│       │   ├── 第二次实验
+│       │   │   ├── 第二次实验 http报文抓取及分析.pdf
+│       │   │   ├── 第二次实验.ppt
+│       │   │   ├── 第二次实验 wireshark简介.pdf
+│       │   │   ├── 金泽文+PB15111604+第二次计算机网络实验报告.doc
+│       │   │   └── 金泽文+PB15111604+第二次计算机网络实验报告（改）.pdf
+│       │   └── 第四次实验
+│       │       ├── MyLab4Captured.pcapng
+│       │       ├── Wireshark_IP.pdf
+│       │       ├── 计算机网络 第四次实验.ppt
+│       │       ├── 金泽文+PB15111604+第四次计算机网络实验报告.doc
+│       │       └── 金泽文+PB15111604+第四次计算机网络实验报告.pdf
+│       ├── ppt_huabei
+│       │   ├── Chapter1_2017.ppt
+│       │   ├── Chapter2_2017.ppt
+│       │   ├── Chapter3_2017.ppt
+│       │   ├── Chapter4_2017.ppt
+│       │   ├── Chapter5_2017.ppt
+│       │   ├── Chapter6_2017.ppt
+│       │   ├── Chapter7_2017.pptx
+│       │   ├── Chapter8_2017.ppt
+│       │   └── Introduction.pptx
+│       ├── ppt_v7_book
+│       │   ├── Chapter_1_V7.01.ppt
+│       │   ├── Chapter_2_V7.01.ppt
+│       │   ├── Chapter_3_V7.01.ppt
+│       │   ├── Chapter_4_V7.01.ppt
+│       │   ├── Chapter_5_V7.01.pptx
+│       │   ├── Chapter_6_V7.01.pptx
+│       │   ├── Chapter_7_V7.0.pptx
+│       │   ├── Chapter_8_V7.0.pptx
+│       │   └── Chapter_9_V7.0.pptx
+│       ├── ppt_xinming
+│       │   ├── Chapter1.ppt
+│       │   ├── Chapter2.ppt
+│       │   ├── Chapter3.ppt
+│       │   ├── Chapter4.ppt
+│       │   ├── Chapter5.ppt
+│       │   ├── Chapter6.ppt
+│       │   ├── Chapter8.ppt
+│       │   ├── Homework.doc
+│       │   └── networks-ch00-2017.ppt
+│       ├── quiz-1-2017-answer.doc
+│       ├── quiz-2-2017-answer.doc
+│       ├── quiz-3-2017-answer.doc
+│       ├── quiz-4-2017-answer.doc
+│       ├── 熊的计网.pdf
+│       └── 计算机网络自顶向下方法答案(英文第六版).pdf
+├── 大二上
+│   ├── ICS
+│   │   ├── hm_lab
+│   │   │   ├── hw01.pdf
+│   │   │   ├── hw02.pdf
+│   │   │   ├── hw03.pdf
+│   │   │   ├── hw04.pdf
+│   │   │   ├── hw05.pdf
+│   │   │   ├── hw06.pdf
+│   │   │   ├── lab02.pdf
+│   │   │   ├── lab04.pdf
+│   │   │   ├── lab05.pdf
+│   │   │   ├── lab3.pdf
+│   │   │   ├── lab5.PNG
+│   │   │   ├── sol01.pdf
+│   │   │   ├── sol02.pdf
+│   │   │   ├── sol03.pdf
+│   │   │   ├── sol04.pdf
+│   │   │   ├── sol05.pdf
+│   │   │   └── sol06.pdf
+│   │   ├── ics小抄.pdf
+│   │   ├── lab04Week12.pdf
+│   │   ├── lab05_1225.pdf
+│   │   ├── lab05_screenshot.pdf
+│   │   ├── lc-3
+│   │   │   ├── ExtensionSample
+│   │   │   │   ├── ExtensionReadMe.txt
+│   │   │   │   ├── ExtensionSample.cpp
+│   │   │   │   ├── ExtensionSample.vcproj
+│   │   │   │   ├── ExtensionTest.asm
+│   │   │   │   └── LC3Extension.h
+│   │   │   ├── LC3Edit.cnt
+│   │   │   ├── LC3Edit.exe
+│   │   │   ├── LC3EDIT.HLP
+│   │   │   ├── Readme.txt
+│   │   │   ├── Simulate.cnt
+│   │   │   ├── Simulate.exe
+│   │   │   └── Simulate.hlp
+│   │   ├── lc3-win.pdf
+│   │   ├── ppt
+│   │   │   ├── ICS16-Ch 1Course Introduction.ppt
+│   │   │   ├── ICS16-Ch 5.ppsx
+│   │   │   ├── ICS17-Ch 2.ppsx
+│   │   │   ├── ICS17-Ch 3.ppt
+│   │   │   ├── ICS17-Ch 4.ppt
+│   │   │   └── TA2.pptx
+│   │   └── students
+│   │       ├── kingzevin
+│   │       │   ├── 3
+│   │       │   │   ├── lab03.bin
+│   │       │   │   ├── lab03.hex
+│   │       │   │   ├── lab03.lst
+│   │       │   │   ├── lab03.obj
+│   │       │   │   ├── lab03.sym
+│   │       │   │   ├── lab03test.asm
+│   │       │   │   ├── lab03test.bin
+│   │       │   │   ├── lab03test.hex
+│   │       │   │   ├── lab03test.lst
+│   │       │   │   ├── lab03test.obj
+│   │       │   │   ├── lab03test.sym
+│   │       │   │   ├── PB15111604_金泽文_lab03.asm
+│   │       │   │   ├── PB15111604_金泽文_lab03.docx
+│   │       │   │   ├── PB15111604_金泽文_lab03.pdf
+│   │       │   │   └── PB15111604_金泽文_lab03.rar
+│   │       │   ├── ExtensionSample
+│   │       │   │   ├── ExtensionReadMe.txt
+│   │       │   │   ├── ExtensionSample.cpp
+│   │       │   │   ├── ExtensionSample.vcproj
+│   │       │   │   ├── ExtensionTest.asm
+│   │       │   │   └── LC3Extension.h
+│   │       │   ├── hw5
+│   │       │   │   ├── ~$5111604_金泽文_hw5.docx
+│   │       │   │   ├── PB5111604_金泽文_hw05.docx
+│   │       │   │   ├── PB5111604_金泽文_hw5.docx
+│   │       │   │   ├── PB5111604_金泽文_hw5.pdf
+│   │       │   │   ├── test.asm
+│   │       │   │   ├── test.bin
+│   │       │   │   ├── test.hex
+│   │       │   │   ├── test.lst
+│   │       │   │   ├── test.obj
+│   │       │   │   ├── test.sym
+│   │       │   │   └── ~WRL1799.tmp
+│   │       │   ├── lab04
+│   │       │   │   ├── lab04.asm
+│   │       │   │   ├── lab04.bin
+│   │       │   │   ├── lab04.hex
+│   │       │   │   ├── lab04.lst
+│   │       │   │   ├── lab04.obj
+│   │       │   │   ├── lab04.sym
+│   │       │   │   ├── lab04test.asm
+│   │       │   │   ├── lab04test.bin
+│   │       │   │   ├── lab04test.hex
+│   │       │   │   ├── lab04test.lst
+│   │       │   │   ├── lab04test.obj
+│   │       │   │   ├── lab04test.sym
+│   │       │   │   ├── PB15111604_金泽文_Lab04.asm
+│   │       │   │   ├── PB15111604_金泽文_Lab04.docx
+│   │       │   │   ├── PB15111604_金泽文_Lab04.pdf
+│   │       │   │   └── PB15111604_金泽文_Lab04.rar
+│   │       │   ├── LAB1
+│   │       │   │   ├── DATA.HEX
+│   │       │   │   ├── DATA.obj
+│   │       │   │   ├── lab01.bin
+│   │       │   │   ├── PB15111604_金泽文_Lab01.obj
+│   │       │   │   ├── PB15111604_金泽文_Lab01.pdf
+│   │       │   │   └── PB15111604_金泽文_Lab01.zip
+│   │       │   ├── lab2
+│   │       │   │   ├── DATA1.HEX
+│   │       │   │   ├── DATA1.obj
+│   │       │   │   ├── DATA.HEX
+│   │       │   │   ├── DATA.obj
+│   │       │   │   ├── lab2.asm
+│   │       │   │   ├── lab2.bin
+│   │       │   │   ├── lab2.hex
+│   │       │   │   ├── lab2.lst
+│   │       │   │   ├── lab2.obj
+│   │       │   │   ├── lab2.sym
+│   │       │   │   ├── lab2.txt
+│   │       │   │   ├── PB15111604_金泽文_Lab02.docx
+│   │       │   │   ├── PB15111604_金泽文_Lab02.pdf
+│   │       │   │   └── PB15111604_金泽文_Lab02.rar
+│   │       │   ├── lab5
+│   │       │   │   ├── interrupt_service_routine.asm
+│   │       │   │   ├── interrupt_service_routine.bin
+│   │       │   │   ├── interrupt_service_routine.hex
+│   │       │   │   ├── interrupt_service_routine.lst
+│   │       │   │   ├── interrupt_service_routine.obj
+│   │       │   │   ├── interrupt_service_routine.sym
+│   │       │   │   ├── PB15111604_金泽文_Lab05.docx
+│   │       │   │   ├── PB15111604_金泽文_Lab05.pdf
+│   │       │   │   ├── PB15111604_金泽文_Lab05.zip
+│   │       │   │   ├── user_program.asm
+│   │       │   │   ├── user_program.bin
+│   │       │   │   ├── user_program.hex
+│   │       │   │   ├── user_program.lst
+│   │       │   │   ├── user_program.obj
+│   │       │   │   └── user_program.sym
+│   │       │   └── lab6
+│   │       │       ├── a.exe
+│   │       │       ├── int main.c
+│   │       │       ├── lab06_0108.pdf
+│   │       │       ├── lab06inpu
+│   │       │       ├── lab06input
+│   │       │       ├── lab06output
+│   │       │       ├── lab06output-坑爹的测试数据
+│   │       │       ├── lc3.c
+│   │       │       ├── lc3.exe
+│   │       │       ├── l.exe
+│   │       │       ├── PB15111604_金泽文_Lab06.docx
+│   │       │       ├── PB15111604_金泽文_Lab06.pdf
+│   │       │       ├── readme.txt
+│   │       │       ├── report.txt
+│   │       │       ├── t
+│   │       │       ├── test.c
+│   │       │       ├── test.exe
+│   │       │       ├── t.exe
+│   │       │       └── tt.t
+│   │       └── mbinary
+│   │           ├── 2017-10-17_162802.png
+│   │           ├── echo.asm
+│   │           ├── hm6_7a.png
+│   │           ├── hm6_catalan.png
+│   │           ├── hm6_stack.jpg
+│   │           ├── instruction.png
+│   │           ├── interrupt_service_routine.asm
+│   │           ├── interrupt_service_routine.bin
+│   │           ├── interrupt_service_routine.hex
+│   │           ├── interrupt_service_routine.lst
+│   │           ├── interrupt_service_routine.obj
+│   │           ├── interrupt_service_routine.sym
+│   │           ├── lab02_after_exec2.png
+│   │           ├── lab02_before_exec2.png
+│   │           ├── lab02_before_exec.png
+│   │           ├── lab03.asm
+│   │           ├── lab03.bin
+│   │           ├── lab03_DST.png
+│   │           ├── lab03.hex
+│   │           ├── lab03.lst
+│   │           ├── lab03.obj
+│   │           ├── lab03_src2.png
+│   │           ├── lab03_src.png
+│   │           ├── lab03.sym
+│   │           ├── lab04_1_finish.png
+│   │           ├── lab04_1_initial.png
+│   │           ├── lab04_1.png
+│   │           ├── lab04_2_finish.png
+│   │           ├── lab04_2_initial.png
+│   │           ├── LAB04.asm
+│   │           ├── LAB04.bin
+│   │           ├── LAB04.hex
+│   │           ├── LAB04.lst
+│   │           ├── LAB04.obj
+│   │           ├── LAB04.sym
+│   │           ├── lab05.bin
+│   │           ├── lab05.hex
+│   │           ├── lab05.lst
+│   │           ├── lab05.obj
+│   │           ├── lab05.sym
+│   │           ├── lab5_rst1.png
+│   │           ├── lab5_rst2.png
+│   │           ├── LC3Edit.exe - 快捷方式.lnk
+│   │           ├── p1.png
+│   │           ├── PB16030899_朱河勤_HW01.pdf
+│   │           ├── PB16030899_朱河勤_HW02 .docx
+│   │           ├── PB16030899_朱河勤_HW02 .pdf
+│   │           ├── PB16030899_朱河勤_HW03.md
+│   │           ├── PB16030899_朱河勤_HW03.pdf
+│   │           ├── PB16030899_朱河勤_HW04.md
+│   │           ├── PB16030899_朱河勤_HW04.pdf
+│   │           ├── PB16030899_朱河勤_HW05.md
+│   │           ├── PB16030899_朱河勤_HW05.pdf
+│   │           ├── PB16030899_朱河勤_HW06.md
+│   │           ├── PB16030899_朱河勤_HW06.pdf
+│   │           ├── PB16030899_朱河勤_Lab01.bin
+│   │           ├── PB16030899_朱河勤_Lab01.docx
+│   │           ├── PB16030899_朱河勤_Lab01.obj
+│   │           ├── PB16030899_朱河勤_Lab01.pdf
+│   │           ├── PB16030899_朱河勤_Lab02.asm
+│   │           ├── PB16030899_朱河勤_Lab02.bin
+│   │           ├── PB16030899_朱河勤_LAB02.md
+│   │           ├── PB16030899_朱河勤_Lab02.obj
+│   │           ├── PB16030899_朱河勤_Lab02.pdf
+│   │           ├── PB16030899_朱河勤_Lab03.md
+│   │           ├── PB16030899_朱河勤_Lab03.pdf
+│   │           ├── PB16030899_朱河勤_Lab03.zip
+│   │           ├── PB16030899_朱河勤_Lab04.md
+│   │           ├── PB16030899_朱河勤_Lab04.pdf
+│   │           ├── PB16030899_朱河勤_Lab04.zip
+│   │           ├── PB16030899_朱河勤_Lab05.md
+│   │           ├── PB16030899_朱河勤_Lab05.pdf
+│   │           ├── SETVAL.asm
+│   │           ├── SETVAL.bin
+│   │           ├── SETVAL.hex
+│   │           ├── SETVAL.lst
+│   │           ├── SETVAL.obj
+│   │           ├── SETVAL.sym
+│   │           ├── Simulate.exe - 快捷方式.lnk
+│   │           ├── soda.png
+│   │           ├── stack.asm
+│   │           ├── table.png
+│   │           ├── tmp.asm
+│   │           ├── tmp.bin
+│   │           ├── tmp.hex
+│   │           ├── tmp.lst
+│   │           ├── tmp.obj
+│   │           ├── tmp.sym
+│   │           ├── user_program.asm
+│   │           ├── user_program.bin
+│   │           ├── user_program.hex
+│   │           ├── user_program.lst
+│   │           ├── user_program.obj
+│   │           └── user_program.sym
+│   ├── 光学与原子物理
+│   │   ├── homework
+│   │   │   ├── 001.jpg
+│   │   │   ├── 002.jpg
+│   │   │   ├── 003.jpg
+│   │   │   ├── 004.jpg
+│   │   │   ├── 005.jpg
+│   │   │   ├── 006.jpg
+│   │   │   ├── 007.jpg
+│   │   │   ├── 008.jpg
+│   │   │   ├── 009.jpg
+│   │   │   ├── 010.jpg
+│   │   │   ├── 011.jpg
+│   │   │   └── 012.jpg
+│   │   ├── 光学
+│   │   │   ├── 中国科大非物理类光学（乙型光学）教学大纲（供研讨）.doc
+│   │   │   ├── 光学2016春3.pptx
+│   │   │   ├── 光学2016春4.pptx
+│   │   │   ├── 光学2016秋10(1).pptx
+│   │   │   ├── 光学2016秋10.pptx
+│   │   │   ├── 光学2016秋11.pptx
+│   │   │   ├── 光学2016秋12.pptx
+│   │   │   ├── 光学2016秋13.pptx
+│   │   │   ├── 光学2016秋14.pptx
+│   │   │   ├── 光学2016秋15.pptx
+│   │   │   ├── 光学2016秋16.pptx
+│   │   │   ├── 光学2016秋17.pptx
+│   │   │   ├── 光学2016秋18.pptx
+│   │   │   ├── 光学2016秋19.pptx
+│   │   │   ├── 光学2016秋1.pdf
+│   │   │   ├── 光学2016秋1.pptx
+│   │   │   ├── 光学2016秋2.pptx
+│   │   │   ├── 光学2016秋3.pptx
+│   │   │   ├── 光学2016秋4.pptx
+│   │   │   ├── 光学2016秋5.pptx
+│   │   │   ├── 光学2016秋6.pptx
+│   │   │   ├── 光学2016秋7.pptx
+│   │   │   ├── 光学2016秋8.pptx
+│   │   │   ├── 光学2016秋9.pptx
+│   │   │   ├── 光学公式2016秋.doc
+│   │   │   ├── 光学公式2016秋.pdf
+│   │   │   └── 吴强版光学部分答案.pdf
+│   │   ├── 原子物理ppt
+│   │   │   ├── ~$光学2016秋15.pptx
+│   │   │   ├── 原子物理2016秋10.pptx
+│   │   │   ├── 原子物理2016秋11.pptx
+│   │   │   ├── 原子物理2016秋12.pptx
+│   │   │   ├── 原子物理2016秋13.pptx
+│   │   │   ├── 原子物理2016秋14.pptx
+│   │   │   ├── 原子物理2016秋1.pptx
+│   │   │   ├── 原子物理2016秋2.pptx
+│   │   │   ├── 原子物理2016秋3.pptx
+│   │   │   ├── ~$原子物理2016秋4.pptx
+│   │   │   ├── 原子物理2016秋4.pptx
+│   │   │   ├── 原子物理2016秋5.pptx
+│   │   │   ├── 原子物理2016秋6.pptx
+│   │   │   ├── 原子物理2016秋7.pptx
+│   │   │   ├── 原子物理2016秋8.pptx
+│   │   │   ├── 原子物理2016秋9.pptx
+│   │   │   ├── 原子物理复习要点.pdf
+│   │   │   └── 原子物理学全套大礼包.zip
+│   │   ├── 原子物理课后习题答案zip.zip
+│   │   └── 陈宏芳_原子物理学_答案.pdf
+│   ├── 数据结构
+│   │   ├── lab
+│   │   │   ├── bankSimulation
+│   │   │   │   ├── bank.png
+│   │   │   │   ├── bankSimulate.py
+│   │   │   │   ├── bankSimulation.png
+│   │   │   │   ├── client.png
+│   │   │   │   ├── demonstrate.png
+│   │   │   │   ├── display.png
+│   │   │   │   ├── linkList.py
+│   │   │   │   ├── manual.png
+│   │   │   │   ├── result2.png
+│   │   │   │   ├── result3.png
+│   │   │   │   ├── result.png
+│   │   │   │   ├── window.png
+│   │   │   │   ├── 银行模拟.aux
+│   │   │   │   ├── 银行模拟.log
+│   │   │   │   ├── 银行模拟.pdf
+│   │   │   │   ├── 银行模拟.synctex.gz
+│   │   │   │   ├── 银行模拟.tex
+│   │   │   │   └── 银行模拟.toc
+│   │   │   ├── huffman
+│   │   │   │   ├── huffman.aux
+│   │   │   │   ├── huffman.cc
+│   │   │   │   ├── huffman.exe
+│   │   │   │   ├── huffman.log
+│   │   │   │   ├── huffman.o
+│   │   │   │   ├── huffman.pdf
+│   │   │   │   ├── huffman.synctex.gz
+│   │   │   │   ├── huffman.tex
+│   │   │   │   ├── huffman.toc
+│   │   │   │   └── test
+│   │   │   │       ├── em.cc
+│   │   │   │       ├── GitHubDesktopSetup.exe
+│   │   │   │       ├── mytxt(1).txt
+│   │   │   │       ├── mytxt.txt
+│   │   │   │       ├── mytxt.zzip
+│   │   │   │       ├── testcase2.png
+│   │   │   │       ├── testcase3.png
+│   │   │   │       ├── testcase.png
+│   │   │   │       ├── testfile(1).txt
+│   │   │   │       ├── testfile.txt
+│   │   │   │       ├── testfile.zzip
+│   │   │   │       ├── 初心未改(1).mp4
+│   │   │   │       ├── 初心未改(1).zzip
+│   │   │   │       ├── 初心未改.mp4
+│   │   │   │       └── 初心未改.zzip
+│   │   │   ├── navigation
+│   │   │   │   ├── directed.py
+│   │   │   │   ├── graph.py
+│   │   │   │   ├── lab4_朱河勤_PB16030899.zip
+│   │   │   │   └── __pycache__
+│   │   │   │       └── directed.cpython-36.pyc
+│   │   │   └── polynomial
+│   │   │       ├── pol.cc
+│   │   │       ├── pol.exe
+│   │   │       ├── polynomial.cc
+│   │   │       ├── polynomial.exe
+│   │   │       ├── polynomial.o
+│   │   │       └── polynomial.py
+│   │   ├── ppt
+│   │   │   ├── ch3.ppt
+│   │   │   ├── ch6.pps
+│   │   │   ├── ch7.pps
+│   │   │   ├── ch9.pps
+│   │   │   ├── chapter1：绪论(Ver1.0 3学时).ppt
+│   │   │   ├── chapter2：线性表（Ver 0.5 8学时）.ppt
+│   │   │   ├── 数据结构c语言版严蔚敏PPT.ppt
+│   │   │   └── 第十章排序2015.ppt
+│   │   ├── 数据结构c_严蔚敏.pdf
+│   │   └── 数据结构习题集答案(C语言版严蔚敏)_ca332.pdf
+│   ├── 数电实验
+│   │   ├── FPGA_STEP参考手册.pdf
+│   │   ├── Nexys3
+│   │   │   └── Nexys3
+│   │   │       ├── Nexys3_BSB_Support.zip
+│   │   │       ├── Nexys3_Master.ucf
+│   │   │       ├── Nexys3_rm.pdf
+│   │   │       ├── NEXYS3_sch.pdf
+│   │   │       └── Nexys3入门指导手册.pdf
+│   │   ├── ppt
+│   │   │   ├── cs_lab.zip
+│   │   │   ├── lab03_比较器.ppt
+│   │   │   ├── lab04_编码器计数器.ppt
+│   │   │   ├── lab05_有限状态机.ppt
+│   │   │   └── lab06_寄存器文件(1).ppt
+│   │   ├── students
+│   │   │   ├── kingzevin
+│   │   │   │   ├── ISE-IP核使用说明.pdf
+│   │   │   │   ├── kmap12.exe
+│   │   │   │   ├── lab01_PB15111604_金泽文_数据选择器.docx
+│   │   │   │   ├── lab02_PB15111604_金泽文_3-8译码器.docx
+│   │   │   │   ├── lab02_PB15111604_金泽文_3-8译码器.pdf
+│   │   │   │   ├── lab03_PB15111604_JinZewen_计数器.pdf
+│   │   │   │   ├── lab03_PB15111604_金泽文_.docx
+│   │   │   │   ├── lab03_计数器.ppt
+│   │   │   │   ├── lab04_PB15111604.docx
+│   │   │   │   ├── lab04_PB15111604.pdf
+│   │   │   │   ├── lab04_.v
+│   │   │   │   ├── lab04_有限状态机.ppt
+│   │   │   │   ├── lab05_PB15111604.docx
+│   │   │   │   ├── lab05_PB15111604_modified.pdf
+│   │   │   │   ├── ~$lab05_寄存器文件.ppt
+│   │   │   │   ├── lab05_寄存器文件.ppt
+│   │   │   │   ├── -lab06_ip核使用.pdf
+│   │   │   │   ├── lab06_PB15111604_JinZewen_ip.docx
+│   │   │   │   ├── lab06_PB15111604_JinZewen_ip.pdf
+│   │   │   │   ├── lab07_综合实验.ppt
+│   │   │   │   ├── Nexys3.zip
+│   │   │   │   └── 数电实验_Zevin.zip
+│   │   │   └── mbinary
+│   │   │       ├── final
+│   │   │       │   ├── frequency.png
+│   │   │       │   ├── imp.png
+│   │   │       │   ├── lz.jpg
+│   │   │       │   ├── m1.png
+│   │   │       │   ├── m2.png
+│   │   │       │   ├── modules.png
+│   │   │       │   ├── pai.png
+│   │   │       │   ├── sb.png
+│   │   │       │   ├── sky.png
+│   │   │       │   ├── yinfu.png
+│   │   │       │   ├── 综合实验_PB16030899_朱河勤.aux
+│   │   │       │   ├── 综合实验_PB16030899_朱河勤.log
+│   │   │       │   ├── 综合实验_PB16030899_朱河勤.pdf
+│   │   │       │   ├── 综合实验_PB16030899_朱河勤.synctex.gz
+│   │   │       │   ├── 综合实验_PB16030899_朱河勤.tex
+│   │   │       │   └── 综合实验_PB16030899_朱河勤.toc
+│   │   │       ├── lab02
+│   │   │       │   ├── lab02_PB16030899.pdf
+│   │   │       │   └── 选择器实验报告.docx
+│   │   │       ├── lab03
+│   │   │       │   ├── lab03_PB16030899_cmp4.pdf
+│   │   │       │   └── 比较器实验报告.docx
+│   │   │       ├── lab04
+│   │   │       │   ├── LAB04.aux
+│   │   │       │   ├── lab04_cd.png
+│   │   │       │   ├── LAB04.log
+│   │   │       │   ├── lab04_PB16030899.pdf
+│   │   │       │   ├── LAB04.synctex.gz
+│   │   │       │   ├── LAB04.tex
+│   │   │       │   ├── LAB04.toc
+│   │   │       │   ├── test.synctex.gz
+│   │   │       │   └── wave.png
+│   │   │       ├── lab05_fsm
+│   │   │       │   ├── fsm.png
+│   │   │       │   ├── lab05_PB16030899 .aux
+│   │   │       │   ├── lab05_PB16030899 .log
+│   │   │       │   ├── lab05_PB16030899 .pdf
+│   │   │       │   ├── lab05_PB16030899 .synctex.gz
+│   │   │       │   ├── lab05_PB16030899 .tex
+│   │   │       │   ├── lab05_PB16030899 .toc
+│   │   │       │   ├── remove_glitch.png
+│   │   │       │   └── states.png
+│   │   │       └── lab06_regfile
+│   │   │           ├── inc.png
+│   │   │           ├── lab06_PB16030899 .aux
+│   │   │           ├── lab06_PB16030899 .log
+│   │   │           ├── lab06_PB16030899_.pdf
+│   │   │           ├── lab06_PB16030899 .synctex.gz
+│   │   │           ├── lab06_PB16030899 .tex
+│   │   │           ├── lab06_PB16030899 .toc
+│   │   │           └── module.png
+│   │   ├── verilog
+│   │   │   ├── verilog_notes.txt
+│   │   │   └── Verilog入门教程.pdf
+│   │   ├── Verilog HDL程序设计实例详解_9011c.pdf
+│   │   ├── Verilog的135个经典设计实例_30d02.pdf
+│   │   └── XILINX FPGA Verilog编程大全LX16_caa82.pdf
+│   └── 魔术
+│       ├── ppt
+│       │   ├── 01_绪论(6).ppt
+│       │   ├── 02_数制与代码(4).ppt
+│       │   ├── 03_逻辑代数基础(1)(3).ppt
+│       │   ├── 04_逻辑代数基础(2)(5).ppt
+│       │   ├── 05_组合逻辑电路(1)(2).ppt
+│       │   ├── 06_组合逻辑电路(2)(3).ppt
+│       │   ├── 07_组合逻辑电路(3)(2).ppt
+│       │   ├── 08_组合逻辑电路(4)(2).ppt
+│       │   ├── 09_Verilog HDL(1)(1).ppt
+│       │   ├── 10_PLD(1)(1).ppt
+│       │   ├── 11_锁存器(1).ppt
+│       │   ├── 12_触发器.ppt
+│       │   ├── 13_时序逻辑电路(1)(1).pps
+│       │   ├── 14_时序逻辑电路(2)(1).pps
+│       │   ├── 15_Verilog-HDL(2)(1).pps
+│       │   ├── 16_时序逻辑电路(3)(1).pps
+│       │   ├── 17_时序逻辑电路(4)(1).pps
+│       │   ├── 18_时序逻辑电路(5)(2).pps
+│       │   ├── 19_时序逻辑电路(6)(3).ppt
+│       │   ├── 20_PLD(2).ppt
+│       │   ├── 21_存储器.ppt
+│       │   ├── 22_二极管(1).ppt
+│       │   ├── 23_三极管(2).ppt
+│       │   ├── 24_基本放大电路(1)(2).ppt
+│       │   ├── 25_基本放大电路(2)(1).ppt
+│       │   ├── 26_集成运放(1)(2).ppt
+│       │   ├── 27_集成运放(2)(2).ppt
+│       │   ├── 28_逻辑门电路(1).ppt
+│       │   └── 29_数模与模数转换(2).ppt
+│       ├── 数电模电.one
+│       ├── 电子技术基础.数字部分.(康华光.第5版)_5f0a2.pdf
+│       ├── 电子技术基础 数字部分第六版 学习辅导与习题解答答案 康光华版_5349c.pdf
+│       ├── 电子技术基础.模拟部分.(康华光.第5版)_6c0a0.pdf
+│       └── 电子技术基础 模拟部分 第六版学习辅导与习题解答 答案 康光华版_c4d65.pdf
+├── 大二下
+│   ├── 操作系统原理与设计
+│   │   ├── 7-userApp.rar
+│   │   ├── 8-README-interrupt-timer-RR
+│   │   ├── AT&T汇编语言.ppt
+│   │   ├── lab1.zip
+│   │   ├── lab5
+│   │   │   ├── 16.ld
+│   │   │   ├── 16.s
+│   │   │   ├── 32.ld
+│   │   │   ├── 32.s
+│   │   │   ├── main.c
+│   │   │   ├── Makefile
+│   │   │   ├── qemu.sh
+│   │   │   ├── 实验报告五_金泽文_PB15111604.pdf
+│   │   │   └── 实验报告五_金泽文_PB15111604_第一次修改.zip
+│   │   ├── lab6
+│   │   │   ├── debug.sh
+│   │   │   ├── Makefile
+│   │   │   ├── myOS
+│   │   │   │   ├── myOS.h
+│   │   │   │   ├── myOS.ld
+│   │   │   │   ├── start16.ld
+│   │   │   │   ├── start16.S
+│   │   │   │   ├── start32.S
+│   │   │   │   └── task.c
+│   │   │   ├── output
+│   │   │   │   ├── a.img
+│   │   │   │   ├── myOS
+│   │   │   │   │   ├── start32.o
+│   │   │   │   │   └── task.o
+│   │   │   │   ├── myOS.bin
+│   │   │   │   ├── myOS.elf
+│   │   │   │   ├── start16.bin
+│   │   │   │   ├── start16.elf
+│   │   │   │   ├── start16.o
+│   │   │   │   └── userApp
+│   │   │   │       ├── init.o
+│   │   │   │       └── main.o
+│   │   │   ├── qemu.sh
+│   │   │   ├── userApp
+│   │   │   │   ├── init.c
+│   │   │   │   ├── main.c
+│   │   │   │   └── userApp.h
+│   │   │   ├── 实验报告六_金泽文_PB15111604.pdf
+│   │   │   └── 实验报告六_金泽文_PB15111604.zip
+│   │   ├── lab6.c
+│   │   ├── lab7
+│   │   │   ├── 2017OS实验7-mem.rar
+│   │   │   ├── debug.sh
+│   │   │   ├── Makefile
+│   │   │   ├── myOS
+│   │   │   │   ├── memory.c
+│   │   │   │   ├── myOS.h
+│   │   │   │   ├── myOS.ld
+│   │   │   │   ├── myprintf.c
+│   │   │   │   ├── myprintf.h
+│   │   │   │   ├── start16.ld
+│   │   │   │   ├── start16.S
+│   │   │   │   ├── start32.S
+│   │   │   │   └── task.c
+│   │   │   ├── output
+│   │   │   │   ├── a.img
+│   │   │   │   ├── myOS
+│   │   │   │   │   ├── memory.o
+│   │   │   │   │   ├── myprintf.o
+│   │   │   │   │   ├── start32.o
+│   │   │   │   │   └── task.o
+│   │   │   │   ├── myOS.bin
+│   │   │   │   ├── myOS.elf
+│   │   │   │   ├── start16.bin
+│   │   │   │   ├── start16.elf
+│   │   │   │   ├── start16.o
+│   │   │   │   └── userApp
+│   │   │   │       ├── init.o
+│   │   │   │       └── main.o
+│   │   │   ├── qemu.sh
+│   │   │   └── userApp
+│   │   │       ├── init.c
+│   │   │       ├── main.c
+│   │   │       └── userApp.h
+│   │   ├── lab8
+│   │   │   ├── 8-README-interrupt-timer-RR
+│   │   │   ├── debug.sh
+│   │   │   ├── lab8.tar.gz
+│   │   │   ├── lab8.txt
+│   │   │   ├── Makefile
+│   │   │   ├── myOS
+│   │   │   │   ├── memory.c
+│   │   │   │   ├── myOS.h
+│   │   │   │   ├── myOS.ld
+│   │   │   │   ├── myprintf.c
+│   │   │   │   ├── myprintf.h
+│   │   │   │   ├── start16.ld
+│   │   │   │   ├── start16.S
+│   │   │   │   ├── start32.S
+│   │   │   │   └── task.c
+│   │   │   ├── output
+│   │   │   │   ├── a.img
+│   │   │   │   ├── myOS
+│   │   │   │   │   ├── memory.o
+│   │   │   │   │   ├── myprintf.o
+│   │   │   │   │   ├── start32.o
+│   │   │   │   │   └── task.o
+│   │   │   │   ├── myOS.bin
+│   │   │   │   ├── myOS.elf
+│   │   │   │   ├── start16.bin
+│   │   │   │   ├── start16.elf
+│   │   │   │   ├── start16.o
+│   │   │   │   └── userApp
+│   │   │   │       ├── init.o
+│   │   │   │       └── main.o
+│   │   │   ├── qemu.sh
+│   │   │   ├── userApp
+│   │   │   │   ├── init.c
+│   │   │   │   ├── main.c
+│   │   │   │   └── userApp.h
+│   │   │   ├── 实验报告八_金泽文_PB15111604
+│   │   │   │   ├── debug.sh
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── myOS
+│   │   │   │   │   ├── memory.c
+│   │   │   │   │   ├── myOS.h
+│   │   │   │   │   ├── myOS.ld
+│   │   │   │   │   ├── myprintf.c
+│   │   │   │   │   ├── myprintf.h
+│   │   │   │   │   ├── start16.ld
+│   │   │   │   │   ├── start16.S
+│   │   │   │   │   ├── start32.S
+│   │   │   │   │   └── task.c
+│   │   │   │   ├── qemu.sh
+│   │   │   │   └── userApp
+│   │   │   │       ├── init.c
+│   │   │   │       ├── main.c
+│   │   │   │       └── userApp.h
+│   │   │   ├── 实验报告八_金泽文_PB15111604.docx
+│   │   │   ├── 实验报告八_金泽文_PB15111604.pdf
+│   │   │   ├── 实验报告八_金泽文_PB15111604.zip
+│   │   │   ├── 实验报告八_金泽文_PB15111604_改
+│   │   │   │   ├── debug.sh
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── myOS
+│   │   │   │   │   ├── memory.c
+│   │   │   │   │   ├── myOS.h
+│   │   │   │   │   ├── myOS.ld
+│   │   │   │   │   ├── myprintf.c
+│   │   │   │   │   ├── myprintf.h
+│   │   │   │   │   ├── start16.ld
+│   │   │   │   │   ├── start16.S
+│   │   │   │   │   ├── start32.S
+│   │   │   │   │   └── task.c
+│   │   │   │   ├── output
+│   │   │   │   │   ├── a.img
+│   │   │   │   │   ├── myOS
+│   │   │   │   │   │   ├── memory.o
+│   │   │   │   │   │   ├── myprintf.o
+│   │   │   │   │   │   ├── start32.o
+│   │   │   │   │   │   └── task.o
+│   │   │   │   │   ├── myOS.bin
+│   │   │   │   │   ├── myOS.elf
+│   │   │   │   │   ├── start16.bin
+│   │   │   │   │   ├── start16.elf
+│   │   │   │   │   ├── start16.o
+│   │   │   │   │   └── userApp
+│   │   │   │   │       ├── init.o
+│   │   │   │   │       └── main.o
+│   │   │   │   ├── qemu.sh
+│   │   │   │   ├── txt
+│   │   │   │   └── userApp
+│   │   │   │       ├── init.c
+│   │   │   │       ├── main.c
+│   │   │   │       └── userApp.h
+│   │   │   └── 实验报告八_金泽文_PB15111604_改.zip
+│   │   ├── linux-0.11
+│   │   │   ├── boot
+│   │   │   │   ├── bootsect.s
+│   │   │   │   ├── head.s
+│   │   │   │   └── setup.s
+│   │   │   ├── fs
+│   │   │   │   ├── bitmap.c
+│   │   │   │   ├── block_dev.c
+│   │   │   │   ├── buffer.c
+│   │   │   │   ├── char_dev.c
+│   │   │   │   ├── exec.c
+│   │   │   │   ├── fcntl.c
+│   │   │   │   ├── file_dev.c
+│   │   │   │   ├── file_table.c
+│   │   │   │   ├── inode.c
+│   │   │   │   ├── ioctl.c
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── namei.c
+│   │   │   │   ├── open.c
+│   │   │   │   ├── pipe.c
+│   │   │   │   ├── read_write.c
+│   │   │   │   ├── stat.c
+│   │   │   │   ├── super.c
+│   │   │   │   └── truncate.c
+│   │   │   ├── include
+│   │   │   │   ├── a.out.h
+│   │   │   │   ├── asm
+│   │   │   │   │   ├── io.h
+│   │   │   │   │   ├── memory.h
+│   │   │   │   │   ├── segment.h
+│   │   │   │   │   └── system.h
+│   │   │   │   ├── const.h
+│   │   │   │   ├── ctype.h
+│   │   │   │   ├── errno.h
+│   │   │   │   ├── fcntl.h
+│   │   │   │   ├── linux
+│   │   │   │   │   ├── config.h
+│   │   │   │   │   ├── fdreg.h
+│   │   │   │   │   ├── fs.h
+│   │   │   │   │   ├── hdreg.h
+│   │   │   │   │   ├── head.h
+│   │   │   │   │   ├── kernel.h
+│   │   │   │   │   ├── mm.h
+│   │   │   │   │   ├── sched.h
+│   │   │   │   │   ├── sys.h
+│   │   │   │   │   └── tty.h
+│   │   │   │   ├── signal.h
+│   │   │   │   ├── stdarg.h
+│   │   │   │   ├── stddef.h
+│   │   │   │   ├── string.h
+│   │   │   │   ├── sys
+│   │   │   │   │   ├── stat.h
+│   │   │   │   │   ├── times.h
+│   │   │   │   │   ├── types.h
+│   │   │   │   │   ├── utsname.h
+│   │   │   │   │   └── wait.h
+│   │   │   │   ├── termios.h
+│   │   │   │   ├── time.h
+│   │   │   │   ├── unistd.h
+│   │   │   │   └── utime.h
+│   │   │   ├── init
+│   │   │   │   └── main.c
+│   │   │   ├── kernel
+│   │   │   │   ├── asm.s
+│   │   │   │   ├── blk_drv
+│   │   │   │   │   ├── blk.h
+│   │   │   │   │   ├── floppy.c
+│   │   │   │   │   ├── hd.c
+│   │   │   │   │   ├── ll_rw_blk.c
+│   │   │   │   │   ├── Makefile
+│   │   │   │   │   └── ramdisk.c
+│   │   │   │   ├── chr_drv
+│   │   │   │   │   ├── console.c
+│   │   │   │   │   ├── keyboard.S
+│   │   │   │   │   ├── Makefile
+│   │   │   │   │   ├── rs_io.s
+│   │   │   │   │   ├── serial.c
+│   │   │   │   │   ├── tty_io.c
+│   │   │   │   │   └── tty_ioctl.c
+│   │   │   │   ├── exit.c
+│   │   │   │   ├── fork.c
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── math
+│   │   │   │   │   ├── Makefile
+│   │   │   │   │   └── math_emulate.c
+│   │   │   │   ├── mktime.c
+│   │   │   │   ├── panic.c
+│   │   │   │   ├── printk.c
+│   │   │   │   ├── sched.c
+│   │   │   │   ├── signal.c
+│   │   │   │   ├── sys.c
+│   │   │   │   ├── system_call.s
+│   │   │   │   ├── traps.c
+│   │   │   │   └── vsprintf.c
+│   │   │   ├── lib
+│   │   │   │   ├── close.c
+│   │   │   │   ├── ctype.c
+│   │   │   │   ├── dup.c
+│   │   │   │   ├── errno.c
+│   │   │   │   ├── execve.c
+│   │   │   │   ├── _exit.c
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── malloc.c
+│   │   │   │   ├── open.c
+│   │   │   │   ├── setsid.c
+│   │   │   │   ├── string.c
+│   │   │   │   ├── wait.c
+│   │   │   │   └── write.c
+│   │   │   ├── Makefile
+│   │   │   ├── mm
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── memory.c
+│   │   │   │   └── page.s
+│   │   │   └── tools
+│   │   │       └── build.c
+│   │   ├── notes.txt
+│   │   ├── ORANGE’S：一个操作系统的实现（高清晰版.pdf
+│   │   ├── ostep
+│   │   │   ├── 01_preface.pdf
+│   │   │   ├── 02_toc.pdf
+│   │   │   ├── ch01_dialogue-threeeasy.pdf
+│   │   │   ├── ch02_intro.pdf
+│   │   │   ├── ch03_dialogue-virtualization.pdf
+│   │   │   ├── ch04_cpu-intro.pdf
+│   │   │   ├── ch05_code.cpu-api.tgz
+│   │   │   ├── ch05_cpu-api.pdf
+│   │   │   ├── ch06_cpu-mechanisms.pdf
+│   │   │   ├── ch07_cpu-sched.pdf
+│   │   │   ├── ch08_cpu-sched-mlfq.pdf
+│   │   │   ├── ch09_code.cpu-sched-lottery.tgz
+│   │   │   ├── ch09_cpu-sched-lottery.pdf
+│   │   │   ├── ch10_cpu-sched-multi.pdf
+│   │   │   ├── ch11_cpu-dialogue.pdf
+│   │   │   ├── ch12_dialogue-vm.pdf
+│   │   │   ├── ch13_vm-intro.pdf
+│   │   │   ├── ch14_vm-api.pdf
+│   │   │   ├── ch15_vm-mechanism.pdf
+│   │   │   ├── ch16_vm-segmentation.pdf
+│   │   │   ├── ch17_vm-freespace.pdf
+│   │   │   ├── ch18_vm-paging.pdf
+│   │   │   ├── ch19_vm-tlbs.pdf
+│   │   │   ├── ch20_vm-smalltables.pdf
+│   │   │   ├── ch21_vm-beyondphys.pdf
+│   │   │   ├── ch22_vm-beyondphys-policy.pdf
+│   │   │   ├── ch23_vm-vax.pdf
+│   │   │   ├── ch24_vm-dialogue.pdf
+│   │   │   └── python-3.5.2-amd64.exe
+│   │   ├── ppt
+│   │   │   ├── 10_FileSystem.pdf
+│   │   │   ├── 11_FS_Implementation.pdf
+│   │   │   ├── 12_MassStorageSystems.pdf
+│   │   │   ├── 13_IO.pdf
+│   │   │   ├── 1_introduction_CS.pdf
+│   │   │   ├── 1_introduction.pdf
+│   │   │   ├── 2_OS structure.pdf
+│   │   │   ├── 3_Processes.pdf
+│   │   │   ├── 4_CPU_Scheduling.pdf
+│   │   │   ├── 4_homework.pdf
+│   │   │   ├── 5_homework.pdf
+│   │   │   ├── 5_Threads.pdf
+│   │   │   ├── 6_homework_2015.pdf
+│   │   │   ├── 6_Process_synchronization.pdf
+│   │   │   ├── 7_deadlock.pdf
+│   │   │   ├── 8_memory.pdf
+│   │   │   ├── 9_VirtualMemory.pdf
+│   │   │   ├── statistics0531.xlsx
+│   │   │   └── 打印版
+│   │   │       ├── 0_start 2017.pdf
+│   │   │       ├── 10_FileSystem 2017.pdf
+│   │   │       ├── 11_FS Implementation 2017.pdf
+│   │   │       ├── 12_MassStorageSystems 2017.pdf
+│   │   │       ├── 13_IO 2016.pdf
+│   │   │       ├── 1_introduction 2017 spring.pdf
+│   │   │       ├── 1_introduction_CS 2017 spring.pdf
+│   │   │       ├── 2_OS structure 2017.pdf
+│   │   │       ├── 3_Processes 2017 spring.pdf
+│   │   │       ├── 4_CPU_Scheduling 2017.pdf
+│   │   │       ├── 5_Threads 2017.pdf
+│   │   │       ├── 6_Process_synchronization 2016.pdf
+│   │   │       ├── 7_deadlock 2017.pdf
+│   │   │       ├── 8_memory 2017.pdf
+│   │   │       └── 9_VirtualMemory 2017.pdf
+│   │   ├── userApp.zip
+│   │   ├── 实验三.pdf
+│   │   ├── 实验报告五_金泽文_PB15111604.docx
+│   │   ├── 实验报告六_金泽文_PB15111604.docx
+│   │   ├── 实验报告六_金泽文_PB15111604.pdf
+│   │   ├── 实验报告四_金泽文_PB15111604.pdf
+│   │   ├── 报告
+│   │   │   ├── lab4_PB15111604_金泽文.ld
+│   │   │   ├── lab4_PB15111604_金泽文.s
+│   │   │   ├── lab4_PB15111604_金泽文.zip
+│   │   │   ├── 实验报告一金泽文_PB15111604.docx
+│   │   │   ├── 实验报告一_金泽文_PB15111604.pdf
+│   │   │   ├── 实验报告七_金泽文_PB15111604
+│   │   │   │   ├── debug.sh
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── myOS
+│   │   │   │   │   ├── lab8_kz.tar.gz
+│   │   │   │   │   ├── memory.c
+│   │   │   │   │   ├── myOS.h
+│   │   │   │   │   ├── myOS.ld
+│   │   │   │   │   ├── myprintf.c
+│   │   │   │   │   ├── myprintf.h
+│   │   │   │   │   ├── Screenshot from 2017-06-20 00-22-06.png
+│   │   │   │   │   ├── start16.ld
+│   │   │   │   │   ├── start16.S
+│   │   │   │   │   ├── start32.S
+│   │   │   │   │   └── task.c
+│   │   │   │   ├── output
+│   │   │   │   │   ├── a.img
+│   │   │   │   │   ├── myOS
+│   │   │   │   │   │   ├── memory.o
+│   │   │   │   │   │   ├── myprintf.o
+│   │   │   │   │   │   ├── start32.o
+│   │   │   │   │   │   └── task.o
+│   │   │   │   │   ├── myOS.bin
+│   │   │   │   │   ├── myOS.elf
+│   │   │   │   │   ├── start16.bin
+│   │   │   │   │   ├── start16.elf
+│   │   │   │   │   ├── start16.o
+│   │   │   │   │   └── userApp
+│   │   │   │   │       ├── init.o
+│   │   │   │   │       └── main.o
+│   │   │   │   ├── qemu.sh
+│   │   │   │   ├── userApp
+│   │   │   │   │   ├── init.c
+│   │   │   │   │   ├── main.c
+│   │   │   │   │   └── userApp.h
+│   │   │   │   └── 实验报告七_金泽文_PB15111604.pdf
+│   │   │   ├── 实验报告七_金泽文_PB15111604.docx
+│   │   │   ├── 实验报告七_金泽文_PB15111604.pdf
+│   │   │   ├── 实验报告七_金泽文_PB15111604.zip
+│   │   │   ├── 实验报告三_金泽文_PB15111604.docx
+│   │   │   ├── 实验报告三_金泽文_PB15111604.pdf
+│   │   │   ├── 实验报告二_金泽文_PB15111604.docx
+│   │   │   ├── 实验报告二_金泽文_PB15111604.pdf
+│   │   │   ├── 实验报告四_金泽文_PB15111604.docx
+│   │   │   └── 实验报告四_金泽文_PB15111604.pdf
+│   │   ├── ~$报告三_金泽文_PB15111604.docx
+│   │   ├── ~$报告五_金泽文_PB15111604.docx
+│   │   └── 操作系统概念第七版习题答案(中文版)完整版.doc
+│   ├── 数理逻辑
+│   │   ├── 数理逻辑2 汪芳庭 课后答案[1-3章].khda.pdf
+│   │   ├── 数理逻辑.pdf
+│   │   ├── 数理逻辑笔记.pdf
+│   │   ├── 数理逻辑-考试必备-童世炜.pdf
+│   │   ├── 练习4_1_3.doc
+│   │   └── 练习4_1_4.doc
+│   ├── 概率论与数理统计B
+│   │   ├── 2002-2012.pdf
+│   │   ├── 2003-2017试卷与答案 (1)
+│   │   │   └── 2003-2017试卷与答案
+│   │   │       ├── 2002-2012.pdf
+│   │   │       ├── 2012-2013-1.pdf
+│   │   │       ├── 2012-2013-2.pdf
+│   │   │       ├── 2013-2014.pdf
+│   │   │       ├── 2015-2016.pdf
+│   │   │       ├── ProSta16.pdf
+│   │   │       └── prosta17.pdf
+│   │   ├── 2003-2017试卷与答案 (1).rar
+│   │   ├── ppt.pptx
+│   │   ├── 中国科技大学概率论与数理统计习题集.pdf
+│   │   ├── 作业范本
+│   │   │   └── 2017_05
+│   │   │       ├── 20170507_IMG_6618.JPG
+│   │   │       ├── 20170507_IMG_6619.JPG
+│   │   │       ├── 20170507_IMG_6620.JPG
+│   │   │       ├── 20170507_IMG_6621.JPG
+│   │   │       ├── 20170507_IMG_6622.JPG
+│   │   │       ├── 20170507_IMG_6623.JPG
+│   │   │       ├── 20170507_IMG_6624.JPG
+│   │   │       ├── 20170507_IMG_6625.JPG
+│   │   │       ├── 20170507_IMG_6626.JPG
+│   │   │       ├── 20170507_IMG_6627.JPG
+│   │   │       ├── 20170507_IMG_6628.JPG
+│   │   │       ├── 20170507_IMG_6629.JPG
+│   │   │       ├── 20170507_IMG_6630.JPG
+│   │   │       ├── 20170507_IMG_6631.JPG
+│   │   │       ├── 20170507_IMG_6632.JPG
+│   │   │       ├── 20170507_IMG_6633.JPG
+│   │   │       ├── 20170507_IMG_6634.JPG
+│   │   │       ├── 20170507_IMG_6635.JPG
+│   │   │       ├── 20170507_IMG_6636.JPG
+│   │   │       ├── 20170507_IMG_6637.JPG
+│   │   │       ├── 20170507_IMG_6638.JPG
+│   │   │       ├── 20170507_IMG_6639.JPG
+│   │   │       ├── 20170507_IMG_6640.JPG
+│   │   │       ├── 20170507_IMG_6641.JPG
+│   │   │       ├── 20170507_IMG_6642.JPG
+│   │   │       ├── 20170507_IMG_6643.JPG
+│   │   │       ├── 20170507_IMG_6644.JPG
+│   │   │       ├── 20170507_IMG_6645.JPG
+│   │   │       ├── 20170507_IMG_6646.JPG
+│   │   │       ├── 20170507_IMG_6647.JPG
+│   │   │       ├── 20170507_IMG_6648.JPG
+│   │   │       ├── 20170507_IMG_6649.JPG
+│   │   │       ├── 20170507_IMG_6650.JPG
+│   │   │       ├── 20170507_IMG_6651.JPG
+│   │   │       ├── 20170507_IMG_6652.JPG
+│   │   │       ├── 20170507_IMG_6653.JPG
+│   │   │       ├── 20170507_IMG_6654.JPG
+│   │   │       ├── 20170507_IMG_6655.JPG
+│   │   │       ├── 20170507_IMG_6656.JPG
+│   │   │       ├── 20170507_IMG_6657.JPG
+│   │   │       ├── 20170507_IMG_6658.JPG
+│   │   │       ├── 20170507_IMG_6659.JPG
+│   │   │       ├── 20170507_IMG_6660.JPG
+│   │   │       ├── 20170507_IMG_6661.JPG
+│   │   │       ├── 20170507_IMG_6662.JPG
+│   │   │       ├── 20170507_IMG_6663.JPG
+│   │   │       ├── 20170507_IMG_6664.JPG
+│   │   │       ├── 20170507_IMG_6665.JPG
+│   │   │       ├── 20170507_IMG_6666.JPG
+│   │   │       ├── 20170507_IMG_6667.JPG
+│   │   │       ├── 20170507_IMG_6668.JPG
+│   │   │       ├── 20170507_IMG_6669.JPG
+│   │   │       └── 20170507_IMG_6670.JPG
+│   │   ├── 作业范本.rar
+│   │   ├── 概率论与数理统计习题全解_8580a.pdf
+│   │   ├── 概率论与数理统计复习资料_b1a43.doc
+│   │   ├── 概率论与数理统计复习资料_b1a43.pdf
+│   │   ├── 概率论与数理统计 经管类 第四版 吴赣昌 课后习题答案 习题全解_a6a4e.pdf
+│   │   ├── 概率论与数理统计辅导及习题精解 浙大 第四版 课后习题答案_427cb.pdf
+│   │   ├── 概统习题集答案
+│   │   │   └── 概统
+│   │   │       ├── IMG_1713.JPG
+│   │   │       ├── IMG_1714.JPG
+│   │   │       ├── IMG_1715.JPG
+│   │   │       ├── IMG_1716.JPG
+│   │   │       ├── IMG_1717.JPG
+│   │   │       ├── IMG_1718.JPG
+│   │   │       ├── IMG_1719.JPG
+│   │   │       ├── IMG_1720.JPG
+│   │   │       ├── IMG_1721.JPG
+│   │   │       ├── IMG_1722.JPG
+│   │   │       ├── IMG_1723.JPG
+│   │   │       ├── IMG_1724.JPG
+│   │   │       ├── IMG_1725.JPG
+│   │   │       ├── IMG_1726.JPG
+│   │   │       ├── IMG_1727.JPG
+│   │   │       ├── IMG_1728.JPG
+│   │   │       ├── IMG_1729.JPG
+│   │   │       ├── IMG_1730.JPG
+│   │   │       └── Thumbs.db
+│   │   ├── 概统习题集答案 (1).rar.tdl
+│   │   └── 科大概率论与数理统计讲义.pdf
+│   ├── 物联网导论
+│   │   ├── 01-2014-03-049.pdf
+│   │   ├── 01-2015-10-041.pdf
+│   │   ├── 1001-0505(2007)S1-0188-05.pdf
+│   │   ├── 1001-3695(2011)05-1889-05.pdf
+│   │   ├── PB15111604_金泽文_RFID_Security.docx
+│   │   ├── PB15111604_金泽文_“RFID密码算法”读书报告.docx
+│   │   ├── PB15111604_金泽文_“RFID密码算法”读书报告.pdf
+│   │   ├── PB15111604_金泽文_“图像搜索、手写识别”读书报告.docx
+│   │   ├── PB15111604_金泽文_“图像搜索、手写识别”读书报告.pdf
+│   │   ├── ppt
+│   │   │   ├── ch04.pdf
+│   │   │   ├── ch10.ppt
+│   │   │   ├── ch11.ppt
+│   │   │   ├── ch12.ppt
+│   │   │   ├── ch13.ppt
+│   │   │   ├── ch14.pdf
+│   │   │   ├── ch15.ppt
+│   │   │   ├── ch1.ppt
+│   │   │   ├── ch2.pdf
+│   │   │   ├── ch3.ppt
+│   │   │   ├── ch5.ppt
+│   │   │   ├── ch6.ppt
+│   │   │   ├── ch7.ppt
+│   │   │   ├── ch8.ppt
+│   │   │   ├── ch9.ppt
+│   │   │   └── M2M.ppt
+│   │   ├── QRCode
+│   │   │   ├── decode
+│   │   │   │   ├── downloader.cpp
+│   │   │   │   ├── downloader.h
+│   │   │   │   ├── main.cpp
+│   │   │   │   ├── mainwindow.h
+│   │   │   │   ├── QRCode
+│   │   │   │   │   ├── include
+│   │   │   │   │   │   ├── bitmap
+│   │   │   │   │   │   │   ├── Bitmap.h
+│   │   │   │   │   │   │   └── Colors.h
+│   │   │   │   │   │   ├── drawable
+│   │   │   │   │   │   │   ├── QRBitmapDraw.h
+│   │   │   │   │   │   │   └── QRDrawable.h
+│   │   │   │   │   │   ├── enums
+│   │   │   │   │   │   │   ├── enumCorrectionLevel.h
+│   │   │   │   │   │   │   ├── enumMode.h
+│   │   │   │   │   │   │   └── enumVersions.h
+│   │   │   │   │   │   ├── exceptions
+│   │   │   │   │   │   │   ├── EQRCapabilities.h
+│   │   │   │   │   │   │   ├── EQRDimension.h
+│   │   │   │   │   │   │   ├── EQRErrorCorrection.h
+│   │   │   │   │   │   │   └── EQRGeneric.h
+│   │   │   │   │   │   ├── masks
+│   │   │   │   │   │   │   ├── QRMask1.h
+│   │   │   │   │   │   │   ├── QRMask2.h
+│   │   │   │   │   │   │   ├── QRMask3.h
+│   │   │   │   │   │   │   ├── QRMask4.h
+│   │   │   │   │   │   │   ├── QRMask5.h
+│   │   │   │   │   │   │   ├── QRMask6.h
+│   │   │   │   │   │   │   ├── QRMask7.h
+│   │   │   │   │   │   │   ├── QRMask8.h
+│   │   │   │   │   │   │   └── QRMask.h
+│   │   │   │   │   │   ├── polynomial_generator
+│   │   │   │   │   │   │   ├── LogAntilog.h
+│   │   │   │   │   │   │   ├── Monomial.h
+│   │   │   │   │   │   │   └── PolynomialGenerator.h
+│   │   │   │   │   │   ├── qrcode
+│   │   │   │   │   │   │   ├── QRCode.h
+│   │   │   │   │   │   │   ├── QRCodeV10.h
+│   │   │   │   │   │   │   ├── QRCodeV11.h
+│   │   │   │   │   │   │   ├── QRCodeV12.h
+│   │   │   │   │   │   │   ├── QRCodeV13.h
+│   │   │   │   │   │   │   ├── QRCodeV14.h
+│   │   │   │   │   │   │   ├── QRCodeV15.h
+│   │   │   │   │   │   │   ├── QRCodeV16.h
+│   │   │   │   │   │   │   ├── QRCodeV17.h
+│   │   │   │   │   │   │   ├── QRCodeV18.h
+│   │   │   │   │   │   │   ├── QRCodeV19.h
+│   │   │   │   │   │   │   ├── QRCodeV1.h
+│   │   │   │   │   │   │   ├── QRCodeV20.h
+│   │   │   │   │   │   │   ├── QRCodeV21.h
+│   │   │   │   │   │   │   ├── QRCodeV22.h
+│   │   │   │   │   │   │   ├── QRCodeV23.h
+│   │   │   │   │   │   │   ├── QRCodeV24.h
+│   │   │   │   │   │   │   ├── QRCodeV25.h
+│   │   │   │   │   │   │   ├── QRCodeV26.h
+│   │   │   │   │   │   │   ├── QRCodeV27.h
+│   │   │   │   │   │   │   ├── QRCodeV28.h
+│   │   │   │   │   │   │   ├── QRCodeV29.h
+│   │   │   │   │   │   │   ├── QRCodeV2.h
+│   │   │   │   │   │   │   ├── QRCodeV30.h
+│   │   │   │   │   │   │   ├── QRCodeV31.h
+│   │   │   │   │   │   │   ├── QRCodeV32.h
+│   │   │   │   │   │   │   ├── QRCodeV33.h
+│   │   │   │   │   │   │   ├── QRCodeV34.h
+│   │   │   │   │   │   │   ├── QRCodeV35.h
+│   │   │   │   │   │   │   ├── QRCodeV36.h
+│   │   │   │   │   │   │   ├── QRCodeV37.h
+│   │   │   │   │   │   │   ├── QRCodeV38.h
+│   │   │   │   │   │   │   ├── QRCodeV39.h
+│   │   │   │   │   │   │   ├── QRCodeV3.h
+│   │   │   │   │   │   │   ├── QRCodeV40.h
+│   │   │   │   │   │   │   ├── QRCodeV4.h
+│   │   │   │   │   │   │   ├── QRCodeV5.h
+│   │   │   │   │   │   │   ├── QRCodeV6.h
+│   │   │   │   │   │   │   ├── QRCodeV7.h
+│   │   │   │   │   │   │   ├── QRCodeV8.h
+│   │   │   │   │   │   │   └── QRCodeV9.h
+│   │   │   │   │   │   ├── QRController.h
+│   │   │   │   │   │   ├── struct
+│   │   │   │   │   │   │   ├── StructECInfo.h
+│   │   │   │   │   │   │   └── StructPoint.h
+│   │   │   │   │   │   └── test
+│   │   │   │   │   │       └── output_test.h
+│   │   │   │   │   ├── QRCode.pri
+│   │   │   │   │   ├── src
+│   │   │   │   │   │   ├── bitmap
+│   │   │   │   │   │   │   └── Bitmap.cpp
+│   │   │   │   │   │   ├── drawable
+│   │   │   │   │   │   │   ├── QRBitmapDraw.cpp
+│   │   │   │   │   │   │   └── QRDrawable.cpp
+│   │   │   │   │   │   ├── exceptions
+│   │   │   │   │   │   │   ├── EQRCapabilities.cpp
+│   │   │   │   │   │   │   ├── EQRDimension.cpp
+│   │   │   │   │   │   │   ├── EQRErrorCorrection.cpp
+│   │   │   │   │   │   │   └── EQRGeneric.cpp
+│   │   │   │   │   │   ├── masks
+│   │   │   │   │   │   │   ├── QRMask1.cpp
+│   │   │   │   │   │   │   ├── QRMask2.cpp
+│   │   │   │   │   │   │   ├── QRMask3.cpp
+│   │   │   │   │   │   │   ├── QRMask4.cpp
+│   │   │   │   │   │   │   ├── QRMask5.cpp
+│   │   │   │   │   │   │   ├── QRMask6.cpp
+│   │   │   │   │   │   │   ├── QRMask7.cpp
+│   │   │   │   │   │   │   ├── QRMask8.cpp
+│   │   │   │   │   │   │   └── QRMask.cpp
+│   │   │   │   │   │   ├── polynomial_generator
+│   │   │   │   │   │   │   ├── Monomial.cpp
+│   │   │   │   │   │   │   └── PolynomialGenerator.cpp
+│   │   │   │   │   │   ├── qrcode
+│   │   │   │   │   │   │   ├── QRCode.cpp
+│   │   │   │   │   │   │   ├── QRCodeV10.cpp
+│   │   │   │   │   │   │   ├── QRCodeV11.cpp
+│   │   │   │   │   │   │   ├── QRCodeV12.cpp
+│   │   │   │   │   │   │   ├── QRCodeV13.cpp
+│   │   │   │   │   │   │   ├── QRCodeV14.cpp
+│   │   │   │   │   │   │   ├── QRCodeV15.cpp
+│   │   │   │   │   │   │   ├── QRCodeV16.cpp
+│   │   │   │   │   │   │   ├── QRCodeV17.cpp
+│   │   │   │   │   │   │   ├── QRCodeV18.cpp
+│   │   │   │   │   │   │   ├── QRCodeV19.cpp
+│   │   │   │   │   │   │   ├── QRCodeV1.cpp
+│   │   │   │   │   │   │   ├── QRCodeV20.cpp
+│   │   │   │   │   │   │   ├── QRCodeV21.cpp
+│   │   │   │   │   │   │   ├── QRCodeV22.cpp
+│   │   │   │   │   │   │   ├── QRCodeV23.cpp
+│   │   │   │   │   │   │   ├── QRCodeV24.cpp
+│   │   │   │   │   │   │   ├── QRCodeV25.cpp
+│   │   │   │   │   │   │   ├── QRCodeV26.cpp
+│   │   │   │   │   │   │   ├── QRCodeV27.cpp
+│   │   │   │   │   │   │   ├── QRCodeV28.cpp
+│   │   │   │   │   │   │   ├── QRCodeV29.cpp
+│   │   │   │   │   │   │   ├── QRCodeV2.cpp
+│   │   │   │   │   │   │   ├── QRCodeV30.cpp
+│   │   │   │   │   │   │   ├── QRCodeV31.cpp
+│   │   │   │   │   │   │   ├── QRCodeV32.cpp
+│   │   │   │   │   │   │   ├── QRCodeV33.cpp
+│   │   │   │   │   │   │   ├── QRCodeV34.cpp
+│   │   │   │   │   │   │   ├── QRCodeV35.cpp
+│   │   │   │   │   │   │   ├── QRCodeV36.cpp
+│   │   │   │   │   │   │   ├── QRCodeV37.cpp
+│   │   │   │   │   │   │   ├── QRCodeV38.cpp
+│   │   │   │   │   │   │   ├── QRCodeV39.cpp
+│   │   │   │   │   │   │   ├── QRCodeV3.cpp
+│   │   │   │   │   │   │   ├── QRCodeV40.cpp
+│   │   │   │   │   │   │   ├── QRCodeV4.cpp
+│   │   │   │   │   │   │   ├── QRCodeV5.cpp
+│   │   │   │   │   │   │   ├── QRCodeV6.cpp
+│   │   │   │   │   │   │   ├── QRCodeV7.cpp
+│   │   │   │   │   │   │   ├── QRCodeV8.cpp
+│   │   │   │   │   │   │   └── QRCodeV9.cpp
+│   │   │   │   │   │   ├── QRController.cpp
+│   │   │   │   │   │   └── test
+│   │   │   │   │   │       └── output_test.cpp
+│   │   │   │   │   └── test_main.cpp
+│   │   │   │   ├── QZXing
+│   │   │   │   │   ├── CameraImageWrapper.cpp
+│   │   │   │   │   ├── CameraImageWrapper.h
+│   │   │   │   │   ├── ImageHandler.cpp
+│   │   │   │   │   ├── ImageHandler.h
+│   │   │   │   │   ├── LICENSE
+│   │   │   │   │   ├── QZXing
+│   │   │   │   │   ├── QZXing.cpp
+│   │   │   │   │   ├── QZXingFilter.cpp
+│   │   │   │   │   ├── QZXingFilter.h
+│   │   │   │   │   ├── QZXing_global.h
+│   │   │   │   │   ├── QZXing.h
+│   │   │   │   │   ├── QZXingImageProvider.cpp
+│   │   │   │   │   ├── QZXingImageProvider.h
+│   │   │   │   │   ├── QZXing.pri
+│   │   │   │   │   ├── QZXing.pro
+│   │   │   │   │   ├── QZXing.pro.user
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   └── zxing
+│   │   │   │   │       ├── bigint
+│   │   │   │   │       │   ├── BigIntegerAlgorithms.cc
+│   │   │   │   │       │   ├── BigIntegerAlgorithms.hh
+│   │   │   │   │       │   ├── BigInteger.cc
+│   │   │   │   │       │   ├── BigInteger.hh
+│   │   │   │   │       │   ├── BigIntegerLibrary.hh
+│   │   │   │   │       │   ├── BigIntegerUtils.cc
+│   │   │   │   │       │   ├── BigIntegerUtils.hh
+│   │   │   │   │       │   ├── BigUnsigned.cc
+│   │   │   │   │       │   ├── BigUnsigned.hh
+│   │   │   │   │       │   ├── BigUnsignedInABase.cc
+│   │   │   │   │       │   ├── BigUnsignedInABase.hh
+│   │   │   │   │       │   ├── ChangeLog
+│   │   │   │   │       │   ├── NumberlikeArray.hh
+│   │   │   │   │       │   └── README
+│   │   │   │   │       ├── win32
+│   │   │   │   │       │   └── zxing
+│   │   │   │   │       │       ├── iconv.h
+│   │   │   │   │       │       ├── msvc
+│   │   │   │   │       │       │   └── stdint.h
+│   │   │   │   │       │       └── win_iconv.c
+│   │   │   │   │       └── zxing
+│   │   │   │   │           ├── aztec
+│   │   │   │   │           │   ├── AztecDetectorResult.cpp
+│   │   │   │   │           │   ├── AztecDetectorResult.h
+│   │   │   │   │           │   ├── AztecReader.cpp
+│   │   │   │   │           │   ├── AztecReader.h
+│   │   │   │   │           │   ├── decoder
+│   │   │   │   │           │   │   ├── AztecDecoder.cpp
+│   │   │   │   │           │   │   └── Decoder.h
+│   │   │   │   │           │   └── detector
+│   │   │   │   │           │       ├── AztecDetector.cpp
+│   │   │   │   │           │       └── Detector.h
+│   │   │   │   │           ├── BarcodeFormat.cpp
+│   │   │   │   │           ├── BarcodeFormat.h
+│   │   │   │   │           ├── Binarizer.cpp
+│   │   │   │   │           ├── Binarizer.h
+│   │   │   │   │           ├── BinaryBitmap.cpp
+│   │   │   │   │           ├── BinaryBitmap.h
+│   │   │   │   │           ├── ChecksumException.cpp
+│   │   │   │   │           ├── ChecksumException.h
+│   │   │   │   │           ├── common
+│   │   │   │   │           │   ├── Array.h
+│   │   │   │   │           │   ├── BitArray.cpp
+│   │   │   │   │           │   ├── BitArray.h
+│   │   │   │   │           │   ├── BitArrayIO.cpp
+│   │   │   │   │           │   ├── BitMatrix.cpp
+│   │   │   │   │           │   ├── BitMatrix.h
+│   │   │   │   │           │   ├── BitSource.cpp
+│   │   │   │   │           │   ├── BitSource.h
+│   │   │   │   │           │   ├── CharacterSetECI.cpp
+│   │   │   │   │           │   ├── CharacterSetECI.h
+│   │   │   │   │           │   ├── Counted.h
+│   │   │   │   │           │   ├── DecoderResult.cpp
+│   │   │   │   │           │   ├── DecoderResult.h
+│   │   │   │   │           │   ├── detector
+│   │   │   │   │           │   │   ├── JavaMath.h
+│   │   │   │   │           │   │   ├── MathUtils.h
+│   │   │   │   │           │   │   ├── MonochromeRectangleDetector.cpp
+│   │   │   │   │           │   │   ├── MonochromeRectangleDetector.h
+│   │   │   │   │           │   │   ├── WhiteRectangleDetector.cpp
+│   │   │   │   │           │   │   └── WhiteRectangleDetector.h
+│   │   │   │   │           │   ├── DetectorResult.cpp
+│   │   │   │   │           │   ├── DetectorResult.h
+│   │   │   │   │           │   ├── GlobalHistogramBinarizer.cpp
+│   │   │   │   │           │   ├── GlobalHistogramBinarizer.h
+│   │   │   │   │           │   ├── GreyscaleLuminanceSource.cpp
+│   │   │   │   │           │   ├── GreyscaleLuminanceSource.h
+│   │   │   │   │           │   ├── GreyscaleRotatedLuminanceSource.cpp
+│   │   │   │   │           │   ├── GreyscaleRotatedLuminanceSource.h
+│   │   │   │   │           │   ├── GridSampler.cpp
+│   │   │   │   │           │   ├── GridSampler.h
+│   │   │   │   │           │   ├── HybridBinarizer.cpp
+│   │   │   │   │           │   ├── HybridBinarizer.h
+│   │   │   │   │           │   ├── IllegalArgumentException.cpp
+│   │   │   │   │           │   ├── IllegalArgumentException.h
+│   │   │   │   │           │   ├── PerspectiveTransform.cpp
+│   │   │   │   │           │   ├── PerspectiveTransform.h
+│   │   │   │   │           │   ├── Point.h
+│   │   │   │   │           │   ├── reedsolomon
+│   │   │   │   │           │   │   ├── GenericGF.cpp
+│   │   │   │   │           │   │   ├── GenericGF.h
+│   │   │   │   │           │   │   ├── GenericGFPoly.cpp
+│   │   │   │   │           │   │   ├── GenericGFPoly.h
+│   │   │   │   │           │   │   ├── ReedSolomonDecoder.cpp
+│   │   │   │   │           │   │   ├── ReedSolomonDecoder.h
+│   │   │   │   │           │   │   ├── ReedSolomonEncoder.cpp
+│   │   │   │   │           │   │   ├── ReedSolomonEncoder.h
+│   │   │   │   │           │   │   ├── ReedSolomonException.cpp
+│   │   │   │   │           │   │   └── ReedSolomonException.h
+│   │   │   │   │           │   ├── Str.cpp
+│   │   │   │   │           │   ├── Str.h
+│   │   │   │   │           │   ├── StringUtils.cpp
+│   │   │   │   │           │   ├── StringUtils.h
+│   │   │   │   │           │   └── Types.h
+│   │   │   │   │           ├── datamatrix
+│   │   │   │   │           │   ├── DataMatrixReader.cpp
+│   │   │   │   │           │   ├── DataMatrixReader.h
+│   │   │   │   │           │   ├── DataMatrixVersion.cpp
+│   │   │   │   │           │   ├── decoder
+│   │   │   │   │           │   │   ├── BitMatrixParser.h
+│   │   │   │   │           │   │   ├── DataBlock.h
+│   │   │   │   │           │   │   ├── DataMatrixBitMatrixParser.cpp
+│   │   │   │   │           │   │   ├── DataMatrixDataBlock.cpp
+│   │   │   │   │           │   │   ├── DataMatrixDecodedBitStreamParser.cpp
+│   │   │   │   │           │   │   ├── DataMatrixDecoder.cpp
+│   │   │   │   │           │   │   ├── DecodedBitStreamParser.h
+│   │   │   │   │           │   │   └── Decoder.h
+│   │   │   │   │           │   ├── detector
+│   │   │   │   │           │   │   ├── CornerPoint.h
+│   │   │   │   │           │   │   ├── DataMatrixCornerPoint.cpp
+│   │   │   │   │           │   │   ├── DataMatrixDetector.cpp
+│   │   │   │   │           │   │   ├── DataMatrixDetectorException.cpp
+│   │   │   │   │           │   │   ├── DetectorException.h
+│   │   │   │   │           │   │   └── Detector.h
+│   │   │   │   │           │   └── Version.h
+│   │   │   │   │           ├── DecodeHints.cpp
+│   │   │   │   │           ├── DecodeHints.h
+│   │   │   │   │           ├── EncodeHint.cpp
+│   │   │   │   │           ├── EncodeHint.h
+│   │   │   │   │           ├── Exception.cpp
+│   │   │   │   │           ├── Exception.h
+│   │   │   │   │           ├── FormatException.cpp
+│   │   │   │   │           ├── FormatException.h
+│   │   │   │   │           ├── IllegalStateException.h
+│   │   │   │   │           ├── InvertedLuminanceSource.cpp
+│   │   │   │   │           ├── InvertedLuminanceSource.h
+│   │   │   │   │           ├── LuminanceSource.cpp
+│   │   │   │   │           ├── LuminanceSource.h
+│   │   │   │   │           ├── multi
+│   │   │   │   │           │   ├── ByQuadrantReader.cpp
+│   │   │   │   │           │   ├── ByQuadrantReader.h
+│   │   │   │   │           │   ├── GenericMultipleBarcodeReader.cpp
+│   │   │   │   │           │   ├── GenericMultipleBarcodeReader.h
+│   │   │   │   │           │   ├── MultipleBarcodeReader.cpp
+│   │   │   │   │           │   ├── MultipleBarcodeReader.h
+│   │   │   │   │           │   └── qrcode
+│   │   │   │   │           │       ├── detector
+│   │   │   │   │           │       │   ├── MultiDetector.cpp
+│   │   │   │   │           │       │   ├── MultiDetector.h
+│   │   │   │   │           │       │   ├── MultiFinderPatternFinder.cpp
+│   │   │   │   │           │       │   └── MultiFinderPatternFinder.h
+│   │   │   │   │           │       ├── QRCodeMultiReader.cpp
+│   │   │   │   │           │       └── QRCodeMultiReader.h
+│   │   │   │   │           ├── MultiFormatReader.cpp
+│   │   │   │   │           ├── MultiFormatReader.h
+│   │   │   │   │           ├── NotFoundException.h
+│   │   │   │   │           ├── oned
+│   │   │   │   │           │   ├── CodaBarReader.cpp
+│   │   │   │   │           │   ├── CodaBarReader.h
+│   │   │   │   │           │   ├── Code128Reader.cpp
+│   │   │   │   │           │   ├── Code128Reader.h
+│   │   │   │   │           │   ├── Code39Reader.cpp
+│   │   │   │   │           │   ├── Code39Reader.h
+│   │   │   │   │           │   ├── Code93Reader.cpp
+│   │   │   │   │           │   ├── Code93Reader.h
+│   │   │   │   │           │   ├── EAN13Reader.cpp
+│   │   │   │   │           │   ├── EAN13Reader.h
+│   │   │   │   │           │   ├── EAN8Reader.cpp
+│   │   │   │   │           │   ├── EAN8Reader.h
+│   │   │   │   │           │   ├── ITFReader.cpp
+│   │   │   │   │           │   ├── ITFReader.h
+│   │   │   │   │           │   ├── MultiFormatOneDReader.cpp
+│   │   │   │   │           │   ├── MultiFormatOneDReader.h
+│   │   │   │   │           │   ├── MultiFormatUPCEANReader.cpp
+│   │   │   │   │           │   ├── MultiFormatUPCEANReader.h
+│   │   │   │   │           │   ├── OneDReader.cpp
+│   │   │   │   │           │   ├── OneDReader.h
+│   │   │   │   │           │   ├── OneDResultPoint.cpp
+│   │   │   │   │           │   ├── OneDResultPoint.h
+│   │   │   │   │           │   ├── UPCAReader.cpp
+│   │   │   │   │           │   ├── UPCAReader.h
+│   │   │   │   │           │   ├── UPCEANReader.cpp
+│   │   │   │   │           │   ├── UPCEANReader.h
+│   │   │   │   │           │   ├── UPCEReader.cpp
+│   │   │   │   │           │   └── UPCEReader.h
+│   │   │   │   │           ├── pdf417
+│   │   │   │   │           │   ├── decoder
+│   │   │   │   │           │   │   ├── BitMatrixParser.h
+│   │   │   │   │           │   │   ├── DecodedBitStreamParser.h
+│   │   │   │   │           │   │   ├── Decoder.h
+│   │   │   │   │           │   │   ├── ec
+│   │   │   │   │           │   │   │   ├── ErrorCorrection.cpp
+│   │   │   │   │           │   │   │   ├── ErrorCorrection.h
+│   │   │   │   │           │   │   │   ├── ModulusGF.cpp
+│   │   │   │   │           │   │   │   ├── ModulusGF.h
+│   │   │   │   │           │   │   │   ├── ModulusPoly.cpp
+│   │   │   │   │           │   │   │   └── ModulusPoly.h
+│   │   │   │   │           │   │   ├── PDF417BitMatrixParser.cpp
+│   │   │   │   │           │   │   ├── PDF417DecodedBitStreamParser.cpp
+│   │   │   │   │           │   │   └── PDF417Decoder.cpp
+│   │   │   │   │           │   ├── detector
+│   │   │   │   │           │   │   ├── Detector.h
+│   │   │   │   │           │   │   ├── LinesSampler.cpp
+│   │   │   │   │           │   │   ├── LinesSampler.h
+│   │   │   │   │           │   │   └── PDF417Detector.cpp
+│   │   │   │   │           │   ├── PDF417Reader.cpp
+│   │   │   │   │           │   └── PDF417Reader.h
+│   │   │   │   │           ├── qrcode
+│   │   │   │   │           │   ├── decoder
+│   │   │   │   │           │   │   ├── BitMatrixParser.h
+│   │   │   │   │           │   │   ├── DataBlock.h
+│   │   │   │   │           │   │   ├── DataMask.h
+│   │   │   │   │           │   │   ├── DecodedBitStreamParser.h
+│   │   │   │   │           │   │   ├── Decoder.h
+│   │   │   │   │           │   │   ├── Mode.h
+│   │   │   │   │           │   │   ├── QRBitMatrixParser.cpp
+│   │   │   │   │           │   │   ├── QRDataBlock.cpp
+│   │   │   │   │           │   │   ├── QRDataMask.cpp
+│   │   │   │   │           │   │   ├── QRDecodedBitStreamParser.cpp
+│   │   │   │   │           │   │   ├── QRDecoder.cpp
+│   │   │   │   │           │   │   └── QRMode.cpp
+│   │   │   │   │           │   ├── detector
+│   │   │   │   │           │   │   ├── AlignmentPatternFinder.h
+│   │   │   │   │           │   │   ├── AlignmentPattern.h
+│   │   │   │   │           │   │   ├── Detector.h
+│   │   │   │   │           │   │   ├── FinderPatternFinder.h
+│   │   │   │   │           │   │   ├── FinderPattern.h
+│   │   │   │   │           │   │   ├── FinderPatternInfo.h
+│   │   │   │   │           │   │   ├── QRAlignmentPattern.cpp
+│   │   │   │   │           │   │   ├── QRAlignmentPatternFinder.cpp
+│   │   │   │   │           │   │   ├── QRDetector.cpp
+│   │   │   │   │           │   │   ├── QRFinderPattern.cpp
+│   │   │   │   │           │   │   ├── QRFinderPatternFinder.cpp
+│   │   │   │   │           │   │   └── QRFinderPatternInfo.cpp
+│   │   │   │   │           │   ├── encoder
+│   │   │   │   │           │   │   ├── BlockPair.h
+│   │   │   │   │           │   │   ├── ByteMatrix.cpp
+│   │   │   │   │           │   │   ├── ByteMatrix.h
+│   │   │   │   │           │   │   ├── Encoder.h
+│   │   │   │   │           │   │   ├── MaskUtil.cpp
+│   │   │   │   │           │   │   ├── MaskUtil.h
+│   │   │   │   │           │   │   ├── MatrixUtil.cpp
+│   │   │   │   │           │   │   ├── MatrixUtil.h
+│   │   │   │   │           │   │   ├── QRCode.cpp
+│   │   │   │   │           │   │   ├── QRCode.h
+│   │   │   │   │           │   │   └── QREncoder.cpp
+│   │   │   │   │           │   ├── ErrorCorrectionLevel.h
+│   │   │   │   │           │   ├── FormatInformation.h
+│   │   │   │   │           │   ├── QRCodeReader.cpp
+│   │   │   │   │           │   ├── QRCodeReader.h
+│   │   │   │   │           │   ├── QRErrorCorrectionLevel.cpp
+│   │   │   │   │           │   ├── QRFormatInformation.cpp
+│   │   │   │   │           │   ├── QRVersion.cpp
+│   │   │   │   │           │   └── Version.h
+│   │   │   │   │           ├── Reader.cpp
+│   │   │   │   │           ├── ReaderException.h
+│   │   │   │   │           ├── Reader.h
+│   │   │   │   │           ├── Result.cpp
+│   │   │   │   │           ├── Result.h
+│   │   │   │   │           ├── ResultIO.cpp
+│   │   │   │   │           ├── ResultPointCallback.cpp
+│   │   │   │   │           ├── ResultPointCallback.h
+│   │   │   │   │           ├── ResultPoint.cpp
+│   │   │   │   │           ├── ResultPoint.h
+│   │   │   │   │           ├── UnsupportedEncodingException.h
+│   │   │   │   │           ├── WriterException.h
+│   │   │   │   │           └── ZXing.h
+│   │   │   │   ├── test.jpg
+│   │   │   │   ├── zevin.cpp
+│   │   │   │   ├── zevin.cpp.autosave
+│   │   │   │   ├── zevin_encode.cpp
+│   │   │   │   ├── zevin_encode.h
+│   │   │   │   ├── zevin.h
+│   │   │   │   ├── zevin.pro
+│   │   │   │   ├── zevin.pro.user
+│   │   │   │   └── zevin.ui
+│   │   │   ├── encode
+│   │   │   │   ├── main.cpp
+│   │   │   │   ├── mainwindow.cpp
+│   │   │   │   ├── mainwindow.h
+│   │   │   │   ├── mainwindow.ui
+│   │   │   │   ├── QRCode
+│   │   │   │   │   ├── include
+│   │   │   │   │   │   ├── bitmap
+│   │   │   │   │   │   │   ├── Bitmap.h
+│   │   │   │   │   │   │   └── Colors.h
+│   │   │   │   │   │   ├── drawable
+│   │   │   │   │   │   │   ├── QRBitmapDraw.h
+│   │   │   │   │   │   │   └── QRDrawable.h
+│   │   │   │   │   │   ├── enums
+│   │   │   │   │   │   │   ├── enumCorrectionLevel.h
+│   │   │   │   │   │   │   ├── enumMode.h
+│   │   │   │   │   │   │   └── enumVersions.h
+│   │   │   │   │   │   ├── exceptions
+│   │   │   │   │   │   │   ├── EQRCapabilities.h
+│   │   │   │   │   │   │   ├── EQRDimension.h
+│   │   │   │   │   │   │   ├── EQRErrorCorrection.h
+│   │   │   │   │   │   │   └── EQRGeneric.h
+│   │   │   │   │   │   ├── masks
+│   │   │   │   │   │   │   ├── QRMask1.h
+│   │   │   │   │   │   │   ├── QRMask2.h
+│   │   │   │   │   │   │   ├── QRMask3.h
+│   │   │   │   │   │   │   ├── QRMask4.h
+│   │   │   │   │   │   │   ├── QRMask5.h
+│   │   │   │   │   │   │   ├── QRMask6.h
+│   │   │   │   │   │   │   ├── QRMask7.h
+│   │   │   │   │   │   │   ├── QRMask8.h
+│   │   │   │   │   │   │   └── QRMask.h
+│   │   │   │   │   │   ├── polynomial_generator
+│   │   │   │   │   │   │   ├── LogAntilog.h
+│   │   │   │   │   │   │   ├── Monomial.h
+│   │   │   │   │   │   │   └── PolynomialGenerator.h
+│   │   │   │   │   │   ├── qrcode
+│   │   │   │   │   │   │   ├── QRCode.h
+│   │   │   │   │   │   │   ├── QRCodeV10.h
+│   │   │   │   │   │   │   ├── QRCodeV11.h
+│   │   │   │   │   │   │   ├── QRCodeV12.h
+│   │   │   │   │   │   │   ├── QRCodeV13.h
+│   │   │   │   │   │   │   ├── QRCodeV14.h
+│   │   │   │   │   │   │   ├── QRCodeV15.h
+│   │   │   │   │   │   │   ├── QRCodeV16.h
+│   │   │   │   │   │   │   ├── QRCodeV17.h
+│   │   │   │   │   │   │   ├── QRCodeV18.h
+│   │   │   │   │   │   │   ├── QRCodeV19.h
+│   │   │   │   │   │   │   ├── QRCodeV1.h
+│   │   │   │   │   │   │   ├── QRCodeV20.h
+│   │   │   │   │   │   │   ├── QRCodeV21.h
+│   │   │   │   │   │   │   ├── QRCodeV22.h
+│   │   │   │   │   │   │   ├── QRCodeV23.h
+│   │   │   │   │   │   │   ├── QRCodeV24.h
+│   │   │   │   │   │   │   ├── QRCodeV25.h
+│   │   │   │   │   │   │   ├── QRCodeV26.h
+│   │   │   │   │   │   │   ├── QRCodeV27.h
+│   │   │   │   │   │   │   ├── QRCodeV28.h
+│   │   │   │   │   │   │   ├── QRCodeV29.h
+│   │   │   │   │   │   │   ├── QRCodeV2.h
+│   │   │   │   │   │   │   ├── QRCodeV30.h
+│   │   │   │   │   │   │   ├── QRCodeV31.h
+│   │   │   │   │   │   │   ├── QRCodeV32.h
+│   │   │   │   │   │   │   ├── QRCodeV33.h
+│   │   │   │   │   │   │   ├── QRCodeV34.h
+│   │   │   │   │   │   │   ├── QRCodeV35.h
+│   │   │   │   │   │   │   ├── QRCodeV36.h
+│   │   │   │   │   │   │   ├── QRCodeV37.h
+│   │   │   │   │   │   │   ├── QRCodeV38.h
+│   │   │   │   │   │   │   ├── QRCodeV39.h
+│   │   │   │   │   │   │   ├── QRCodeV3.h
+│   │   │   │   │   │   │   ├── QRCodeV40.h
+│   │   │   │   │   │   │   ├── QRCodeV4.h
+│   │   │   │   │   │   │   ├── QRCodeV5.h
+│   │   │   │   │   │   │   ├── QRCodeV6.h
+│   │   │   │   │   │   │   ├── QRCodeV7.h
+│   │   │   │   │   │   │   ├── QRCodeV8.h
+│   │   │   │   │   │   │   └── QRCodeV9.h
+│   │   │   │   │   │   ├── QRController.h
+│   │   │   │   │   │   ├── struct
+│   │   │   │   │   │   │   ├── StructECInfo.h
+│   │   │   │   │   │   │   └── StructPoint.h
+│   │   │   │   │   │   └── test
+│   │   │   │   │   │       └── output_test.h
+│   │   │   │   │   ├── QRCode.pri
+│   │   │   │   │   ├── src
+│   │   │   │   │   │   ├── bitmap
+│   │   │   │   │   │   │   └── Bitmap.cpp
+│   │   │   │   │   │   ├── drawable
+│   │   │   │   │   │   │   ├── QRBitmapDraw.cpp
+│   │   │   │   │   │   │   └── QRDrawable.cpp
+│   │   │   │   │   │   ├── exceptions
+│   │   │   │   │   │   │   ├── EQRCapabilities.cpp
+│   │   │   │   │   │   │   ├── EQRDimension.cpp
+│   │   │   │   │   │   │   ├── EQRErrorCorrection.cpp
+│   │   │   │   │   │   │   └── EQRGeneric.cpp
+│   │   │   │   │   │   ├── masks
+│   │   │   │   │   │   │   ├── QRMask1.cpp
+│   │   │   │   │   │   │   ├── QRMask2.cpp
+│   │   │   │   │   │   │   ├── QRMask3.cpp
+│   │   │   │   │   │   │   ├── QRMask4.cpp
+│   │   │   │   │   │   │   ├── QRMask5.cpp
+│   │   │   │   │   │   │   ├── QRMask6.cpp
+│   │   │   │   │   │   │   ├── QRMask7.cpp
+│   │   │   │   │   │   │   ├── QRMask8.cpp
+│   │   │   │   │   │   │   └── QRMask.cpp
+│   │   │   │   │   │   ├── polynomial_generator
+│   │   │   │   │   │   │   ├── Monomial.cpp
+│   │   │   │   │   │   │   └── PolynomialGenerator.cpp
+│   │   │   │   │   │   ├── qrcode
+│   │   │   │   │   │   │   ├── QRCode.cpp
+│   │   │   │   │   │   │   ├── QRCodeV10.cpp
+│   │   │   │   │   │   │   ├── QRCodeV11.cpp
+│   │   │   │   │   │   │   ├── QRCodeV12.cpp
+│   │   │   │   │   │   │   ├── QRCodeV13.cpp
+│   │   │   │   │   │   │   ├── QRCodeV14.cpp
+│   │   │   │   │   │   │   ├── QRCodeV15.cpp
+│   │   │   │   │   │   │   ├── QRCodeV16.cpp
+│   │   │   │   │   │   │   ├── QRCodeV17.cpp
+│   │   │   │   │   │   │   ├── QRCodeV18.cpp
+│   │   │   │   │   │   │   ├── QRCodeV19.cpp
+│   │   │   │   │   │   │   ├── QRCodeV1.cpp
+│   │   │   │   │   │   │   ├── QRCodeV20.cpp
+│   │   │   │   │   │   │   ├── QRCodeV21.cpp
+│   │   │   │   │   │   │   ├── QRCodeV22.cpp
+│   │   │   │   │   │   │   ├── QRCodeV23.cpp
+│   │   │   │   │   │   │   ├── QRCodeV24.cpp
+│   │   │   │   │   │   │   ├── QRCodeV25.cpp
+│   │   │   │   │   │   │   ├── QRCodeV26.cpp
+│   │   │   │   │   │   │   ├── QRCodeV27.cpp
+│   │   │   │   │   │   │   ├── QRCodeV28.cpp
+│   │   │   │   │   │   │   ├── QRCodeV29.cpp
+│   │   │   │   │   │   │   ├── QRCodeV2.cpp
+│   │   │   │   │   │   │   ├── QRCodeV30.cpp
+│   │   │   │   │   │   │   ├── QRCodeV31.cpp
+│   │   │   │   │   │   │   ├── QRCodeV32.cpp
+│   │   │   │   │   │   │   ├── QRCodeV33.cpp
+│   │   │   │   │   │   │   ├── QRCodeV34.cpp
+│   │   │   │   │   │   │   ├── QRCodeV35.cpp
+│   │   │   │   │   │   │   ├── QRCodeV36.cpp
+│   │   │   │   │   │   │   ├── QRCodeV37.cpp
+│   │   │   │   │   │   │   ├── QRCodeV38.cpp
+│   │   │   │   │   │   │   ├── QRCodeV39.cpp
+│   │   │   │   │   │   │   ├── QRCodeV3.cpp
+│   │   │   │   │   │   │   ├── QRCodeV40.cpp
+│   │   │   │   │   │   │   ├── QRCodeV4.cpp
+│   │   │   │   │   │   │   ├── QRCodeV5.cpp
+│   │   │   │   │   │   │   ├── QRCodeV6.cpp
+│   │   │   │   │   │   │   ├── QRCodeV7.cpp
+│   │   │   │   │   │   │   ├── QRCodeV8.cpp
+│   │   │   │   │   │   │   └── QRCodeV9.cpp
+│   │   │   │   │   │   ├── QRController.cpp
+│   │   │   │   │   │   └── test
+│   │   │   │   │   │       └── output_test.cpp
+│   │   │   │   │   └── test_main.cpp
+│   │   │   │   ├── QRCode_Generator.pro
+│   │   │   │   └── QRCode_Generator.pro.user
+│   │   │   └── PB15111604
+│   │   │       ├── decode
+│   │   │       │   ├── debug
+│   │   │       │   │   ├── AztecDecoder.o
+│   │   │       │   │   ├── AztecDetector.o
+│   │   │       │   │   ├── AztecDetectorResult.o
+│   │   │       │   │   ├── AztecReader.o
+│   │   │       │   │   ├── BarcodeFormat.o
+│   │   │       │   │   ├── BigIntegerAlgorithms.o
+│   │   │       │   │   ├── BigInteger.o
+│   │   │       │   │   ├── BigIntegerUtils.o
+│   │   │       │   │   ├── BigUnsignedInABase.o
+│   │   │       │   │   ├── BigUnsigned.o
+│   │   │       │   │   ├── Binarizer.o
+│   │   │       │   │   ├── BinaryBitmap.o
+│   │   │       │   │   ├── BitArrayIO.o
+│   │   │       │   │   ├── BitArray.o
+│   │   │       │   │   ├── BitMatrix.o
+│   │   │       │   │   ├── BitSource.o
+│   │   │       │   │   ├── ByQuadrantReader.o
+│   │   │       │   │   ├── ByteMatrix.o
+│   │   │       │   │   ├── CameraImageWrapper.o
+│   │   │       │   │   ├── CharacterSetECI.o
+│   │   │       │   │   ├── ChecksumException.o
+│   │   │       │   │   ├── CodaBarReader.o
+│   │   │       │   │   ├── Code128Reader.o
+│   │   │       │   │   ├── Code39Reader.o
+│   │   │       │   │   ├── Code93Reader.o
+│   │   │       │   │   ├── DataMatrixBitMatrixParser.o
+│   │   │       │   │   ├── DataMatrixCornerPoint.o
+│   │   │       │   │   ├── DataMatrixDataBlock.o
+│   │   │       │   │   ├── DataMatrixDecodedBitStreamParser.o
+│   │   │       │   │   ├── DataMatrixDecoder.o
+│   │   │       │   │   ├── DataMatrixDetectorException.o
+│   │   │       │   │   ├── DataMatrixDetector.o
+│   │   │       │   │   ├── DataMatrixReader.o
+│   │   │       │   │   ├── DataMatrixVersion.o
+│   │   │       │   │   ├── DecodeHints.o
+│   │   │       │   │   ├── DecoderResult.o
+│   │   │       │   │   ├── DetectorResult.o
+│   │   │       │   │   ├── downloader.o
+│   │   │       │   │   ├── EAN13Reader.o
+│   │   │       │   │   ├── EAN8Reader.o
+│   │   │       │   │   ├── EncodeHint.o
+│   │   │       │   │   ├── ErrorCorrection.o
+│   │   │       │   │   ├── Exception.o
+│   │   │       │   │   ├── FormatException.o
+│   │   │       │   │   ├── GenericGF.o
+│   │   │       │   │   ├── GenericGFPoly.o
+│   │   │       │   │   ├── GenericMultipleBarcodeReader.o
+│   │   │       │   │   ├── GlobalHistogramBinarizer.o
+│   │   │       │   │   ├── GreyscaleLuminanceSource.o
+│   │   │       │   │   ├── GreyscaleRotatedLuminanceSource.o
+│   │   │       │   │   ├── GridSampler.o
+│   │   │       │   │   ├── HybridBinarizer.o
+│   │   │       │   │   ├── IllegalArgumentException.o
+│   │   │       │   │   ├── ImageHandler.o
+│   │   │       │   │   ├── InvertedLuminanceSource.o
+│   │   │       │   │   ├── ITFReader.o
+│   │   │       │   │   ├── LinesSampler.o
+│   │   │       │   │   ├── LuminanceSource.o
+│   │   │       │   │   ├── main.o
+│   │   │       │   │   ├── MaskUtil.o
+│   │   │       │   │   ├── MatrixUtil.o
+│   │   │       │   │   ├── moc_downloader.cpp
+│   │   │       │   │   ├── moc_downloader.o
+│   │   │       │   │   ├── moc_ImageHandler.cpp
+│   │   │       │   │   ├── moc_ImageHandler.o
+│   │   │       │   │   ├── moc_predefs.h
+│   │   │       │   │   ├── moc_QZXing.cpp
+│   │   │       │   │   ├── moc_QZXing.o
+│   │   │       │   │   ├── moc_zevin.cpp
+│   │   │       │   │   ├── moc_zevin.o
+│   │   │       │   │   ├── ModulusGF.o
+│   │   │       │   │   ├── ModulusPoly.o
+│   │   │       │   │   ├── MonochromeRectangleDetector.o
+│   │   │       │   │   ├── MultiDetector.o
+│   │   │       │   │   ├── MultiFinderPatternFinder.o
+│   │   │       │   │   ├── MultiFormatOneDReader.o
+│   │   │       │   │   ├── MultiFormatReader.o
+│   │   │       │   │   ├── MultiFormatUPCEANReader.o
+│   │   │       │   │   ├── MultipleBarcodeReader.o
+│   │   │       │   │   ├── OneDReader.o
+│   │   │       │   │   ├── OneDResultPoint.o
+│   │   │       │   │   ├── PDF417BitMatrixParser.o
+│   │   │       │   │   ├── PDF417DecodedBitStreamParser.o
+│   │   │       │   │   ├── PDF417Decoder.o
+│   │   │       │   │   ├── PDF417Detector.o
+│   │   │       │   │   ├── PDF417Reader.o
+│   │   │       │   │   ├── PerspectiveTransform.o
+│   │   │       │   │   ├── QRAlignmentPatternFinder.o
+│   │   │       │   │   ├── QRAlignmentPattern.o
+│   │   │       │   │   ├── QRBitMatrixParser.o
+│   │   │       │   │   ├── QRCodeMultiReader.o
+│   │   │       │   │   ├── QRCode.o
+│   │   │       │   │   ├── QRCodeReader.o
+│   │   │       │   │   ├── QRDataBlock.o
+│   │   │       │   │   ├── QRDataMask.o
+│   │   │       │   │   ├── QRDecodedBitStreamParser.o
+│   │   │       │   │   ├── QRDecoder.o
+│   │   │       │   │   ├── QRDetector.o
+│   │   │       │   │   ├── QREncoder.o
+│   │   │       │   │   ├── QRErrorCorrectionLevel.o
+│   │   │       │   │   ├── QRFinderPatternFinder.o
+│   │   │       │   │   ├── QRFinderPatternInfo.o
+│   │   │       │   │   ├── QRFinderPattern.o
+│   │   │       │   │   ├── QRFormatInformation.o
+│   │   │       │   │   ├── QRMode.o
+│   │   │       │   │   ├── QRVersion.o
+│   │   │       │   │   ├── QZXing.o
+│   │   │       │   │   ├── Reader.o
+│   │   │       │   │   ├── ReedSolomonDecoder.o
+│   │   │       │   │   ├── ReedSolomonEncoder.o
+│   │   │       │   │   ├── ReedSolomonException.o
+│   │   │       │   │   ├── ResultIO.o
+│   │   │       │   │   ├── Result.o
+│   │   │       │   │   ├── ResultPointCallback.o
+│   │   │       │   │   ├── ResultPoint.o
+│   │   │       │   │   ├── StringUtils.o
+│   │   │       │   │   ├── Str.o
+│   │   │       │   │   ├── UPCAReader.o
+│   │   │       │   │   ├── UPCEANReader.o
+│   │   │       │   │   ├── UPCEReader.o
+│   │   │       │   │   ├── WhiteRectangleDetector.o
+│   │   │       │   │   ├── win_iconv.o
+│   │   │       │   │   ├── zevin_decode.exe
+│   │   │       │   │   └── zevin.o
+│   │   │       │   ├── Makefile
+│   │   │       │   ├── Makefile.Debug
+│   │   │       │   ├── Makefile.Release
+│   │   │       │   ├── object_script.zevin_decode.Debug
+│   │   │       │   ├── object_script.zevin_decode.Release
+│   │   │       │   └── ui_zevin.h
+│   │   │       ├── encode
+│   │   │       │   ├── debug
+│   │   │       │   │   ├── Bitmap.o
+│   │   │       │   │   ├── EQRCapabilities.o
+│   │   │       │   │   ├── EQRDimension.o
+│   │   │       │   │   ├── EQRErrorCorrection.o
+│   │   │       │   │   ├── EQRGeneric.o
+│   │   │       │   │   ├── main.o
+│   │   │       │   │   ├── mainwindow.o
+│   │   │       │   │   ├── moc_mainwindow.cpp
+│   │   │       │   │   ├── moc_mainwindow.o
+│   │   │       │   │   ├── moc_predefs.h
+│   │   │       │   │   ├── Monomial.o
+│   │   │       │   │   ├── output_test.o
+│   │   │       │   │   ├── PolynomialGenerator.o
+│   │   │       │   │   ├── QRBitmapDraw.o
+│   │   │       │   │   ├── QRCode.o
+│   │   │       │   │   ├── QRCodeV10.o
+│   │   │       │   │   ├── QRCodeV11.o
+│   │   │       │   │   ├── QRCodeV12.o
+│   │   │       │   │   ├── QRCodeV13.o
+│   │   │       │   │   ├── QRCodeV14.o
+│   │   │       │   │   ├── QRCodeV15.o
+│   │   │       │   │   ├── QRCodeV16.o
+│   │   │       │   │   ├── QRCodeV17.o
+│   │   │       │   │   ├── QRCodeV18.o
+│   │   │       │   │   ├── QRCodeV19.o
+│   │   │       │   │   ├── QRCodeV1.o
+│   │   │       │   │   ├── QRCodeV20.o
+│   │   │       │   │   ├── QRCodeV21.o
+│   │   │       │   │   ├── QRCodeV22.o
+│   │   │       │   │   ├── QRCodeV23.o
+│   │   │       │   │   ├── QRCodeV24.o
+│   │   │       │   │   ├── QRCodeV25.o
+│   │   │       │   │   ├── QRCodeV26.o
+│   │   │       │   │   ├── QRCodeV27.o
+│   │   │       │   │   ├── QRCodeV28.o
+│   │   │       │   │   ├── QRCodeV29.o
+│   │   │       │   │   ├── QRCodeV2.o
+│   │   │       │   │   ├── QRCodeV30.o
+│   │   │       │   │   ├── QRCodeV31.o
+│   │   │       │   │   ├── QRCodeV32.o
+│   │   │       │   │   ├── QRCodeV33.o
+│   │   │       │   │   ├── QRCodeV34.o
+│   │   │       │   │   ├── QRCodeV35.o
+│   │   │       │   │   ├── QRCodeV36.o
+│   │   │       │   │   ├── QRCodeV37.o
+│   │   │       │   │   ├── QRCodeV38.o
+│   │   │       │   │   ├── QRCodeV39.o
+│   │   │       │   │   ├── QRCodeV3.o
+│   │   │       │   │   ├── QRCodeV40.o
+│   │   │       │   │   ├── QRCodeV4.o
+│   │   │       │   │   ├── QRCodeV5.o
+│   │   │       │   │   ├── QRCodeV6.o
+│   │   │       │   │   ├── QRCodeV7.o
+│   │   │       │   │   ├── QRCodeV8.o
+│   │   │       │   │   ├── QRCodeV9.o
+│   │   │       │   │   ├── QRController.o
+│   │   │       │   │   ├── QRDrawable.o
+│   │   │       │   │   ├── QRMask1.o
+│   │   │       │   │   ├── QRMask2.o
+│   │   │       │   │   ├── QRMask3.o
+│   │   │       │   │   ├── QRMask4.o
+│   │   │       │   │   ├── QRMask5.o
+│   │   │       │   │   ├── QRMask6.o
+│   │   │       │   │   ├── QRMask7.o
+│   │   │       │   │   ├── QRMask8.o
+│   │   │       │   │   ├── QRMask.o
+│   │   │       │   │   ├── test_main.o
+│   │   │       │   │   └── zevin_encode.exe
+│   │   │       │   ├── Makefile
+│   │   │       │   ├── Makefile.Debug
+│   │   │       │   ├── Makefile.Release
+│   │   │       │   ├── object_script.zevin_encode.Debug
+│   │   │       │   ├── object_script.zevin_encode.Release
+│   │   │       │   └── ui_mainwindow.h
+│   │   │       ├── QRCode.bmp
+│   │   │       ├── zevin_decode.exe
+│   │   │       └── zevin_encode.exe
+│   │   ├── RFID Security Issues & Challenges.pdf
+│   │   ├── 一种适用于RFID标签的安全化密码算法实现.pdf
+│   │   ├── 二进制树型算法和帧时隙ALOHA算法在RFID的反碰撞性能比较.doc
+│   │   ├── 基于PRESENT 算法的安全标签基带设计 (1).pdf
+│   │   ├── 基于PRESENT 算法的安全标签基带设计.pdf
+│   │   ├── 基于人类视觉系统的图像感知哈希算法.pdf
+│   │   ├── 基于信号强度的分组帧时隙ALOHA 防碰撞算法.pdf
+│   │   ├── 帧时隙ALOHA的快速防冲突算法.pdf
+│   │   └── 物联网导论 刘云浩.pdf
+│   ├── 计算机组成原理
+│   │   ├── Computer Organization and Design 4th.pdf
+│   │   ├── hw
+│   │   │   ├── 作业01-PB15111604-金泽文-计算机boot机制.doc.docx
+│   │   │   ├── 作业01-PB15111604-金泽文-计算机boot机制.doc.pdf
+│   │   │   ├── 作业02-PB15111604-金泽文-实验报告-改-01.pdf
+│   │   │   ├── 作业02-PB15111604-金泽文-思考题.docx
+│   │   │   ├── 作业02-PB15111604-金泽文-思考题.pdf
+│   │   │   ├── 作业09-PB15111604-金泽文-思考题.docx
+│   │   │   ├── 作业09-PB15111604-金泽文-思考题.pdf
+│   │   │   ├── 实验二-PB15111604-金泽文.docx
+│   │   │   └── 实验二-PB15111604-金泽文.pdf
+│   │   ├── lab
+│   │   │   ├── 1
+│   │   │   │   ├── ALU.v
+│   │   │   │   ├── Lab6_PB15111676.pdf
+│   │   │   │   ├── Lab6.zip
+│   │   │   │   └── top.v
+│   │   │   ├── 1475205407066-01_数字电路实验课程介绍.ppt
+│   │   │   ├── 1475906628152-实例_计数器.ppt
+│   │   │   ├── 1489459228862-lab1-alu.ppt
+│   │   │   ├── 1489979926245-lab2-registerfile.ppt
+│   │   │   ├── 1490582652025-lab3-ram.ppt
+│   │   │   ├── 1490621885929-lab4_时序与状态机.ppt
+│   │   │   ├── 1492486408225-mips-c指令集-校对完成版-指令排序.pdf
+│   │   │   ├── 1492500542264-lab5_单周期mips-cpu设计.pptx
+│   │   │   ├── 1493650440292-lab6_多周期mips-cpu设计.pptx
+│   │   │   ├── 1494214504030-lab7_mips-cpu设计.pptx
+│   │   │   ├── 2
+│   │   │   │   ├── ALU.v
+│   │   │   │   ├── Lab2_PB15111604.pdf
+│   │   │   │   ├── reg.v
+│   │   │   │   └── top.v
+│   │   │   ├── 3
+│   │   │   │   ├── ALU.v
+│   │   │   │   ├── control.v
+│   │   │   │   ├── reg.v
+│   │   │   │   └── top.v
+│   │   │   ├── 4
+│   │   │   │   └── statemachine2
+│   │   │   │       └── statemachine2
+│   │   │   │           ├── ALU.v
+│   │   │   │           ├── control.v
+│   │   │   │           ├── coregen_xil_4688_48.cgc
+│   │   │   │           ├── coregen_xil_4688_48.cgp
+│   │   │   │           ├── fuse.log
+│   │   │   │           ├── ipcore_dir
+│   │   │   │           │   ├── blk_mem_gen_ds512.pdf
+│   │   │   │           │   ├── blk_mem_gen_readme.txt
+│   │   │   │           │   ├── coregen.cgc
+│   │   │   │           │   ├── coregen.cgp
+│   │   │   │           │   ├── coregen.log
+│   │   │   │           │   ├── coregen.rsp
+│   │   │   │           │   ├── ram.asy
+│   │   │   │           │   ├── ram_flist.txt
+│   │   │   │           │   ├── ram.gise
+│   │   │   │           │   ├── ram.mif
+│   │   │   │           │   ├── ram.ngc
+│   │   │   │           │   ├── ram.sym
+│   │   │   │           │   ├── ram.v
+│   │   │   │           │   ├── ram.veo
+│   │   │   │           │   ├── ram.vhd
+│   │   │   │           │   ├── ram.vho
+│   │   │   │           │   ├── ram.xco
+│   │   │   │           │   ├── ram.xco.bak
+│   │   │   │           │   ├── ram.xise
+│   │   │   │           │   ├── ram_xmdf.tcl
+│   │   │   │           │   └── _xmsgs
+│   │   │   │           │       ├── ngcbuild.xmsgs
+│   │   │   │           │       ├── pn_parser.xmsgs
+│   │   │   │           │       └── xst.xmsgs
+│   │   │   │           ├── iseconfig
+│   │   │   │           │   ├── statemachine2.projectmgr
+│   │   │   │           │   └── top.xreport
+│   │   │   │           ├── isim
+│   │   │   │           │   ├── isim_usage_statistics.html
+│   │   │   │           │   ├── temp
+│   │   │   │           │   │   ├── @a@l@u.sdb
+│   │   │   │           │   │   ├── control.sdb
+│   │   │   │           │   │   ├── glbl.sdb
+│   │   │   │           │   │   ├── @r@e@g_@f@i@l@e.sdb
+│   │   │   │           │   │   ├── test.sdb
+│   │   │   │           │   │   └── top.sdb
+│   │   │   │           │   ├── test_isim_beh.exe.sim
+│   │   │   │           │   │   ├── isimcrash.log
+│   │   │   │           │   │   ├── ISimEngine-DesignHierarchy.dbg
+│   │   │   │           │   │   ├── isimkernel.log
+│   │   │   │           │   │   ├── libPortability.dll
+│   │   │   │           │   │   ├── netId.dat
+│   │   │   │           │   │   ├── test_isim_beh.exe
+│   │   │   │           │   │   ├── tmp_save
+│   │   │   │           │   │   │   └── _1
+│   │   │   │           │   │   ├── work
+│   │   │   │           │   │   │   ├── m_00000000000003407997_3037777339.c
+│   │   │   │           │   │   │   ├── m_00000000000003407997_3037777339.didat
+│   │   │   │           │   │   │   ├── m_00000000000003407997_3037777339.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000000745735562_3783644070.c
+│   │   │   │           │   │   │   ├── m_00000000000745735562_3783644070.didat
+│   │   │   │           │   │   │   ├── m_00000000000745735562_3783644070.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000001649072342_0886308060.c
+│   │   │   │           │   │   │   ├── m_00000000001649072342_0886308060.didat
+│   │   │   │           │   │   │   ├── m_00000000001649072342_0886308060.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000001664380267_0450250084.c
+│   │   │   │           │   │   │   ├── m_00000000001664380267_0450250084.didat
+│   │   │   │           │   │   │   ├── m_00000000001664380267_0450250084.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000002013452923_2073120511.c
+│   │   │   │           │   │   │   ├── m_00000000002013452923_2073120511.didat
+│   │   │   │           │   │   │   ├── m_00000000002013452923_2073120511.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000002630772315_1985558087.c
+│   │   │   │           │   │   │   ├── m_00000000002630772315_1985558087.didat
+│   │   │   │           │   │   │   ├── m_00000000002630772315_1985558087.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000004088700851_3823007873.c
+│   │   │   │           │   │   │   ├── m_00000000004088700851_3823007873.didat
+│   │   │   │           │   │   │   ├── m_00000000004088700851_3823007873.nt64.obj
+│   │   │   │           │   │   │   ├── test_isim_beh.exe_main.c
+│   │   │   │           │   │   │   └── test_isim_beh.exe_main.nt64.obj
+│   │   │   │           │   │   └── xilinxcorelib_ver
+│   │   │   │           │   │       ├── m_00000000001036818086_3680357725.c
+│   │   │   │           │   │       ├── m_00000000001036818086_3680357725.didat
+│   │   │   │           │   │       ├── m_00000000001036818086_3680357725.nt64.obj
+│   │   │   │           │   │       ├── m_00000000001184809869_0153913454.c
+│   │   │   │           │   │       ├── m_00000000001184809869_0153913454.didat
+│   │   │   │           │   │       ├── m_00000000001184809869_0153913454.nt64.obj
+│   │   │   │           │   │       ├── m_00000000002194637086_1261012529.c
+│   │   │   │           │   │       ├── m_00000000002194637086_1261012529.didat
+│   │   │   │           │   │       ├── m_00000000002194637086_1261012529.nt64.obj
+│   │   │   │           │   │       ├── m_00000000002216354146_3675061481.c
+│   │   │   │           │   │       ├── m_00000000002216354146_3675061481.didat
+│   │   │   │           │   │       └── m_00000000002216354146_3675061481.nt64.obj
+│   │   │   │           │   ├── top_isim_beh.exe.sim
+│   │   │   │           │   │   ├── isimcrash.log
+│   │   │   │           │   │   ├── ISimEngine-DesignHierarchy.dbg
+│   │   │   │           │   │   ├── isimkernel.log
+│   │   │   │           │   │   ├── libPortability.dll
+│   │   │   │           │   │   ├── netId.dat
+│   │   │   │           │   │   ├── tmp_save
+│   │   │   │           │   │   │   └── _1
+│   │   │   │           │   │   ├── top_isim_beh.exe
+│   │   │   │           │   │   ├── work
+│   │   │   │           │   │   │   ├── m_00000000000745735562_3783644070.c
+│   │   │   │           │   │   │   ├── m_00000000000745735562_3783644070.didat
+│   │   │   │           │   │   │   ├── m_00000000000745735562_3783644070.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000001109824723_3823007873.c
+│   │   │   │           │   │   │   ├── m_00000000001109824723_3823007873.didat
+│   │   │   │           │   │   │   ├── m_00000000001109824723_3823007873.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000001649072342_0886308060.c
+│   │   │   │           │   │   │   ├── m_00000000001649072342_0886308060.didat
+│   │   │   │           │   │   │   ├── m_00000000001649072342_0886308060.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000001664380267_0450250084.c
+│   │   │   │           │   │   │   ├── m_00000000001664380267_0450250084.didat
+│   │   │   │           │   │   │   ├── m_00000000001664380267_0450250084.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000002013452923_2073120511.c
+│   │   │   │           │   │   │   ├── m_00000000002013452923_2073120511.didat
+│   │   │   │           │   │   │   ├── m_00000000002013452923_2073120511.nt64.obj
+│   │   │   │           │   │   │   ├── m_00000000003346641321_3037777339.c
+│   │   │   │           │   │   │   ├── m_00000000003346641321_3037777339.didat
+│   │   │   │           │   │   │   ├── m_00000000003346641321_3037777339.nt64.obj
+│   │   │   │           │   │   │   ├── top_isim_beh.exe_main.c
+│   │   │   │           │   │   │   └── top_isim_beh.exe_main.nt64.obj
+│   │   │   │           │   │   └── xilinxcorelib_ver
+│   │   │   │           │   │       ├── m_00000000001036818086_3680357725.c
+│   │   │   │           │   │       ├── m_00000000001036818086_3680357725.didat
+│   │   │   │           │   │       ├── m_00000000001036818086_3680357725.nt64.obj
+│   │   │   │           │   │       ├── m_00000000001184809869_0153913454.c
+│   │   │   │           │   │       ├── m_00000000001184809869_0153913454.didat
+│   │   │   │           │   │       ├── m_00000000001184809869_0153913454.nt64.obj
+│   │   │   │           │   │       ├── m_00000000002194637086_1261012529.c
+│   │   │   │           │   │       ├── m_00000000002194637086_1261012529.didat
+│   │   │   │           │   │       ├── m_00000000002194637086_1261012529.nt64.obj
+│   │   │   │           │   │       ├── m_00000000002216354146_3675061481.c
+│   │   │   │           │   │       ├── m_00000000002216354146_3675061481.didat
+│   │   │   │           │   │       └── m_00000000002216354146_3675061481.nt64.obj
+│   │   │   │           │   └── work
+│   │   │   │           │       ├── @a@l@u.sdb
+│   │   │   │           │       ├── control.sdb
+│   │   │   │           │       ├── glbl.sdb
+│   │   │   │           │       ├── ram.sdb
+│   │   │   │           │       ├── @r@e@g_@f@i@l@e.sdb
+│   │   │   │           │       ├── test.sdb
+│   │   │   │           │       └── top.sdb
+│   │   │   │           ├── isim.cmd
+│   │   │   │           ├── isim.log
+│   │   │   │           ├── ram.mif
+│   │   │   │           ├── REG_FILE.v
+│   │   │   │           ├── statemachine2.gise
+│   │   │   │           ├── statemachine2.xise
+│   │   │   │           ├── statemachine.v
+│   │   │   │           ├── state.wcfg
+│   │   │   │           ├── test_beh.prj
+│   │   │   │           ├── test_isim_beh.exe
+│   │   │   │           ├── test_isim_beh.wdb
+│   │   │   │           ├── test_stx_beh.prj
+│   │   │   │           ├── test.v
+│   │   │   │           ├── top_isim_beh.exe
+│   │   │   │           ├── top_stx_beh.prj
+│   │   │   │           ├── top_summary.html
+│   │   │   │           ├── top.v
+│   │   │   │           ├── xilinxsim.ini
+│   │   │   │           └── _xmsgs
+│   │   │   │               └── pn_parser.xmsgs
+│   │   │   ├── 5
+│   │   │   │   ├── alu.v
+│   │   │   │   ├── control.v
+│   │   │   │   ├── data_mem.coe
+│   │   │   │   ├── ins_mem.coe
+│   │   │   │   ├── pc_reg.v
+│   │   │   │   ├── reg_file.v
+│   │   │   │   └── top.v
+│   │   │   ├── 6
+│   │   │   │   └── Lab6
+│   │   │   │       ├── alu.v
+│   │   │   │       ├── control.lso
+│   │   │   │       ├── control.prj
+│   │   │   │       ├── control.stx
+│   │   │   │       ├── control.v
+│   │   │   │       ├── control.xst
+│   │   │   │       ├── coregen_xil_4924_21.cgc
+│   │   │   │       ├── coregen_xil_4924_21.cgp
+│   │   │   │       ├── fuse.log
+│   │   │   │       ├── ipcore_dir
+│   │   │   │       │   ├── blk_mem_gen_ds512.pdf
+│   │   │   │       │   ├── blk_mem_gen_readme.txt
+│   │   │   │       │   ├── coregen.cgc
+│   │   │   │       │   ├── coregen.cgp
+│   │   │   │       │   ├── coregen.log
+│   │   │   │       │   ├── coregen.rsp
+│   │   │   │       │   ├── mem.asy
+│   │   │   │       │   ├── mem.coe
+│   │   │   │       │   ├── mem_flist.txt
+│   │   │   │       │   ├── mem.gise
+│   │   │   │       │   ├── mem.mif
+│   │   │   │       │   ├── mem.ncf
+│   │   │   │       │   ├── mem.ngc
+│   │   │   │       │   ├── mem.sym
+│   │   │   │       │   ├── mem.v
+│   │   │   │       │   ├── mem.veo
+│   │   │   │       │   ├── mem.vhd
+│   │   │   │       │   ├── mem.vho
+│   │   │   │       │   ├── mem.xco
+│   │   │   │       │   ├── mem.xco.bak
+│   │   │   │       │   ├── mem.xise
+│   │   │   │       │   ├── mem_xmdf.tcl
+│   │   │   │       │   ├── tmp
+│   │   │   │       │   │   └── _cg
+│   │   │   │       │   │       └── mem.mif
+│   │   │   │       │   └── _xmsgs
+│   │   │   │       │       ├── ngcbuild.xmsgs
+│   │   │   │       │       ├── pn_parser.xmsgs
+│   │   │   │       │       └── xst.xmsgs
+│   │   │   │       ├── iseconfig
+│   │   │   │       │   ├── Lab6.projectmgr
+│   │   │   │       │   └── top.xreport
+│   │   │   │       ├── isim
+│   │   │   │       │   ├── isim_usage_statistics.html
+│   │   │   │       │   ├── test_isim_beh.exe.sim
+│   │   │   │       │   │   ├── isimcrash.log
+│   │   │   │       │   │   ├── ISimEngine-DesignHierarchy.dbg
+│   │   │   │       │   │   ├── isimkernel.log
+│   │   │   │       │   │   ├── libPortability.dll
+│   │   │   │       │   │   ├── netId.dat
+│   │   │   │       │   │   ├── test_isim_beh.exe
+│   │   │   │       │   │   ├── tmp_save
+│   │   │   │       │   │   │   └── _1
+│   │   │   │       │   │   ├── work
+│   │   │   │       │   │   │   ├── m_00000000000096677982_1985558087.c
+│   │   │   │       │   │   │   ├── m_00000000000096677982_1985558087.didat
+│   │   │   │       │   │   │   ├── m_00000000000096677982_1985558087.nt64.obj
+│   │   │   │       │   │   │   ├── m_00000000000225340969_3037777339.c
+│   │   │   │       │   │   │   ├── m_00000000000225340969_3037777339.didat
+│   │   │   │       │   │   │   ├── m_00000000000225340969_3037777339.nt64.obj
+│   │   │   │       │   │   │   ├── m_00000000002013452923_2073120511.c
+│   │   │   │       │   │   │   ├── m_00000000002013452923_2073120511.didat
+│   │   │   │       │   │   │   ├── m_00000000002013452923_2073120511.nt64.obj
+│   │   │   │       │   │   │   ├── m_00000000003062947860_3783644070.c
+│   │   │   │       │   │   │   ├── m_00000000003062947860_3783644070.didat
+│   │   │   │       │   │   │   ├── m_00000000003062947860_3783644070.nt64.obj
+│   │   │   │       │   │   │   ├── m_00000000003219014410_2725559894.c
+│   │   │   │       │   │   │   ├── m_00000000003219014410_2725559894.didat
+│   │   │   │       │   │   │   ├── m_00000000003219014410_2725559894.nt64.obj
+│   │   │   │       │   │   │   ├── m_00000000003322221736_3823007873.c
+│   │   │   │       │   │   │   ├── m_00000000003322221736_3823007873.didat
+│   │   │   │       │   │   │   ├── m_00000000003322221736_3823007873.nt64.obj
+│   │   │   │       │   │   │   ├── m_00000000003645434707_1774216237.c
+│   │   │   │       │   │   │   ├── m_00000000003645434707_1774216237.didat
+│   │   │   │       │   │   │   ├── m_00000000003645434707_1774216237.nt64.obj
+│   │   │   │       │   │   │   ├── test_isim_beh.exe_main.c
+│   │   │   │       │   │   │   └── test_isim_beh.exe_main.nt64.obj
+│   │   │   │       │   │   └── xilinxcorelib_ver
+│   │   │   │       │   │       ├── m_00000000000414557669_1431215541.c
+│   │   │   │       │   │       ├── m_00000000000414557669_1431215541.didat
+│   │   │   │       │   │       ├── m_00000000000414557669_1431215541.nt64.obj
+│   │   │   │       │   │       ├── m_00000000001036818086_1530692395.c
+│   │   │   │       │   │       ├── m_00000000001036818086_1530692395.didat
+│   │   │   │       │   │       ├── m_00000000001036818086_1530692395.nt64.obj
+│   │   │   │       │   │       ├── m_00000000001184809869_3179119762.c
+│   │   │   │       │   │       ├── m_00000000001184809869_3179119762.didat
+│   │   │   │       │   │       ├── m_00000000001184809869_3179119762.nt64.obj
+│   │   │   │       │   │       ├── m_00000000002216354146_2503625811.c
+│   │   │   │       │   │       ├── m_00000000002216354146_2503625811.didat
+│   │   │   │       │   │       └── m_00000000002216354146_2503625811.nt64.obj
+│   │   │   │       │   └── work
+│   │   │   │       │       ├── alu.sdb
+│   │   │   │       │       ├── control.sdb
+│   │   │   │       │       ├── glbl.sdb
+│   │   │   │       │       ├── mem.sdb
+│   │   │   │       │       ├── @r@e@g_@f@i@l@e.sdb
+│   │   │   │       │       ├── test.sdb
+│   │   │   │       │       └── top.sdb
+│   │   │   │       ├── isim.cmd
+│   │   │   │       ├── isim.log
+│   │   │   │       ├── Lab6.gise
+│   │   │   │       ├── Lab6.xise
+│   │   │   │       ├── mem.coe
+│   │   │   │       ├── mem.mif
+│   │   │   │       ├── PB15111604_金泽文_波莱罗赏析.txt
+│   │   │   │       ├── REG_FILE.v
+│   │   │   │       ├── test_beh.prj
+│   │   │   │       ├── test_isim_beh.exe
+│   │   │   │       ├── test_isim_beh.wdb
+│   │   │   │       ├── test.v
+│   │   │   │       ├── test.wcfg
+│   │   │   │       ├── top.cmd_log
+│   │   │   │       ├── top_envsettings.html
+│   │   │   │       ├── top.lso
+│   │   │   │       ├── top.ngc
+│   │   │   │       ├── top.ngr
+│   │   │   │       ├── top.prj
+│   │   │   │       ├── top.stx
+│   │   │   │       ├── top_summary.html
+│   │   │   │       ├── top.syr
+│   │   │   │       ├── top.v
+│   │   │   │       ├── top.xst
+│   │   │   │       ├── top_xst.xrpt
+│   │   │   │       ├── webtalk_pn.xml
+│   │   │   │       ├── xilinxsim.ini
+│   │   │   │       ├── _xmsgs
+│   │   │   │       │   ├── pn_parser.xmsgs
+│   │   │   │       │   └── xst.xmsgs
+│   │   │   │       └── xst
+│   │   │   │           └── work
+│   │   │   │               ├── work.sdbl
+│   │   │   │               └── work.sdbx
+│   │   │   ├── 7
+│   │   │   │   ├── alu_decoder.v
+│   │   │   │   ├── alu.v
+│   │   │   │   ├── control.v
+│   │   │   │   ├── digilent.adept.system_v2.13.1.exe
+│   │   │   │   ├── gpsr(fixed by ckh with location service).zip
+│   │   │   │   ├── hazard.v
+│   │   │   │   ├── judge.v
+│   │   │   │   ├── Lab6_PB15111604.docx
+│   │   │   │   ├── Lab7_PB15111604.docx
+│   │   │   │   ├── Lab7_PB15111604.pdf
+│   │   │   │   ├── Lab7_PB15111604_revised.pdf
+│   │   │   │   ├── REG_FILE.v
+│   │   │   │   ├── sign_extend.v
+│   │   │   │   ├── sim.v
+│   │   │   │   └── top.v
+│   │   │   ├── control.v
+│   │   │   ├── Lab06_PB15111604_the_only_true_version.pdf
+│   │   │   ├── lab3.coe
+│   │   │   ├── Lab3_PB15111604.pdf
+│   │   │   ├── lab4.coe
+│   │   │   ├── Lab5_PB15111604.docx
+│   │   │   ├── Lab5_PB15111604.pdf
+│   │   │   ├── Lab6
+│   │   │   │   ├── alu.v
+│   │   │   │   ├── control.lso
+│   │   │   │   ├── control.prj
+│   │   │   │   ├── control.stx
+│   │   │   │   ├── control.v
+│   │   │   │   ├── control.xst
+│   │   │   │   ├── coregen_xil_4924_21.cgc
+│   │   │   │   ├── coregen_xil_4924_21.cgp
+│   │   │   │   ├── fuse.log
+│   │   │   │   ├── fuseRelaunch.cmd
+│   │   │   │   ├── fuse.xmsgs
+│   │   │   │   ├── ipcore_dir
+│   │   │   │   │   ├── blk_mem_gen_ds512.pdf
+│   │   │   │   │   ├── blk_mem_gen_readme.txt
+│   │   │   │   │   ├── coregen.cgp
+│   │   │   │   │   ├── coregen_lock
+│   │   │   │   │   ├── coregen.log
+│   │   │   │   │   ├── coregen.rsp
+│   │   │   │   │   ├── create_mem.tcl
+│   │   │   │   │   ├── create_tfrs.tcl
+│   │   │   │   │   ├── edit_mem.tcl
+│   │   │   │   │   ├── mem
+│   │   │   │   │   │   ├── blk_mem_gen_v7_3_readme.txt
+│   │   │   │   │   │   ├── doc
+│   │   │   │   │   │   │   ├── blk_mem_gen_v7_3_vinfo.html
+│   │   │   │   │   │   │   └── pg058-blk-mem-gen.pdf
+│   │   │   │   │   │   ├── example_design
+│   │   │   │   │   │   │   ├── mem_exdes.ucf
+│   │   │   │   │   │   │   ├── mem_exdes.vhd
+│   │   │   │   │   │   │   ├── mem_exdes.xdc
+│   │   │   │   │   │   │   └── mem_prod.vhd
+│   │   │   │   │   │   ├── implement
+│   │   │   │   │   │   │   ├── implement.bat
+│   │   │   │   │   │   │   ├── implement.sh
+│   │   │   │   │   │   │   ├── planAhead_ise.bat
+│   │   │   │   │   │   │   ├── planAhead_ise.sh
+│   │   │   │   │   │   │   ├── planAhead_ise.tcl
+│   │   │   │   │   │   │   ├── xst.prj
+│   │   │   │   │   │   │   └── xst.scr
+│   │   │   │   │   │   └── simulation
+│   │   │   │   │   │       ├── addr_gen.vhd
+│   │   │   │   │   │       ├── bmg_stim_gen.vhd
+│   │   │   │   │   │       ├── bmg_tb_pkg.vhd
+│   │   │   │   │   │       ├── checker.vhd
+│   │   │   │   │   │       ├── data_gen.vhd
+│   │   │   │   │   │       ├── functional
+│   │   │   │   │   │       │   ├── simcmds.tcl
+│   │   │   │   │   │       │   ├── simulate_isim.bat
+│   │   │   │   │   │       │   ├── simulate_mti.bat
+│   │   │   │   │   │       │   ├── simulate_mti.do
+│   │   │   │   │   │       │   ├── simulate_mti.sh
+│   │   │   │   │   │       │   ├── simulate_ncsim.sh
+│   │   │   │   │   │       │   ├── simulate_vcs.sh
+│   │   │   │   │   │       │   ├── ucli_commands.key
+│   │   │   │   │   │       │   ├── vcs_session.tcl
+│   │   │   │   │   │       │   ├── wave_mti.do
+│   │   │   │   │   │       │   └── wave_ncsim.sv
+│   │   │   │   │   │       ├── mem_synth.vhd
+│   │   │   │   │   │       ├── mem_tb.vhd
+│   │   │   │   │   │       ├── random.vhd
+│   │   │   │   │   │       └── timing
+│   │   │   │   │   │           ├── simcmds.tcl
+│   │   │   │   │   │           ├── simulate_isim.bat
+│   │   │   │   │   │           ├── simulate_mti.bat
+│   │   │   │   │   │           ├── simulate_mti.do
+│   │   │   │   │   │           ├── simulate_mti.sh
+│   │   │   │   │   │           ├── simulate_ncsim.sh
+│   │   │   │   │   │           ├── simulate_vcs.sh
+│   │   │   │   │   │           ├── ucli_commands.key
+│   │   │   │   │   │           ├── vcs_session.tcl
+│   │   │   │   │   │           ├── wave_mti.do
+│   │   │   │   │   │           └── wave_ncsim.sv
+│   │   │   │   │   ├── mem.asy
+│   │   │   │   │   ├── mem.cgc
+│   │   │   │   │   ├── mem.coe
+│   │   │   │   │   ├── mem_flist.txt
+│   │   │   │   │   ├── mem.gise
+│   │   │   │   │   ├── mem.mif
+│   │   │   │   │   ├── mem.ncf
+│   │   │   │   │   ├── mem.ngc
+│   │   │   │   │   ├── mem.sym
+│   │   │   │   │   ├── mem.v
+│   │   │   │   │   ├── mem.veo
+│   │   │   │   │   ├── mem.vhd
+│   │   │   │   │   ├── mem.vho
+│   │   │   │   │   ├── mem.xco
+│   │   │   │   │   ├── mem.xco.bak
+│   │   │   │   │   ├── mem.xise
+│   │   │   │   │   ├── mem_xmdf.tcl
+│   │   │   │   │   ├── summary.log
+│   │   │   │   │   ├── tfrs
+│   │   │   │   │   │   ├── dist_mem_gen_v7_2_readme.txt
+│   │   │   │   │   │   ├── doc
+│   │   │   │   │   │   │   ├── dist_mem_gen_v7_2_vinfo.html
+│   │   │   │   │   │   │   └── pg063-dist-mem-gen.pdf
+│   │   │   │   │   │   ├── example_design
+│   │   │   │   │   │   │   ├── tfrs_exdes.ucf
+│   │   │   │   │   │   │   ├── tfrs_exdes.vhd
+│   │   │   │   │   │   │   ├── tfrs_exdes.xdc
+│   │   │   │   │   │   │   └── tfrs_prod_exdes.vhd
+│   │   │   │   │   │   ├── implement
+│   │   │   │   │   │   │   ├── implement.bat
+│   │   │   │   │   │   │   ├── implement.sh
+│   │   │   │   │   │   │   ├── implement_synplify.bat
+│   │   │   │   │   │   │   ├── implement_synplify.sh
+│   │   │   │   │   │   │   ├── planAhead_ise.bat
+│   │   │   │   │   │   │   ├── planAhead_ise.sh
+│   │   │   │   │   │   │   ├── planAhead_ise.tcl
+│   │   │   │   │   │   │   ├── xst.prj
+│   │   │   │   │   │   │   └── xst.scr
+│   │   │   │   │   │   └── simulation
+│   │   │   │   │   │       ├── functional
+│   │   │   │   │   │       │   ├── simulate_mti.bat
+│   │   │   │   │   │       │   ├── simulate_mti.do
+│   │   │   │   │   │       │   └── simulate_mti.sh
+│   │   │   │   │   │       ├── tfrs_tb_agen.vhd
+│   │   │   │   │   │       ├── tfrs_tb_checker.vhd
+│   │   │   │   │   │       ├── tfrs_tb_dgen.vhd
+│   │   │   │   │   │       ├── tfrs_tb_pkg.vhd
+│   │   │   │   │   │       ├── tfrs_tb_rng.vhd
+│   │   │   │   │   │       ├── tfrs_tb_stim_gen.vhd
+│   │   │   │   │   │       ├── tfrs_tb_synth.vhd
+│   │   │   │   │   │       ├── tfrs_tb.vhd
+│   │   │   │   │   │       └── timing
+│   │   │   │   │   │           ├── simulate_mti.bat
+│   │   │   │   │   │           ├── simulate_mti.do
+│   │   │   │   │   │           └── simulate_mti.sh
+│   │   │   │   │   ├── tfrs.asy
+│   │   │   │   │   ├── tfrs_flist.txt
+│   │   │   │   │   ├── tfrs.gise
+│   │   │   │   │   ├── tfrs.ngc
+│   │   │   │   │   ├── tfrs.sym
+│   │   │   │   │   ├── tfrs.v
+│   │   │   │   │   ├── tfrs.veo
+│   │   │   │   │   ├── tfrs.xco
+│   │   │   │   │   ├── tfrs.xise
+│   │   │   │   │   ├── tfrs_xmdf.tcl
+│   │   │   │   │   ├── tmp
+│   │   │   │   │   │   ├── _cg
+│   │   │   │   │   │   │   └── _dbg
+│   │   │   │   │   │   │       └── xil_305.in
+│   │   │   │   │   │   ├── mem.lso
+│   │   │   │   │   │   ├── tfrs.lso
+│   │   │   │   │   │   └── _xmsgs
+│   │   │   │   │   │       ├── pn_parser.xmsgs
+│   │   │   │   │   │       └── xst.xmsgs
+│   │   │   │   │   └── _xmsgs
+│   │   │   │   │       ├── cg.xmsgs
+│   │   │   │   │       ├── ngcbuild.xmsgs
+│   │   │   │   │       ├── pn_parser.xmsgs
+│   │   │   │   │       └── xst.xmsgs
+│   │   │   │   ├── iseconfig
+│   │   │   │   │   ├── Lab6.projectmgr
+│   │   │   │   │   └── top.xreport
+│   │   │   │   ├── isim
+│   │   │   │   │   ├── isim_usage_statistics.html
+│   │   │   │   │   ├── pn_info
+│   │   │   │   │   ├── temp
+│   │   │   │   │   │   ├── alu.sdb
+│   │   │   │   │   │   ├── control.sdb
+│   │   │   │   │   │   ├── glbl.sdb
+│   │   │   │   │   │   ├── mem.sdb
+│   │   │   │   │   │   ├── @r@e@g_@f@i@l@e.sdb
+│   │   │   │   │   │   ├── test.sdb
+│   │   │   │   │   │   └── top.sdb
+│   │   │   │   │   ├── test_isim_beh.exe.sim
+│   │   │   │   │   │   ├── isimcrash.log
+│   │   │   │   │   │   ├── ISimEngine-DesignHierarchy.dbg
+│   │   │   │   │   │   ├── isimkernel.log
+│   │   │   │   │   │   ├── libPortability.dll
+│   │   │   │   │   │   ├── netId.dat
+│   │   │   │   │   │   ├── test_isim_beh.exe
+│   │   │   │   │   │   ├── tmp_save
+│   │   │   │   │   │   │   └── _1
+│   │   │   │   │   │   ├── work
+│   │   │   │   │   │   │   ├── m_00000000000403262735_1774216237.c
+│   │   │   │   │   │   │   ├── m_00000000000403262735_1774216237.didat
+│   │   │   │   │   │   │   ├── m_00000000000403262735_1774216237.nt64.obj
+│   │   │   │   │   │   │   ├── m_00000000001343346779_3823007873.c
+│   │   │   │   │   │   │   ├── m_00000000001343346779_3823007873.didat
+│   │   │   │   │   │   │   ├── m_00000000001343346779_3823007873.nt64.obj
+│   │   │   │   │   │   │   ├── m_00000000001695776882_2725559894.c
+│   │   │   │   │   │   │   ├── m_00000000001695776882_2725559894.didat
+│   │   │   │   │   │   │   ├── m_00000000001695776882_2725559894.nt64.obj
+│   │   │   │   │   │   │   ├── m_00000000002179725905_1985558087.c
+│   │   │   │   │   │   │   ├── m_00000000002179725905_1985558087.didat
+│   │   │   │   │   │   │   ├── m_00000000002179725905_1985558087.nt64.obj
+│   │   │   │   │   │   │   ├── m_00000000002701904252_3037777339.c
+│   │   │   │   │   │   │   ├── m_00000000002701904252_3037777339.didat
+│   │   │   │   │   │   │   ├── m_00000000002701904252_3037777339.nt64.obj
+│   │   │   │   │   │   │   ├── m_00000000003853492643_3783644070.c
+│   │   │   │   │   │   │   ├── m_00000000003853492643_3783644070.didat
+│   │   │   │   │   │   │   ├── m_00000000003853492643_3783644070.nt64.obj
+│   │   │   │   │   │   │   ├── m_00000000004134447467_2073120511.c
+│   │   │   │   │   │   │   ├── m_00000000004134447467_2073120511.didat
+│   │   │   │   │   │   │   ├── m_00000000004134447467_2073120511.nt64.obj
+│   │   │   │   │   │   │   ├── test_isim_beh.exe_main.c
+│   │   │   │   │   │   │   └── test_isim_beh.exe_main.nt64.obj
+│   │   │   │   │   │   └── xilinxcorelib_ver
+│   │   │   │   │   │       ├── m_00000000000277421008_0181814267.c
+│   │   │   │   │   │       ├── m_00000000000277421008_0181814267.didat
+│   │   │   │   │   │       ├── m_00000000000277421008_0181814267.nt64.obj
+│   │   │   │   │   │       ├── m_00000000001358910285_1942005516.c
+│   │   │   │   │   │       ├── m_00000000001358910285_1942005516.didat
+│   │   │   │   │   │       ├── m_00000000001358910285_1942005516.nt64.obj
+│   │   │   │   │   │       ├── m_00000000001603977570_2501326302.c
+│   │   │   │   │   │       ├── m_00000000001603977570_2501326302.didat
+│   │   │   │   │   │       ├── m_00000000001603977570_2501326302.nt64.obj
+│   │   │   │   │   │       ├── m_00000000001687936702_3218604958.c
+│   │   │   │   │   │       ├── m_00000000001687936702_3218604958.didat
+│   │   │   │   │   │       └── m_00000000001687936702_3218604958.nt64.obj
+│   │   │   │   │   └── work
+│   │   │   │   │       ├── alu.sdb
+│   │   │   │   │       ├── control.sdb
+│   │   │   │   │       ├── glbl.sdb
+│   │   │   │   │       ├── mem.sdb
+│   │   │   │   │       ├── @r@e@g_@f@i@l@e.sdb
+│   │   │   │   │       ├── test.sdb
+│   │   │   │   │       └── top.sdb
+│   │   │   │   ├── isim.cmd
+│   │   │   │   ├── isim.log
+│   │   │   │   ├── Lab6.gise
+│   │   │   │   ├── Lab6.xise
+│   │   │   │   ├── mem.mif
+│   │   │   │   ├── mem.txt
+│   │   │   │   ├── REG_FILE.v
+│   │   │   │   ├── test_beh.prj
+│   │   │   │   ├── test_isim_beh.exe
+│   │   │   │   ├── test_stx_beh.prj
+│   │   │   │   ├── test_summary.html
+│   │   │   │   ├── test.v
+│   │   │   │   ├── test.wcfg
+│   │   │   │   ├── top.cmd_log
+│   │   │   │   ├── top_envsettings.html
+│   │   │   │   ├── top.lso
+│   │   │   │   ├── top.ngc
+│   │   │   │   ├── top.ngr
+│   │   │   │   ├── top.prj
+│   │   │   │   ├── top.stx
+│   │   │   │   ├── top_summary.html
+│   │   │   │   ├── top.syr
+│   │   │   │   ├── top.v
+│   │   │   │   ├── top.xst
+│   │   │   │   ├── top_xst.xrpt
+│   │   │   │   ├── webtalk_pn.xml
+│   │   │   │   ├── xilinxsim.ini
+│   │   │   │   └── _xmsgs
+│   │   │   │       ├── pn_parser.xmsgs
+│   │   │   │       └── xst.xmsgs
+│   │   │   └── Lab6_PB15111604.docx
+│   │   ├── Lab1_PB15111604.docx
+│   │   ├── Lab1_PB15111604.pdf
+│   │   ├── Lab3_PB15111604.docx
+│   │   ├── Lab4_PB15111604.pdf
+│   │   ├── lab_statistics.xlsx
+│   │   ├── ppt
+│   │   │   ├── 10-storage-check.pdf
+│   │   │   ├── 11_bus.pdf
+│   │   │   ├── 12_IOSystem_1.pdf
+│   │   │   ├── 13_CPU_construction&functionality.pdf
+│   │   │   ├── 13_CPU_controller_design.pdf
+│   │   │   ├── 17_calculate-1x.pdf
+│   │   │   ├── 18_calculate-2x.pdf
+│   │   │   ├── 19_calculate-3x.pdf
+│   │   │   ├── 1_generality.pdf
+│   │   │   ├── 2_ISA.pdf
+│   │   │   ├── 3_MIPS_Processor_1.pdf
+│   │   │   ├── 4_MIPS_Processor_2_pipeline.ppt
+│   │   │   ├── 5_Interruption1.pdf
+│   │   │   ├── 6_storage-dram.pdf
+│   │   │   ├── 7_storage-cache.pdf
+│   │   │   ├── 8_storage-exstorage.pdf
+│   │   │   ├── 9_storage-vm.ppt
+│   │   │   ├── courseSchedule.png
+│   │   │   ├── ex1-2.ppt
+│   │   │   ├── ex3.pptx
+│   │   │   ├── ex4-5.pdf
+│   │   │   ├── final_COD.pdf
+│   │   │   └── statistics.xls
+│   │   ├── statistics0419.xlsx
+│   │   ├── statistics.xls
+│   │   ├── verilog
+│   │   │   ├── verilog_notes.txt
+│   │   │   └── Verilog入门教程.pdf
+│   │   ├── 组成原理答案.pdf
+│   │   ├── 计算机组成原理第二版唐朔飞课后习题答案.doc
+│   │   └── 计算机组成原理课后答案(唐朔飞第二版).doc
+│   ├── 运筹学基础
+│   │   ├── 15
+│   │   │   ├── chp01.pdf
+│   │   │   ├── chp02.pdf
+│   │   │   ├── chp03.pdf
+│   │   │   ├── chp04.pdf
+│   │   │   ├── chp05.pdf
+│   │   │   ├── chp06.pdf
+│   │   │   ├── chp10.pdf
+│   │   │   ├── chp11.pdf
+│   │   │   ├── chp12.pdf
+│   │   │   ├── chp13存储论1.pdf
+│   │   │   └── chp14.pdf
+│   │   ├── chp01.pdf
+│   │   ├── chp02.pdf
+│   │   ├── chp03.pdf
+│   │   ├── chp04.pdf
+│   │   ├── chp05.pdf
+│   │   ├── chp06.pdf
+│   │   ├── chp11.pdf
+│   │   ├── chp12.pdf
+│   │   ├── statistics0531.xlsx
+│   │   ├── ustc_cs2014.txt
+│   │   ├── 新建文件夹
+│   │   │   ├── Bus.pdf
+│   │   │   ├── Check.pdf
+│   │   │   ├── IO.pdf
+│   │   │   └── Ｉｎterrupt.pdf
+│   │   └── 运筹学考试范围-来自学长，有出入仅供参考.pdf
+│   └── 重要思想概论
+│       ├── 史济怀教授访谈.txt
+│       └── 采访史济怀教授.txt
+├── 自由选修-其他
+├── 自由选修-数学类
+│   └── README.md
+├── 自由选修-物理类
+│   └── README.md
+└── 自由选修-经管类
+    ├── 会计学原理
+    │   ├── 会计学汇总_6_slides_per_page.pdf
+    │   ├── 会计学重点.txt
+    │   ├── 第10章  所有者权益.pptx
+    │   ├── 第11章  利润表.pptx
+    │   ├── 第12章   现金流量表.pptx
+    │   ├── 第13章   会计报表分析.pptx
+    │   ├── 第1章  会计学基础.pptx
+    │   ├── 第2章     会计循环.pptx
+    │   ├── 第3章  资产负债表.pptx
+    │   ├── 第4章   货币资金与应收项目.pptx
+    │   ├── 第5章   存货.pptx
+    │   ├── 第6章  固定资产.pptx
+    │   ├── 第7章   无形资产和其他资产.pptx
+    │   ├── 第8章  投资.pptx
+    │   ├── 第9章  负债 (1).pptx
+    │   └── 第9章  负债.pptx
+    └── 微观经济学
+        ├── 微观经济学复习提纲.doc
+        ├── 第1章 绪论.doc
+        ├── 第2章 需求曲线和供给曲线概述以及有关的基本概念.doc
+        ├── 第3章 消费者选择.doc
+        ├── 第4章 生产者行为理论.doc
+        ├── 第5章 完全竞争市场.doc
+        ├── 第6章 不完全竞争的市场.doc
+        └── 蔡继明微观经济学习题第4-章.doc
+
+437 directories, 3080 files
