@@ -1,0 +1,10 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	COUNT                   3011
+//	DELAY                   300B
+//	LOOP                    3000
+//	NEWLINE                 3013
+//	REP                     300D
+//	S1                      3014
+//	S2                      3054
+//	SaveR1                  3012

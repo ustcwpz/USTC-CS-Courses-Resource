@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}实验目的}{1}
+\contentsline {paragraph}{1}{1}
+\contentsline {paragraph}{2}{1}
+\contentsline {paragraph}{3}{1}
+\contentsline {section}{\numberline {2}设备外设}{2}
+\contentsline {section}{\numberline {3}要求}{2}
+\contentsline {paragraph}{*}{2}
+\contentsline {paragraph}{*}{2}
+\contentsline {paragraph}{*}{2}
+\contentsline {paragraph}{*}{2}
+\contentsline {paragraph}{*}{2}
+\contentsline {paragraph}{*}{2}
+\contentsline {paragraph}{*}{2}
+\contentsline {paragraph}{*}{2}
+\contentsline {section}{\numberline {4}实验结果}{2}
+\contentsline {section}{\numberline {5}实验分析}{3}
+\contentsline {paragraph}{1}{3}
+\contentsline {paragraph}{2}{3}
+\contentsline {paragraph}{3}{3}
+\contentsline {paragraph}{4}{3}
+\contentsline {section}{\numberline {6}思考题}{3}
+\contentsline {section}{\numberline {7}源代码}{3}
+\contentsline {section}{\numberline {8}模块划分}{13}

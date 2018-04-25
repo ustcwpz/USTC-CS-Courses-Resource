@@ -1,0 +1,41 @@
+\contentsline {section}{\numberline {1}需求分析}{2}
+\contentsline {paragraph}{1}{2}
+\contentsline {paragraph}{2}{2}
+\contentsline {paragraph}{3}{2}
+\contentsline {paragraph}{4}{2}
+\contentsline {section}{\numberline {2}概要设计}{2}
+\contentsline {subsection}{\numberline {2.1}链表}{2}
+\contentsline {paragraph}{数据对象}{2}
+\contentsline {paragraph}{数据关系}{2}
+\contentsline {paragraph}{基本操作}{2}
+\contentsline {subparagraph}{s = linkList()}{2}
+\contentsline {subparagraph}{s.append(x)}{2}
+\contentsline {subparagraph}{x = s[i]}{2}
+\contentsline {subparagraph}{del s[i]}{2}
+\contentsline {subparagraph}{s[i] = x}{3}
+\contentsline {subparagraph}{s.insert(i,x)}{3}
+\contentsline {subsection}{\numberline {2.2}双端队列}{3}
+\contentsline {paragraph}{数据对象}{3}
+\contentsline {paragraph}{数据关系}{3}
+\contentsline {paragraph}{基本操作}{3}
+\contentsline {subparagraph}{s = queue()}{3}
+\contentsline {subparagraph}{s.append(x)}{3}
+\contentsline {subparagraph}{x = s[i]}{3}
+\contentsline {subparagraph}{s.pop()}{3}
+\contentsline {subparagraph}{s.popleft()}{3}
+\contentsline {subparagraph}{s.appendleft()}{3}
+\contentsline {section}{\numberline {3}详细设计}{4}
+\contentsline {subsection}{\numberline {3.1}用户类型}{4}
+\contentsline {subsection}{\numberline {3.2}窗口类型}{5}
+\contentsline {subsection}{\numberline {3.3}银行类型}{6}
+\contentsline {subsection}{\numberline {3.4}显示信息的函数代码}{7}
+\contentsline {section}{\numberline {4}调试分析}{7}
+\contentsline {paragraph}{1}{7}
+\contentsline {paragraph}{2}{7}
+\contentsline {paragraph}{3}{7}
+\contentsline {section}{\numberline {5}用户手册}{8}
+\contentsline {section}{\numberline {6}测试结果}{9}
+\contentsline {subsection}{\numberline {6.1}输入10000，100，20，50，2}{9}
+\contentsline {subsection}{\numberline {6.2}输入1000，50，30，80，4}{10}
+\contentsline {subsection}{\numberline {6.3}输入50000，60，40，300，6}{11}
+\contentsline {section}{\numberline {7}附录}{11}

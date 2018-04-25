@@ -1,0 +1,20 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	CHECK                   1504
+//	DDR                     1529
+//	DSR                     1528
+//	FINISH                  1519
+//	KBDR                    1527
+//	KBSR                    1526
+//	NEWLINE                 152A
+//	NINE                    152C
+//	NOTNUM                  1513
+//	PUTCHR                  1521
+//	PUTSTR                  1514
+//	S1                      1531
+//	S2                      1549
+//	SAVER0                  152D
+//	SAVER1                  152E
+//	SAVER2                  152F
+//	SAVER7                  1530
+//	ZERO                    152B

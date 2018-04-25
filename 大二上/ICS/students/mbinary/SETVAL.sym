@@ -1,0 +1,10 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	CHECK                   3000
+//	DDR                     300E
+//	DSR                     300D
+//	HI                      3010
+//	KBDR                    300C
+//	KBSR                    300B
+//	NEWLINE                 300F
+//	l2                      3006

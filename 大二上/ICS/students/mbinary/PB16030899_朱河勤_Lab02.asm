@@ -1,0 +1,42 @@
+        .ORIG x3000
+        LD R5,TOTAL
+        LD R3,SRC
+	LD R4,DST
+
+LABEL0  LDR R1,R3,#0
+        ADD R6,R1,#-3  ;JUDGE  IF X <3
+        BRzp  LABEL1
+
+    	AND R0,R0,#0
+        ADD R0,R0,#2  ; 0<=x<3
+        BR LABEL3
+
+LABEL1  ADD R6,R1,#-10   ;JUDGE IF X<10
+        BRp  LABEL2      
+        ADD R0,R1,#-1  ;3<=X<=10  
+	ADD R6,R1,#1
+	JSR MUL
+	ADD R1,R6,#0
+	JSR MUL
+	BR LABEL3
+
+LABEL2  ADD R0,R1,#1 ;10<=X<=100
+
+LABEL3	STR R0,R4,#0
+	ADD R3,R3,#1
+	ADD R4,R4,#1
+	ADD R5,R5,#-1
+	BRp LABEL0
+
+MUL	ADD R2,R0,#0  ;  MUL R0,R0,R1
+	ADD R1,R1,#-1 ; NOTICE THAT RO HAS ONE VALUE
+  LOOP  ADD R0,R0,R2
+	ADD R1,R1,#-1
+	BRp LOOP
+	RET
+
+	HALT
+TOTAL   .FILL #60
+SRC	.FILL x3200
+DST	.FILL x3300 
+	.END

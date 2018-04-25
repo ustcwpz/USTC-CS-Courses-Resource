@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}实验目的}{1}
+\contentsline {paragraph}{1}{1}
+\contentsline {paragraph}{2}{1}
+\contentsline {paragraph}{3}{1}
+\contentsline {paragraph}{4}{1}
+\contentsline {section}{\numberline {2}设备外设}{2}
+\contentsline {section}{\numberline {3}要求}{2}
+\contentsline {subsection}{\numberline {3.1}时序逻辑always块编码}{2}
+\contentsline {paragraph}{1}{2}
+\contentsline {paragraph}{2}{2}
+\contentsline {paragraph}{3}{2}
+\contentsline {subsection}{\numberline {3.2}编码}{2}
+\contentsline {paragraph}{1}{2}
+\contentsline {paragraph}{2}{2}
+\contentsline {paragraph}{3}{2}
+\contentsline {subsection}{\numberline {3.3}实验要求}{2}
+\contentsline {section}{\numberline {4}实验结果}{2}
+\contentsline {section}{\numberline {5}实验分析}{3}
+\contentsline {paragraph}{1}{3}
+\contentsline {paragraph}{2}{3}
+\contentsline {paragraph}{3}{3}
+\contentsline {paragraph}{4}{3}
+\contentsline {section}{\numberline {6}源代码}{4}

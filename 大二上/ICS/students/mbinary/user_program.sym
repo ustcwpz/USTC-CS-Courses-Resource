@@ -1,0 +1,16 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	CDADDR                  301B
+//	COUNT                   3018
+//	DELAY                   3010
+//	INTKB                   301C
+//	KBSR                    301D
+//	LOOP                    3005
+//	MASK                    301E
+//	NEWLINE                 301F
+//	REP                     3013
+//	S1                      3021
+//	S2                      3061
+//	SAVER7                  301A
+//	STK                     3020
+//	SaveR1                  3019
