@@ -485,7 +485,7 @@ string QRCode::EncodeData(void)
 
     res += terminator;
 
-    // Pad 0 to the right of the string to make it lenght multiple of 8
+    // Pad 0 to the right of the string to make it length multiple of 8
     while (strlen(res.c_str()) % 8 != 0)
         res += "0";
 
